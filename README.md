@@ -1,7 +1,7 @@
 # DARN - Dark mAtteR iNvestigator
 
 
-<img src="(https://raw.githubusercontent.com/hariszaf/darn/main/figures/darn_logo.png" width="200" height="200">
+<img src="https://raw.githubusercontent.com/hariszaf/darn/main/figures/darn_logo.png" width="200" height="200">
 
 
 
