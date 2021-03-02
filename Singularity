@@ -10,5 +10,3 @@ From: hariszaf/darn
 	export WORKDIR="/home"
 	echo "export WORKDIR=$WORKDIR" >> $SINGULARITY_ENVIRONMENT
 	mkdir -p $WORKDIR
-
-
