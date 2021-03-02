@@ -44,7 +44,7 @@ docker run --rm -it -v /path_to_your_sample/:/mnt darn
 and once the shell is on you just need to run:
 
 ```
-./darn -s /mnt/your_sample.fasta -t <number_of_threads_available>
+./darn.sh -s /mnt/your_sample.fasta -t <number_of_threads_available>
 ```
 
 In case, you are working on Singularity, you follow the following steps
@@ -63,7 +63,7 @@ singularity run -B /<path_to_your_sample/:/mnt /<path_to>/darn.sif
 and once shell appears:
 
 ```
-./darn -s /mnt/your_sample.fasta -t <number_of_threads_available>
+./darn.sh -s /mnt/your_sample.fasta -t <number_of_threads_available>
 ```
 
 **In both cases, the output of DARN will be returned in the path you mount!**
