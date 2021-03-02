@@ -18,6 +18,18 @@ To build DARN we had to build a COI-oriented tree of life. Here is the approach 
 <img src="https://raw.githubusercontent.com/hariszaf/darn/main/figures/darn_workflow.png" width="700" height="950">
 
 
+## Output
+
+Once you run DARN against your sample, you will get a Krona interactive plot, in `.html` format as the one here:
+
+<img src="https://raw.githubusercontent.com/hariszaf/darn/main/figures/darn_krona.png" width="800" height="500">
+
+You will also get the a `.newick` and a `.jplace` file with the assignments on the tree as well as the `.profile` that was used to get the Krona plot. 
+
+You may have a look on the DARN output over [here](https://github.com/hariszaf/darn/tree/main/analysis).
+
+
+
 ## How to run 
 
 You may get DARN as a Docker image by running: 
@@ -68,12 +80,5 @@ DARN makes use of the following software:
 * [krona](https://github.com/marbl/Krona/wiki)
 
 Their corresponding licenses apply. 
-
-
-
-
-
-
-
 
 
