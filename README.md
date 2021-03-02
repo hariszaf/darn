@@ -1,9 +1,6 @@
-# DARN - Dark mAtteR iNvestigator
-
-
 <img src="https://raw.githubusercontent.com/hariszaf/darn/main/figures/darn_logo.png" width="200" height="200">
 
-
+# DARN - Dark mAtteR iNvestigator
 
 This is the Dark mAtteR iNvestigator tool (DARN).
 
