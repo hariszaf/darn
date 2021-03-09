@@ -21,6 +21,8 @@ Once you run DARN against your sample, you will get a Krona interactive plot, in
 
 <img src="https://raw.githubusercontent.com/hariszaf/darn/main/figures/darn_krona.png" width="800" height="500">
 
+For a more thorough look on such a plot, just cilck [here](https://htmlpreview.github.io/?https://raw.githubusercontent.com/hariszaf/darn/main/analysis/marine_dark_matter.html).
+
 You will also get the a `.newick` and a `.jplace` file with the assignments on the tree as well as the `.profile` that was used to get the Krona plot. 
 
 You may have a look on the DARN output over [here](https://github.com/hariszaf/darn/tree/main/analysis).
