@@ -39,4 +39,6 @@ WORKDIR /home/docs
 COPY /docs/ ./
 
 WORKDIR /home
-COPY darn.sh .
+COPY darn.sh parse_per_query.py ./
+
+RUN apt-get update -y && apt-get install -y python3
