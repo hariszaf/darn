@@ -55,28 +55,39 @@ query_names_per_domain.pop("taxopath", None)
 
 total_queries = len(dictionary.keys()) - 1
 
-total_bacteria  = len(query_names_per_domain["Bacteria"])
-total_archaea = len(query_names_per_domain["Archaea"])
-total_eukaryotes = len(query_names_per_domain["Eukaryota"])
-total_distant = len(query_names_per_domain["DISTANT"])
-total_doubles = len(query_names_per_domain["doubles"])
+if "Bacteria" in query_names_per_domain:
+   total_bacteria  = len(query_names_per_domain["Bacteria"])
+else:
+   total_bacteria = 0
+
+if "Archaea" in query_names_per_domain:
+   total_archaea = len(query_names_per_domain["Archaea"])
+else:
+   total_archaea = 0
+
+if "Eukaryota" in query_names_per_domain:
+   total_eukaryotes = len(query_names_per_domain["Eukaryota"])
+else:
+   total_eukaryotes = 0
+
+if "DISTANT" in query_names_per_domain:
+   total_distant = len(query_names_per_domain["DISTANT"])
+else:
+   total_distant = 0
+
 
 # add metadata of the dict to the dict
-query_names_per_domain["metadata"] = {"total # of queries" : total_queries, \
-"total bacteria assigned" : total_bacteria, \
-"total archaea assigned" : total_archaea \
+query_names_per_domain["metadata"] = {"total queries" : total_queries, \
+"Bacteria assignments" : total_bacteria, \
+"Archaea assigned" : total_archaea, \
+"Eukaryota assigned" : total_eukaryotes, \
+"Distant assigned" : total_distant
 }
 
 
 
-with open('app.json', 'w') as fp:
+with open('darn_assignments_per_domain.json', 'w') as fp:
     json.dump(query_names_per_domain, fp)
 
 
-print("Total number of queries: " + str(total_queries))
-print("Total number of Bacteria: " + str(total_bacteria))
-print("Total number of Archaea: " + str(total_archaea))
-print("Total number of Eukaryota: " + str(total_eukaryotes))
-print("Total number of distant: " + str(total_distant))
-print("Total number of double assigned: " + str(total_doubles))
 

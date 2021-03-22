@@ -102,19 +102,32 @@ sed '/^>/!s/.\{80\}/&\n/g' tmp2 > papara.fasta
 
 rm tmp tmp2
 
+
+# Sample name
+sampleName=${nameFile::-6}
+
 # Run EPA-ng
 /home/tools/epa/bin/epa-ng -t /home/docs/magicTree.bestTree -s /home/docs/magic_tree_aln.fasta -m GTR+FO+G4m -q papara.fasta
 
 # Run gappa to build krona input
-/home/tools/gappa/bin/gappa examine assign --file-prefix darn_gappa_assign_ --jplace-path epa_result.jplace --taxon-file docs/TAXONOMY_ALL --per-query-results --best-hit --krona
+/home/tools/gappa/bin/gappa examine assign --file-prefix assign_exhaustive_ --jplace-path epa_result.jplace --taxon-file docs/TAXONOMY_ALL --per-query-results --krona
+mv assign_exhaustive_per_query.tsv /mnt
+rm assign_*
+/home/tools/gappa/bin/gappa examine assign --file-prefix darn_gappa_assign_$sampleName\_ --jplace-path epa_result.jplace --taxon-file docs/TAXONOMY_ALL --per-query-results --best-hit --krona
 
 # Build Krona plot
-ktImportText *krona.profile
+ktImportText darn_gappa_assign_$sampleName\_krona.profile -o darn_$sampleName.krona_plot.html
+
+# Run parsing script
+cp *_per_query.tsv darn_gappa_assign_per_query.tsv
+python3 parse_per_query.py
+rm darn_gappa_assign_per_query.tsv
 
 # Move krona plots and important files to mount directory
 mv epa_result.jplace /mnt
+mv *.html /mnt
 mv darn_gappa_assign_* /mnt
+mv darn_assignments_per_domain.json /mnt
 
-python3 parse_per_query.py
 
 echo "DARN has been completed. You may dive into the dark matter.."
