@@ -11,17 +11,21 @@ for line in input_file:
    line = line.split("\t")
    query_id = line[0]
 
-   taxonomy = line[-1].split(";")
-   domain = taxonomy[0]
-
-   if "\n" in domain:
-      domain = domain[:-1]
-
-   if query_id not in dictionary.keys():
-      dictionary[query_id] = [domain]
-
+   if "Query" not in query_id:
+      continue
    else:
-      dictionary[query_id].append(domain)
+
+      taxonomy = line[-1].split(";")
+      domain = taxonomy[0]
+
+      if "\n" in domain:
+         domain = domain[:-1]
+
+      if query_id not in dictionary.keys():
+         dictionary[query_id] = [domain]
+
+      else:
+         dictionary[query_id].append(domain)
 
 
 query_names_with_doubles = []
