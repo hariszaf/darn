@@ -106,13 +106,15 @@ rm tmp tmp2
 /home/tools/epa/bin/epa-ng -t /home/docs/magicTree.bestTree -s /home/docs/magic_tree_aln.fasta -m GTR+FO+G4m -q papara.fasta
 
 # Run gappa to build krona input
-/home/tools/gappa/bin/gappa examine assign --jplace-path epa_result.jplace --taxon-file docs/TAXONOMY_ALL --krona
+/home/tools/gappa/bin/gappa examine assign --file-prefix darn_gappa_assign_ --jplace-path epa_result.jplace --taxon-file docs/TAXONOMY_ALL --per-query-results --best-hit --krona
 
 # Build Krona plot
 ktImportText *krona.profile
 
 # Move krona plots and important files to mount directory
-mv krona.profile epa_result.jplace labelled_tree.newick profile.tsv /mnt
+mv epa_result.jplace /mnt
+mv darn_gappa_assign_* /mnt
 
+python3 parse_per_query.py
 
 echo "DARN has been completed. You may dive into the dark matter.."
