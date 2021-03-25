@@ -110,12 +110,12 @@ sampleName=${nameFile::-6}
 /home/tools/epa/bin/epa-ng -t /home/docs/magicTree.bestTree -s /home/docs/magic_tree_aln.fasta -m GTR+FO+G4m -q papara.fasta
 
 # Run gappa to build krona input
-/home/tools/gappa/bin/gappa examine assign --file-prefix assign_exhaustive_ --jplace-path epa_result.jplace --taxon-file docs/TAXONOMY_ALL --per-query-results --krona
-mv assign_exhaustive_per_query.tsv /mnt
-rm assign_*
+/home/tools/gappa/bin/gappa examine assign --file-prefix darn_assign_exhaustive_$sampleName\_ --jplace-path epa_result.jplace --taxon-file docs/TAXONOMY_ALL --per-query-results --krona
+mv darn_assign_exhaustive_* /mnt
+rm darn_assign_*
 /home/tools/gappa/bin/gappa examine assign --file-prefix darn_gappa_assign_$sampleName\_ --jplace-path epa_result.jplace --taxon-file docs/TAXONOMY_ALL --per-query-results --best-hit --krona
 
-# Build Krona plot
+# Build Krona plot - using the likelihood values
 ktImportText darn_gappa_assign_$sampleName\_krona.profile -o darn_$sampleName.krona_plot.html
 
 # Run parsing script
@@ -123,11 +123,22 @@ cp *_per_query.tsv darn_gappa_assign_per_query.tsv
 python3 parse_per_query.py
 rm darn_gappa_assign_per_query.tsv
 
+mv darn_pres_abs.profile darn_pres_abs_$sampleName\_krona.profile.tmp
+
+awk '$1="1.0"' darn_pres_abs_$sampleName\_krona.profile.tmp > darn_pres_abs_$sampleName\_krona.profile.tmp2
+
+# # Build Krona plot
+sed 's/ /\t/g' darn_pres_abs_marine_part_krona.profile.tmp2 > darn_pres_abs_marine_part_krona.profile
+ktImportText darn_pres_abs_$sampleName\_krona.profile -o darn_$sampleName\_pres_abs.krona_plot.html
+rm darn_pres_abs_marine_part_krona.profile.tmp*
+
+
 # Move krona plots and important files to mount directory
 mv epa_result.jplace /mnt
 mv *.html /mnt
-mv darn_gappa_assign_* /mnt
-mv darn_assignments_per_domain.json /mnt
+# mv darn_gappa_assign_* /mnt
+# mv darn_assignments_per_domain.json /mnt
+mv darn_* /mnt
 
 
 echo "DARN has been completed. You may dive into the dark matter.."

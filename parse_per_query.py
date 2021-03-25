@@ -1,46 +1,92 @@
 #!/usr/bin/python
+
+# developed by: Haris Zafeiropoulos
+# in the framework of the DARN project
+
 import sys, json
 
 input_file = open("darn_gappa_assign_per_query.tsv", "r")
 
-dictionary = {}
+domain_dict = {}
 counter = 0 
+lwr_dict = {}
+
 
 for line in input_file:
 
    line = line.split("\t")
    query_id = line[0]
 
+   # Check if it is actuall a query sequence; otherwise move to the next
    if "Query" not in query_id:
       continue
+
    else:
 
-      taxonomy = line[-1].split(";")
-      domain = taxonomy[0]
+      taxonomy = line[-1]
+      domain = taxonomy.split(";")[0]
+      taxonomy = taxonomy[:-1]
 
       if "\n" in domain:
          domain = domain[:-1]
 
-      if query_id not in dictionary.keys():
-         dictionary[query_id] = [domain]
+      if query_id not in domain_dict.keys():
+         domain_dict[query_id] = [domain]
 
       else:
-         dictionary[query_id].append(domain)
+         domain_dict[query_id].append(domain)
+
+      lwr = line[1]
+
+      if taxonomy not in lwr_dict.keys():
+         lwr_dict[taxonomy] = float(lwr)
+      
+      else:
+         lwr_dict[taxonomy] += float(lwr)
+
+# build krona input 
+output_file = open("darn_pres_abs.profile", "w")
+entries = []
+for taxonomy, value in lwr_dict.items():
+
+   taxonomy = taxonomy.split(";")
+
+   layers = taxonomy[0]
+
+   if len(layers) > 1:
+
+      for level in taxonomy[1:]:
+         layers += "\t" + level
+
+   entry = (value, layers)
+   entries.append(entry)
+
+
+# sort based on the taxonomy
+entries.sort(key=lambda x:x[1])
+
+for entry in entries:
+
+   print(str(entry[0]) + "\t" + entry[1])
+   output_file.write(str(entry[0]) + "\t" + entry[1] + "\n")
+
 
 
 query_names_with_doubles = []
-for key, value in dictionary.items():
+for key, value in domain_dict.items():
 
    if len(value) > 2: 
 
-      dictionary[key] = set(value)
+      domain_dict[key] = set(value)
       query_names_with_doubles.append(key)
 
 
 query_names_per_domain = {}
-query_names_per_domain["doubles"] = query_names_with_doubles
 
-for query, domains in dictionary.items():
+if len(query_names_with_doubles) > 0 :
+   query_names_per_domain["doubles"] = query_names_with_doubles
+
+for query, domains in domain_dict.items():
 
    for domain in domains:
 
@@ -57,7 +103,7 @@ query_names_per_domain.pop("taxopath", None)
 
 
 
-total_queries = len(dictionary.keys()) - 1
+total_queries = len(domain_dict.keys()) - 1
 
 if "Bacteria" in query_names_per_domain:
    total_bacteria  = len(query_names_per_domain["Bacteria"])
