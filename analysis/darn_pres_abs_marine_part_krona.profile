@@ -1,0 +1,18 @@
+1.0	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III
+1.0	Bacteria
+1.0	Bacteria	Proteobacteria	Alphaproteobacteria
+1.0	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	Alphaproteobacteria	Alphaproteobacteria	SAR116_cluster_alpha_proteobacterium_HIMB100
+1.0	Bacteria	Proteobacteria	Alphaproteobacteria	Pelagibacterales	Pelagibacteraceae
+1.0	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales
+1.0	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales
+1.0	Bacteria	Proteobacteria	Betaproteobacteria
+1.0	Bacteria	Proteobacteria	Betaproteobacteria	Nitrosomonadales
+1.0	Bacteria	Proteobacteria	Gammaproteobacteria
+1.0	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales
+1.0	Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales
+1.0	Bacteria	Proteobacteria	Gammaproteobacteria	Thiotrichales	Piscirickettsiaceae
+1.0	Eukaryota
+1.0	Eukaryota	Chlorophyta
+1.0	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales
+1.0	Eukaryota	Chordata	Thaliacea	Pyrosomata	Pyrosomatidae	Pyrostremma	Pyrostremma_spinosum
+1.0	Eukaryota	Haptista	Haptophyta
