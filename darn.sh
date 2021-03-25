@@ -72,6 +72,12 @@ nameFile=${sample##*/}
 
 #---------------------------------------------------------------------------------------------------
 
+# Sample name
+sampleName=${nameFile::-6}
+
+# Keep the headers of the seqs in a file
+awk -v n=1 '{if($x~/>/) {print $0 "_Query" n; n++}else{print $0}}' $sample > darn_$sampleName.fasta
+
 # To relabel the Otus on the multiline fasta
 awk -v n=1 '{if($x~/>/){sub(/>.*/, ">Query" n); print; n++}else{print $0}}' $sample > labeled_$nameFile
 
@@ -93,7 +99,6 @@ sed -i '/^[[:space:]]*$/d' multiline_labeled_$name_file
 # Remove ref seqs
 tail -23234 papara_alignment.papara > papara.phy
 
-
 sed -i '1d' papara.phy
 awk '{print ">"$0}' papara.phy > tmp
 
@@ -102,9 +107,6 @@ sed '/^>/!s/.\{80\}/&\n/g' tmp2 > papara.fasta
 
 rm tmp tmp2
 
-
-# Sample name
-sampleName=${nameFile::-6}
 
 # Run EPA-ng
 /home/tools/epa/bin/epa-ng -t /home/docs/magicTree.bestTree -s /home/docs/magic_tree_aln.fasta -m GTR+FO+G4m -q papara.fasta
@@ -134,11 +136,8 @@ rm darn_pres_abs_marine_part_krona.profile.tmp*
 
 
 # Move krona plots and important files to mount directory
-mv epa_result.jplace /mnt
+mv epa_result.jplace darn_$sampleName\_epa_result.jplace
 mv *.html /mnt
-# mv darn_gappa_assign_* /mnt
-# mv darn_assignments_per_domain.json /mnt
 mv darn_* /mnt
-
 
 echo "DARN has been completed. You may dive into the dark matter.."
