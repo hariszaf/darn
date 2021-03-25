@@ -5,15 +5,24 @@
 
 import sys, json
 
+###################################################################
+# PART A: Parse per query gappa output to build Krona input
+###################################################################
+
 input_file = open("darn_gappa_assign_per_query.tsv", "r")
+
+# Two dictionaries will be built
+# One for the domains of each query {'Query78': ['Bacteria'], 'Query79': ['Archaea'], 'Query76': ['Bacteria'], ... }
+# And a second one for the likelihood sums for each taxonomy: {'Eukaryota;Chlorophyta': 4.441, 'Eukaryota;Haptista;Haptophyta': 0.7416, ...}
 
 domain_dict = {}
 counter = 0 
 lwr_dict = {}
 
-
+# Each line of the per_query is parsed to fill in the 2 dictionaries 
 for line in input_file:
 
+   # Keep the query id
    line = line.split("\t")
    query_id = line[0]
 
@@ -23,34 +32,40 @@ for line in input_file:
 
    else:
 
+      # Keep the complete taxonomy and the domain of the query assignment
       taxonomy = line[-1]
       domain = taxonomy.split(";")[0]
       taxonomy = taxonomy[:-1]
 
+      # Remove new line from domain if there
       if "\n" in domain:
          domain = domain[:-1]
 
+      # Check if this is the first record for this query id and if yes, add a key-value pair with its domain as a list
       if query_id not in domain_dict.keys():
          domain_dict[query_id] = [domain]
 
+      # Otherwise, just add the domain of this new record to the list
       else:
          domain_dict[query_id].append(domain)
 
+      # Keep the LWR score of the record
       lwr = line[1]
 
+      # And again, if this is the first record make a new pair 
       if taxonomy not in lwr_dict.keys():
          lwr_dict[taxonomy] = float(lwr)
       
+      # This is critical!! Otherwise, we add this new likelihood value to the list
       else:
          lwr_dict[taxonomy] += float(lwr)
 
-# build krona input 
-output_file = open("darn_pres_abs.profile", "w")
+# Build krona input 
+output_file = open("darn_processed.profile", "w")
 entries = []
 for taxonomy, value in lwr_dict.items():
 
    taxonomy = taxonomy.split(";")
-
    layers = taxonomy[0]
 
    if len(layers) > 1:
@@ -62,29 +77,20 @@ for taxonomy, value in lwr_dict.items():
    entries.append(entry)
 
 
-# sort based on the taxonomy
+# Sort based on the taxonomy
 entries.sort(key=lambda x:x[1])
 
+# Write a file with alla the entries 
 for entry in entries:
-
-   print(str(entry[0]) + "\t" + entry[1])
    output_file.write(str(entry[0]) + "\t" + entry[1] + "\n")
 
 
+###################################################################
+# PART B: Build the .json file for retrieve query ids per domain 
+###################################################################
 
-query_names_with_doubles = []
-for key, value in domain_dict.items():
-
-   if len(value) > 2: 
-
-      domain_dict[key] = set(value)
-      query_names_with_doubles.append(key)
-
-
+# Track query ids assigned in each domain 
 query_names_per_domain = {}
-
-if len(query_names_with_doubles) > 0 :
-   query_names_per_domain["doubles"] = query_names_with_doubles
 
 for query, domains in domain_dict.items():
 
@@ -96,14 +102,10 @@ for query, domains in domain_dict.items():
       else:
          query_names_per_domain[domain].append(query)
 
-      
 query_names_per_domain.pop("taxopath", None)
 
-
-
-
-
-total_queries = len(domain_dict.keys()) - 1
+# Keep some counts! 
+total_queries = len(domain_dict.keys()) 
 
 if "Bacteria" in query_names_per_domain:
    total_bacteria  = len(query_names_per_domain["Bacteria"])
@@ -126,18 +128,14 @@ else:
    total_distant = 0
 
 
-# add metadata of the dict to the dict
-query_names_per_domain["metadata"] = {"total queries" : total_queries, \
-"Bacteria assignments" : total_bacteria, \
-"Archaea assigned" : total_archaea, \
-"Eukaryota assigned" : total_eukaryotes, \
-"Distant assigned" : total_distant
+# Add metadata of the dict to the dict
+query_names_per_domain["metadata"] = { "total queries" : total_queries, \
+                                       "Bacteria assignments" : total_bacteria, \
+                                       "Archaea assigned" : total_archaea, \
+                                       "Eukaryota assigned" : total_eukaryotes, \
+                                       "Distant assigned" : total_distant
 }
-
-
 
 with open('darn_assignments_per_domain.json', 'w') as fp:
     json.dump(query_names_per_domain, fp)
-
-
 

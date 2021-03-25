@@ -40,17 +40,17 @@ usage() {
 
 
 while getopts ":s:t:" o; do
-    case "${o}" in
-        s)
-            sample=${OPTARG}
-            ;;
-	t)
-            threads=${OPTARG}
-            ;;
-        *)
-            usage
-            ;;
-    esac
+   case "${o}" in
+      s)
+         sample=${OPTARG}
+         ;;
+	   t)
+         threads=${OPTARG}
+         ;;
+     *)
+         usage
+         ;;
+   esac
 done
 shift $((OPTIND-1))
 
@@ -95,7 +95,6 @@ sed -i '/^[[:space:]]*$/d' multiline_labeled_$name_file
 	-r \
 	-j $threads
 
-
 # Remove ref seqs
 tail -23234 papara_alignment.papara > papara.phy
 
@@ -112,32 +111,51 @@ rm tmp tmp2
 /home/tools/epa/bin/epa-ng -t /home/docs/magicTree.bestTree -s /home/docs/magic_tree_aln.fasta -m GTR+FO+G4m -q papara.fasta
 
 # Run gappa to build krona input
-/home/tools/gappa/bin/gappa examine assign --file-prefix darn_assign_exhaustive_$sampleName\_ --jplace-path epa_result.jplace --taxon-file docs/TAXONOMY_ALL --per-query-results --krona
-mv darn_assign_exhaustive_* /mnt
-rm darn_assign_*
-/home/tools/gappa/bin/gappa examine assign --file-prefix darn_gappa_assign_$sampleName\_ --jplace-path epa_result.jplace --taxon-file docs/TAXONOMY_ALL --per-query-results --best-hit --krona
+# IMPORTANT HINT! Darn will build Krona plots based on the BEST HITS assignments; both based on the likelihood values and in a binary way. 
+# However, it will also return the likelihoods of the exhaustive likelihood values to allow user a thorough overview of its queries
+/home/tools/gappa/bin/gappa examine assign \
+   --file-prefix darn_assign_exhaustive_$sampleName\_ \
+   --jplace-path epa_result.jplace \
+   --taxon-file docs/TAXONOMY_ALL \
+   --per-query-results \
+   --krona
 
-# Build Krona plot - using the likelihood values
-ktImportText darn_gappa_assign_$sampleName\_krona.profile -o darn_$sampleName.krona_plot.html
+/home/tools/gappa/bin/gappa examine assign \
+   --file-prefix darn_best_hit_$sampleName\_ \
+   --jplace-path epa_result.jplace \
+   --taxon-file docs/TAXONOMY_ALL \
+   --per-query-results \
+   --best-hit \
+   --krona
 
-# Run parsing script
-cp *_per_query.tsv darn_gappa_assign_per_query.tsv
+
+# Remove non query sequences from the output of gappa assign
+sed 's/^Archaea.*//g ; s/^Bacteria.*//g ; s/^Eukaryota.*//g ; /^$/d ' darn_best_hit_$sampleName\_per_query.tsv > tmp 
+rm darn_best_hit_$sampleName\_per_query.tsv
+mv tmp darn_best_hit_$sampleName\_per_query.tsv
+
+sed 's/^Archaea.*//g ; s/^Bacteria.*//g ; s/^Eukaryota.*//g ; /^$/d ' darn_assign_exhaustive_$sampleName\_per_query.tsv > tmp
+rm darn_assign_exhaustive_$sampleName\_per_query.tsv
+mv tmp darn_assign_exhaustive_$sampleName\_per_query.tsv
+
+# Run parsing script; this step uses the gappa output to get the 
+cp darn_best_hit_$sampleName\_per_query.tsv darn_gappa_assign_per_query.tsv
 python3 parse_per_query.py
 rm darn_gappa_assign_per_query.tsv
 
-mv darn_pres_abs.profile darn_pres_abs_$sampleName\_krona.profile.tmp
-
+# Build Krona input (profile) for binary 
+cp darn_processed.profile darn_pres_abs_$sampleName\_krona.profile.tmp
 awk '$1="1.0"' darn_pres_abs_$sampleName\_krona.profile.tmp > darn_pres_abs_$sampleName\_krona.profile.tmp2
+sed 's/ /\t/g' darn_pres_abs_marine_part_krona.profile.tmp2 > darn_pres_abs_$sampleName\_krona.profile
+mv darn_processed.profile darn_likelihood_$sampleName\_krona.profile
 
-# # Build Krona plot
-sed 's/ /\t/g' darn_pres_abs_marine_part_krona.profile.tmp2 > darn_pres_abs_marine_part_krona.profile
+# Build Krona plots
 ktImportText darn_pres_abs_$sampleName\_krona.profile -o darn_$sampleName\_pres_abs.krona_plot.html
-rm darn_pres_abs_marine_part_krona.profile.tmp*
-
+ktImportText darn_likelihood_$sampleName\_krona.profile -o darn_$sampleName\_likelihood.krona_plot.html
 
 # Move krona plots and important files to mount directory
+rm darn_pres_abs_$sampleName\_krona.profile.tmp*
 mv epa_result.jplace darn_$sampleName\_epa_result.jplace
-mv *.html /mnt
 mv darn_* /mnt
 
 echo "DARN has been completed. You may dive into the dark matter.."
