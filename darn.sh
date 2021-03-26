@@ -73,6 +73,8 @@ nameFile=${sample##*/}
 #---------------------------------------------------------------------------------------------------
 
 # If darn has been used again in the same directory, the epa log output must be removed if has not changed
+CWD=$(pwd)
+cd /home
 [[ -f epa_info.log ]] && rm epa_info.log
 
 # Sample name
@@ -109,7 +111,6 @@ sed 's/ \{1,\}/ /g ; s/ /\n/' tmp > tmp2
 sed '/^>/!s/.\{80\}/&\n/g' tmp2 > papara.fasta
 
 rm tmp tmp2
-
 
 # Run EPA-ng
 /home/tools/epa/bin/epa-ng -t /home/docs/magicTree.bestTree -s /home/docs/magic_tree_aln.fasta -m GTR+FO+G4m -q papara.fasta
