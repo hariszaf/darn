@@ -17,13 +17,21 @@ To build DARN we had to build a COI-oriented tree of life. Here is the approach 
 
 ## Output
 
-Once you run DARN against your sample, you will get a Krona interactive plot, in `.html` format as the one here:
+Once you run DARN against your sample, you will get 2 Krona interactive plots, in `.html` format as the one here:
 
 <img src="https://raw.githubusercontent.com/hariszaf/darn/main/figures/darn_krona.png" width="800" height="500">
 
-For a more thorough look on such a plot, just cilck [here](https://htmlpreview.github.io/?https://raw.githubusercontent.com/hariszaf/darn/main/analysis/marine_dark_matter.html).
+The first Krona plot, is based on the likelihood values of the best hit assignments of your query sequences. 
+This way, you may have an overview of what is most likely to actually have on your sample. 
+For a more thorough look on such a Krona, just cilck [here](https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/main/analysis/final_outcome/darn_marine_part_likelihood.krona_plot.html).
 
-You will also get the a `.newick` and a `.jplace` file with the assignments on the tree as well as the `.profile` that was used to get the Krona plot. 
+The second Krona plot, is based on a binary interpretation of the best hits assignments of your sequences, meaning
+that no matter the likelihood value of the best hit of each query, we treat all the assignments as equal to get a 
+quantitative overview of the assignments. For more click [here](https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/main/analysis/final_outcome/darn_marine_part_pres_abs.krona_plot.html).
+
+
+The Krona plots are accompanied by the profiles they came from and by a `.json` file with all the qurey assignments per domain (Bacteria, Archaea, Eukaryota) and a series of `.fasta` files; one for each domain found, with the sequences that have been assigned to it. 
+
 
 You may have a look on the DARN output over [here](https://github.com/hariszaf/darn/tree/main/analysis).
 
