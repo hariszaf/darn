@@ -159,29 +159,40 @@ for line in query_fasta_file:
       ids_mapping[darn_id] = header
 
 
+if "Bacteria" in query_names_per_domain:
+   bacteria_fasta = open("darn_bacteria_assignments.fasta", "w")
+   for query_id in query_names_per_domain["Bacteria"]:
 
-bacteria_fasta = open("darn_bacteria_assignments.fasta", "w")
-for query_id in query_names_per_domain["Bacteria"]:
+      if query_id in ids_mapping.keys():
+         header = ids_mapping[query_id]
+         seq = queries_dict[header]
+         bacteria_fasta.write(header + seq)
 
-   if query_id in ids_mapping.keys():
-      header = ids_mapping[query_id]
-      seq = queries_dict[header]
-      bacteria_fasta.write(header + seq)
+if "Archaea" in query_names_per_domain:
+   archaea_fasta = open("darn_archaea_assignments.fasta", "w")
+   for query_id in query_names_per_domain["Archaea"]:
 
-archaea_fasta = open("darn_archaea_assignments.fasta", "w")
-for query_id in query_names_per_domain["Archaea"]:
+      if query_id in ids_mapping.keys():
+         header = ids_mapping[query_id]
+         seq = queries_dict[header]
+         archaea_fasta.write(header + seq)
 
-   if query_id in ids_mapping.keys():
-      header = ids_mapping[query_id]
-      seq = queries_dict[header]
-      archaea_fasta.write(header + seq)
+if "Eukaryota" in query_names_per_domain: 
+   eukaryota_fasta = open("darn_eukaryota_assignments.fasta", "w")
+   for query_id in query_names_per_domain["Eukaryota"]:
 
-eukaryota_fasta = open("darn_eukaryota_assignments.fasta", "w")
-for query_id in query_names_per_domain["Eukaryota"]:
+      if query_id in ids_mapping.keys():
+         header = ids_mapping[query_id]
+         seq = queries_dict[header]
+         eukaryota_fasta.write(header + seq)
 
-   if query_id in ids_mapping.keys():
-      header = ids_mapping[query_id]
-      seq = queries_dict[header]
-      eukaryota_fasta.write(header + seq)
+if "DISTANT" in query_names_per_domain: 
+   eukaryota_fasta = open("darn_distant_assignments.fasta", "w")
+   for query_id in query_names_per_domain["DISTANT"]:
+
+      if query_id in ids_mapping.keys():
+         header = ids_mapping[query_id]
+         seq = queries_dict[header]
+         eukaryota_fasta.write(header + seq)
 
 print("Parsing script has been completed. \n")

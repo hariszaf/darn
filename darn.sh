@@ -147,12 +147,17 @@ rm darn_gappa_assign_per_query.tsv
 # Build Krona input (profile) for binary 
 cp darn_processed.profile darn_pres_abs_$sampleName\_krona.profile.tmp
 awk '$1="1.0"' darn_pres_abs_$sampleName\_krona.profile.tmp > darn_pres_abs_$sampleName\_krona.profile.tmp2
-sed 's/ /\t/g' darn_pres_abs_marine_part_krona.profile.tmp2 > darn_pres_abs_$sampleName\_krona.profile
+sed 's/ /\t/g' darn_pres_abs_$sampleName\_krona.profile.tmp2 > darn_pres_abs_$sampleName\_krona.profile
 mv darn_processed.profile darn_likelihood_$sampleName\_krona.profile
 
 # Build Krona plots
 ktImportText darn_pres_abs_$sampleName\_krona.profile -o darn_$sampleName\_pres_abs.krona_plot.html
 ktImportText darn_likelihood_$sampleName\_krona.profile -o darn_$sampleName\_likelihood.krona_plot.html
+
+
+#############
+# Make output 
+#############
 
 # Move krona plots and important files to mount directory
 rm darn_pres_abs_$sampleName\_krona.profile.tmp* 
@@ -176,10 +181,12 @@ mv /mnt/*epa_result.jplace /mnt/intermediate
 
 # Rename output files to follow the sample notion
 cd /mnt
-mv darn_eukaryota_assignments.fasta darn_$sampleName\_eukaryota_assignments.fasta
-mv darn_bacteria_assignments.fasta darn_$sampleName\_bacteria_assignments.fasta
-mv darn_archaea_assignments.fasta darn_$sampleName\_archaea_assignments.fasta
-mv darn_assignments_per_domain.json darn_$sampleName\_assignments_per_domain.json
+[[ -f darn_eukaryota_assignments.fasta ]] && mv darn_eukaryota_assignments.fasta darn_$sampleName\_eukaryota_assignments.fasta
+[[ -f darn_bacteria_assignments.fasta ]] && mv darn_bacteria_assignments.fasta darn_$sampleName\_bacteria_assignments.fasta
+[[ -f darn_archaea_assignments.fasta ]] && mv darn_archaea_assignments.fasta darn_$sampleName\_archaea_assignments.fasta
+[[ -f darn_distant_assignments.fasta ]] && mv darn_distant_assignments.fasta darn_$sampleName\_distant_assignments.fasta
+
+[[ -f darn_assignments_per_domain.json ]] && mv darn_assignments_per_domain.json darn_$sampleName\_assignments_per_domain.json
 
 # And move the interesting part to the final outcome directory!
 mkdir -p final_outcome
