@@ -18,5 +18,5 @@ From: hariszaf/darn:latest
 
 # Set basecommnad; run PEMA analysis
 %runscript
-   bash /home/darn.sh
+   bash /home/darn.sh "$@"
 
