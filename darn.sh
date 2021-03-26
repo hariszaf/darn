@@ -72,6 +72,9 @@ nameFile=${sample##*/}
 
 #---------------------------------------------------------------------------------------------------
 
+# If darn has been used again in the same directory, the epa log output must be removed if has not changed
+[[ -f epa_info.log ]] && rm epa_info.log
+
 # Sample name
 sampleName=${nameFile::-6}
 
