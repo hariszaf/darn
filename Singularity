@@ -17,3 +17,4 @@ From: hariszaf/darn:test
 %runscript
    bash /home/darn.sh "$@"
 
+
