@@ -14,4 +14,4 @@ In the latter, for each sample you run, you will find:
 
 * and 4 .fasta files:
    * one with a "_QueryXX" as suffix, where "XX" is a serial number
-   * one for each domain, with the sequences that have been assigned to each (always using the best hit assignments)
+   * one for each domain, with the sequences that have been assigned to each (always using the best hit assignments) and one for the distant ones.
