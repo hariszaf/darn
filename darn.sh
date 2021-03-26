@@ -77,6 +77,7 @@ sampleName=${nameFile::-6}
 
 # Keep the headers of the seqs in a file
 awk -v n=1 '{if($x~/>/) {print $0 "_Query" n; n++}else{print $0}}' $sample > darn_$sampleName.fasta
+cp darn_$sampleName.fasta query.fasta
 
 # To relabel the Otus on the multiline fasta
 awk -v n=1 '{if($x~/>/){sub(/>.*/, ">Query" n); print; n++}else{print $0}}' $sample > labeled_$nameFile
@@ -154,8 +155,36 @@ ktImportText darn_pres_abs_$sampleName\_krona.profile -o darn_$sampleName\_pres_
 ktImportText darn_likelihood_$sampleName\_krona.profile -o darn_$sampleName\_likelihood.krona_plot.html
 
 # Move krona plots and important files to mount directory
-rm darn_pres_abs_$sampleName\_krona.profile.tmp*
+rm darn_pres_abs_$sampleName\_krona.profile.tmp* 
+rm query.fasta
 mv epa_result.jplace darn_$sampleName\_epa_result.jplace
 mv darn_* /mnt
+
+# Build a directory to move the exhaustive files 
+cd /mnt
+mkdir -p intermediate
+cd /mnt/intermediate
+mkdir -p gappa_exhaustive
+mv /mnt/darn_assign_exhaustive* /mnt/intermediate/gappa_exhaustive
+
+# Likewise, for the best hits
+mkdir -p best_hits
+mv /mnt/darn_best_hit* /mnt/intermediate/best_hits
+mv /mnt/darn_likelihood* /mnt/intermediate/best_hits
+mv /mnt/darn_pres_abs* /mnt/intermediate/best_hits
+mv /mnt/*epa_result.jplace /mnt/intermediate
+
+# Rename output files to follow the sample notion
+cd /mnt
+mv darn_eukaryota_assignments.fasta darn_$sampleName\_eukaryota_assignments.fasta
+mv darn_bacteria_assignments.fasta darn_$sampleName\_bacteria_assignments.fasta
+mv darn_archaea_assignments.fasta darn_$sampleName\_archaea_assignments.fasta
+mv darn_assignments_per_domain.json darn_$sampleName\_assignments_per_domain.json
+
+# And move the interesting part to the final outcome directory!
+mkdir -p final_outcome
+mv /mnt/*.html /mnt/final_outcome
+mv /mnt/*.json /mnt/final_outcome
+mv /mnt/darn_*.fasta  /mnt/final_outcome
 
 echo "DARN has been completed. You may dive into the dark matter.."
