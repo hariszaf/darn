@@ -13,7 +13,6 @@ From: hariszaf/darn:test
 	mkdir -p $WORKDIR
    echo "export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin" >> $SINGULARITY_ENVIRONMENT 
 
-
 # Set basecommnad; run PEMA analysis
 %runscript
    bash /home/darn.sh "$@"
