@@ -42,3 +42,7 @@ WORKDIR /home
 COPY darn.sh parse_per_query.py ./
 
 RUN apt-get update -y && apt-get install -y python3
+
+# We need to be sure that in the directory to mount, all permissions are set properly.
+RUN chmod 777 /mnt
+RUN chmod g+s /mnt
