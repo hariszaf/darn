@@ -87,6 +87,7 @@ for entry in entries:
 
 ###################################################################
 # PART B: Build the .json file for retrieve query ids per domain 
+# and export seqs of each domain in a text file
 ###################################################################
 
 # Track query ids assigned in each domain 
@@ -139,3 +140,48 @@ query_names_per_domain["metadata"] = { "total queries" : total_queries, \
 with open('darn_assignments_per_domain.json', 'w') as fp:
     json.dump(query_names_per_domain, fp)
 
+
+
+query_fasta_file = open('query.fasta', "r")
+
+queries_dict = {}
+ids_mapping = {}
+
+for line in query_fasta_file:
+
+   if line[0] == ">": 
+
+      header = line
+      darn_id = line[line.rindex('_')+1:][:-1]
+      
+   else: 
+      queries_dict[header]  = line
+      ids_mapping[darn_id] = header
+
+
+
+bacteria_fasta = open("darn_bacteria_assignments.fasta", "w")
+for query_id in query_names_per_domain["Bacteria"]:
+
+   if query_id in ids_mapping.keys():
+      header = ids_mapping[query_id]
+      seq = queries_dict[header]
+      bacteria_fasta.write(header + seq)
+
+archaea_fasta = open("darn_archaea_assignments.fasta", "w")
+for query_id in query_names_per_domain["Archaea"]:
+
+   if query_id in ids_mapping.keys():
+      header = ids_mapping[query_id]
+      seq = queries_dict[header]
+      archaea_fasta.write(header + seq)
+
+eukaryota_fasta = open("darn_eukaryota_assignments.fasta", "w")
+for query_id in query_names_per_domain["Eukaryota"]:
+
+   if query_id in ids_mapping.keys():
+      header = ids_mapping[query_id]
+      seq = queries_dict[header]
+      eukaryota_fasta.write(header + seq)
+
+print("Parsing script has been completed. \n")
