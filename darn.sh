@@ -117,14 +117,14 @@ rm tmp tmp2
 /home/tools/gappa/bin/gappa examine assign \
    --file-prefix darn_assign_exhaustive_$sampleName\_ \
    --jplace-path epa_result.jplace \
-   --taxon-file docs/TAXONOMY_ALL \
+   --taxon-file /home/docs/TAXONOMY_ALL \
    --per-query-results \
    --krona
 
 /home/tools/gappa/bin/gappa examine assign \
    --file-prefix darn_best_hit_$sampleName\_ \
    --jplace-path epa_result.jplace \
-   --taxon-file docs/TAXONOMY_ALL \
+   --taxon-file /home/docs/TAXONOMY_ALL \
    --per-query-results \
    --best-hit \
    --krona
