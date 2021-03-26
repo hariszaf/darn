@@ -1,6 +1,6 @@
 # Set base image
 Bootstrap: docker
-From: hariszaf/darn:latest
+From: hariszaf/darn:test
 
 %labels
 	Maintainer Haris Zafeiropoulos

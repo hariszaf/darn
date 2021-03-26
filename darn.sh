@@ -194,4 +194,8 @@ mv /mnt/*.html /mnt/final_outcome
 mv /mnt/*.json /mnt/final_outcome
 mv /mnt/darn_*.fasta  /mnt/final_outcome
 
+# Remove the rest
+cd /home
+rm epa_info.log papara* multiline* labeled_*
+
 echo "DARN has been completed. You may dive into the dark matter.."
