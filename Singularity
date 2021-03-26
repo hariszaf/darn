@@ -6,14 +6,11 @@ From: hariszaf/darn:test
 	Maintainer Haris Zafeiropoulos
 
 
-
-
 # Set Singularity environment
 %post
 	export WORKDIR="/home"
 	echo "export WORKDIR=$WORKDIR" >> $SINGULARITY_ENVIRONMENT
 	mkdir -p $WORKDIR
-
 
 
 # Set basecommnad; run PEMA analysis
