@@ -2,6 +2,7 @@
 Bootstrap: docker
 From: hariszaf/darn:test
 
+# Set the maintainer
 %labels
    Maintainer Haris Zafeiropoulos
 
