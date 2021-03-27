@@ -64,19 +64,44 @@ In case, you are working on Singularity, you follow the following steps
 singularity pull shub://hariszaf/darn
 ```
 
-and like in the Docker case, you need to open a shell mounting the directory where your sample is located
+Then, in case you are are working on a High Performance Computing sustem, depending on the queing system used, 
+you need to build a *job* script. Assuming SLURM is used, here is an example file:
 
 ```
-singularity run -B /<path_to_your_sample/:/mnt /<path_to>/darn.sif
+#!/bin/bash
+
+#SBATCH --partition=<a computational part of the HPC>
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=20
+#SBATCH --job-name="darn"
+#SBATCH --output=darn_example.output
+#SBATCH --mail-user=<your_email>
+
+
+singularity run --bind /<path_to_your_sample>/:/mnt darn_latest.sif s /mnt/query_freshwater_short_all_seqs.fasta -t 20
+```
+
+
+In case you need to run Singularity without a *job* script, you can do that either by running the command showed above:
+
+```
+singularity run --bind /<path_to_your_sample>/:/mnt darn_latest.sif s /mnt/query_freshwater_short_all_seqs.fasta -t 20
+```
+
+Or, by using the same way as in the Docker case, meaning you first open a shell 
+
+```
+singularity shell --bind /<path_to_your_sample>/:/mnt darn_latest.sif
 ```
 
 and once shell appears:
 
 ```
+cd /home
 ./darn.sh -s /mnt/your_sample.fasta -t <number_of_threads_available>
 ```
 
-**In both cases, the output of DARN will be returned in the path you mount!**
+> In all cases, the output of DARN will be returned in the path you mount!
 
 
 ## Licences
