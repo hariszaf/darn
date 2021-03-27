@@ -5,7 +5,6 @@ From: hariszaf/darn:test
 %labels
 	Maintainer Haris Zafeiropoulos
 
-
 # Set Singularity environment
 %post
 	export WORKDIR="/home"
