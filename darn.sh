@@ -73,19 +73,23 @@ nameFile=${sample##*/}
 #---------------------------------------------------------------------------------------------------
 
 # If darn has been used again in the same directory, the epa log output must be removed if has not changed
-CWD=$(pwd)
-cd /home
+cd /mnt
 [[ -f epa_info.log ]] && rm epa_info.log
 
 # Sample name
 sampleName=${nameFile::-6}
 
 # Keep the headers of the seqs in a file
-awk -v n=1 '{if($x~/>/) {print $0 "_Query" n; n++}else{print $0}}' $sample > darn_$sampleName.fasta
+# awk -v n=1 '{if($x~/>/) {print $0 "_Query" n; n++} else {print $0}}' $sample > darn_$sampleName.fasta
+awk -v n=1 '{if($x~/>/) {printf "%s\t%s\n",$0,"Query"n;n++} else {print $0}}' $sample > darn.fasta.tmp
+cat darn.fasta.tmp | tr -d '\r' > darn.fasta.tmp.2
+sed 's/\t/_/' darn.fasta.tmp.2 > darn_$sampleName.fasta
+
 cp darn_$sampleName.fasta query.fasta
+rm darn.fasta.tmp*
 
 # To relabel the Otus on the multiline fasta
-awk -v n=1 '{if($x~/>/){sub(/>.*/, ">Query" n); print; n++}else{print $0}}' $sample > labeled_$nameFile
+awk -v n=1 '{if($x~/>/){sub(/>.*/, ">Query" n); print; n++} else {print $0}}' $sample > labeled_$nameFile
 
 # To convert single line fasta to multi line
 sed '/^>/!s/.\{80\}/&\n/g' labeled_$nameFile > multiline_labeled_$nameFile
@@ -145,7 +149,7 @@ mv tmp darn_assign_exhaustive_$sampleName\_per_query.tsv
 
 # Run parsing script; this step uses the gappa output to get the 
 cp darn_best_hit_$sampleName\_per_query.tsv darn_gappa_assign_per_query.tsv
-python3 parse_per_query.py
+python3 /home/parse_per_query.py
 rm darn_gappa_assign_per_query.tsv
 
 # Build Krona input (profile) for binary 
@@ -167,7 +171,7 @@ ktImportText darn_likelihood_$sampleName\_krona.profile -o darn_$sampleName\_lik
 rm darn_pres_abs_$sampleName\_krona.profile.tmp* 
 rm query.fasta
 mv epa_result.jplace darn_$sampleName\_epa_result.jplace
-mv darn_* /mnt
+# mv darn_* /mnt
 
 # Build a directory to move the exhaustive files 
 cd /mnt
@@ -199,7 +203,7 @@ mv /mnt/*.json /mnt/final_outcome
 mv /mnt/darn_*.fasta  /mnt/final_outcome
 
 # Remove the rest
-cd /home
+cd /mnt
 rm epa_info.log papara* multiline* labeled_*
 
 echo "DARN has been completed. You may dive into the dark matter.."
