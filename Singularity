@@ -17,5 +17,4 @@ From: hariszaf/darn:latest
 %runscript
    bash /home/darn.sh "$@"
 
-
 # Singularity container complete
