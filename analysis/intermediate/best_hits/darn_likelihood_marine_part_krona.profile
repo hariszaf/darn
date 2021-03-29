@@ -1,27 +1,27 @@
 19.019399999999997	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III
 4.518000000000001	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III	euryarchaeote_AD1000_61_A07
-2.6452999999999998	Archaea	TACK_group	Crenarchaeota	Thermoprotei
+2.6453	Archaea	TACK_group	Crenarchaeota	Thermoprotei
 1.9315	Archaea	TACK_group	Thaumarchaeota
-40.63640000000001	Bacteria
+40.636399999999995	Bacteria
 0.2536	Bacteria	Proteobacteria
-21.0992	Bacteria	Proteobacteria	Alphaproteobacteria
-13.1156	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	Alphaproteobacteria	Alphaproteobacteria	SAR116_cluster_alpha_proteobacterium_HIMB100
-46.616299999999995	Bacteria	Proteobacteria	Alphaproteobacteria	Pelagibacterales	Pelagibacteraceae
+21.099199999999996	Bacteria	Proteobacteria	Alphaproteobacteria
+13.115600000000002	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	Alphaproteobacteria	Alphaproteobacteria	SAR116_cluster_alpha_proteobacterium_HIMB100
+46.61630000000002	Bacteria	Proteobacteria	Alphaproteobacteria	Pelagibacterales	Pelagibacteraceae
 0.5	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales
-53.95629999999999	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales
+53.9563	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales
 0.9138	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales
 14.069999999999999	Bacteria	Proteobacteria	Betaproteobacteria
 0.1661	Bacteria	Proteobacteria	Betaproteobacteria	Betaproteobacteria_incertae_sedis	Candidatus_Accumulibacter
 2.8169999999999997	Bacteria	Proteobacteria	Betaproteobacteria	Nitrosomonadales
-39.46649999999998	Bacteria	Proteobacteria	Gammaproteobacteria
+39.46650000000001	Bacteria	Proteobacteria	Gammaproteobacteria
 0.6173	Bacteria	Proteobacteria	Gammaproteobacteria	Alteromonadales
-8.647730000000001	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales
+8.64773	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales
 0.8951	Bacteria	Proteobacteria	Gammaproteobacteria	Methylococcales	Methylococcaceae
 1.6149	Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales
 1.1244	Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales
 1.8947	Bacteria	Proteobacteria	Gammaproteobacteria	Thiotrichales	Piscirickettsiaceae
-24.994300000000006	DISTANT
-15.507510000000003	Eukaryota
+24.9943	DISTANT
+15.50751	Eukaryota
 0.8409	Eukaryota	Annelida	Polychaeta
 3.6078	Eukaryota	Bacillariophyta
 0.6132	Eukaryota	Bacillariophyta	Mediophyceae
