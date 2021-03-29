@@ -153,25 +153,21 @@ python3 /home/parse_per_query.py
 rm darn_gappa_assign_per_query.tsv
 
 # Build Krona input (profile) for binary 
-cp darn_processed.profile darn_pres_abs_$sampleName\_krona.profile.tmp
-awk '$1="1.0"' darn_pres_abs_$sampleName\_krona.profile.tmp > darn_pres_abs_$sampleName\_krona.profile.tmp2
-sed 's/ /\t/g' darn_pres_abs_$sampleName\_krona.profile.tmp2 > darn_pres_abs_$sampleName\_krona.profile
-mv darn_processed.profile darn_likelihood_$sampleName\_krona.profile
+mv darn_processed_lwr.profile darn_likelihood_$sampleName\_krona.profile
+mv darn_processed_counts.profile darn_counts_$sampleName\_krona.profile
 
 # Build Krona plots
-ktImportText darn_pres_abs_$sampleName\_krona.profile -o darn_$sampleName\_pres_abs.krona_plot.html
+ktImportText darn_counts_$sampleName\_krona.profile -o darn_$sampleName\_pres_abs.krona_plot.html
 ktImportText darn_likelihood_$sampleName\_krona.profile -o darn_$sampleName\_likelihood.krona_plot.html
-
 
 #############
 # Make output 
 #############
 
 # Move krona plots and important files to mount directory
-rm darn_pres_abs_$sampleName\_krona.profile.tmp* 
 rm query.fasta
 mv epa_result.jplace darn_$sampleName\_epa_result.jplace
-# mv darn_* /mnt
+
 
 # Build a directory to move the exhaustive files 
 cd /mnt
@@ -184,7 +180,7 @@ mv /mnt/darn_assign_exhaustive* /mnt/intermediate/gappa_exhaustive
 mkdir -p best_hits
 mv /mnt/darn_best_hit* /mnt/intermediate/best_hits
 mv /mnt/darn_likelihood* /mnt/intermediate/best_hits
-mv /mnt/darn_pres_abs* /mnt/intermediate/best_hits
+mv /mnt/darn_counts* /mnt/intermediate/best_hits
 mv /mnt/*epa_result.jplace /mnt/intermediate
 
 # Rename output files to follow the sample notion

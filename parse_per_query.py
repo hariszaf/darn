@@ -18,6 +18,7 @@ input_file = open("darn_gappa_assign_per_query.tsv", "r")
 domain_dict = {}
 counter = 0 
 lwr_dict = {}
+counts_dict = {}
 
 # Each line of the per_query is parsed to fill in the 2 dictionaries 
 for line in input_file:
@@ -60,8 +61,14 @@ for line in input_file:
       else:
          lwr_dict[taxonomy] += float(lwr)
 
-# Build krona input 
-output_file = open("darn_processed.profile", "w")
+      # Likewise, count occurences
+      if taxonomy not in counts_dict.keys():
+         counts_dict[taxonomy] = 1.0
+      else: 
+         counts_dict[taxonomy] += 1.0
+
+# Build likelihood krona profile 
+lwr_krona_profile = open("darn_processed_lwr.profile", "w")
 entries = []
 for taxonomy, value in lwr_dict.items():
 
@@ -80,9 +87,65 @@ for taxonomy, value in lwr_dict.items():
 # Sort based on the taxonomy
 entries.sort(key=lambda x:x[1])
 
-# Write a file with alla the entries 
+# Write a file with all the entries 
 for entry in entries:
-   output_file.write(str(entry[0]) + "\t" + entry[1] + "\n")
+   lwr_krona_profile.write(str(entry[0]) + "\t" + entry[1] + "\n")
+
+
+# Likewise, for the counts 
+counts_krona_profile = open("darn_processed_counts.profile", "w")
+exact_counts = {}
+for taxonomy, value in counts_dict.items():
+
+   taxonomy = taxonomy.split(";")      # taxonomy is a LIST
+
+   domain_check = taxonomy[0]
+
+   if len(domain_check) > 1:
+
+      domain = domain_check
+
+      # Build taxonomy and add intra-taxonomy occurences
+      for level in range(len(taxonomy)):
+
+         if level == 0 :
+            build_taxonomy = taxonomy[level]
+            if build_taxonomy not in exact_counts.keys():
+               exact_counts[build_taxonomy] = value
+            else:
+               exact_counts[build_taxonomy] += value
+
+         else:
+            build_taxonomy += ";" + taxonomy[level]
+
+            if build_taxonomy not in exact_counts.keys():
+               exact_counts[build_taxonomy] = value
+            else: 
+               exact_counts[build_taxonomy] += value
+
+entries = []
+for taxonomy, value in exact_counts.items():
+
+   taxonomy = taxonomy.split(";")
+   layers = taxonomy[0]
+
+   if len(layers) > 1:
+
+      for level in taxonomy[1:]:
+         layers += "\t" + level
+
+   entry = (value, layers)
+   entries.append(entry)
+
+
+# Sort based on the taxonomy
+entries.sort(key=lambda x:x[1])
+
+
+# Write a file with all the entries 
+for entry in entries:
+   counts_krona_profile.write(str(entry[0]) + "\t" + entry[1] + "\n")
+
 
 
 ###################################################################
