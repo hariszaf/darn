@@ -110,18 +110,41 @@ for taxonomy, value in counts_dict.items():
 
          if level == 0 :
             build_taxonomy = taxonomy[level]
-            if build_taxonomy not in exact_counts.keys():
-               exact_counts[build_taxonomy] = value
-            else:
-               exact_counts[build_taxonomy] += value
 
-         else:
+            if len(taxonomy) == 1:
+               if build_taxonomy not in exact_counts.keys():
+                  exact_counts[build_taxonomy] = value
+               else:
+                  exact_counts[build_taxonomy] += value
+
+            else:
+               if build_taxonomy not in exact_counts.keys():
+                  exact_counts[build_taxonomy] = 0.0
+               else: 
+                  exact_counts[build_taxonomy] += 0.0          
+
+
+
+
+         elif level == len(taxonomy) - 1:
             build_taxonomy += ";" + taxonomy[level]
 
             if build_taxonomy not in exact_counts.keys():
                exact_counts[build_taxonomy] = value
             else: 
-               exact_counts[build_taxonomy] += value
+               exact_counts[build_taxonomy] += value            
+
+
+         else:
+            build_taxonomy += ";" + taxonomy[level]
+
+            if build_taxonomy not in exact_counts.keys():
+               exact_counts[build_taxonomy] = 0.0
+            else: 
+               exact_counts[build_taxonomy] += 0.0
+
+   else:
+      print(taxonomy)
 
 entries = []
 for taxonomy, value in exact_counts.items():
@@ -144,7 +167,12 @@ entries.sort(key=lambda x:x[1])
 
 # Write a file with all the entries 
 for entry in entries:
-   counts_krona_profile.write(str(entry[0]) + "\t" + entry[1] + "\n")
+   if entry[0] == 0.0:
+      counts = ""
+   else:
+      counts = str(entry[0])
+   taxopath = entry[1]
+   counts_krona_profile.write(counts + "\t" + taxopath + "\n")
 
 
 
