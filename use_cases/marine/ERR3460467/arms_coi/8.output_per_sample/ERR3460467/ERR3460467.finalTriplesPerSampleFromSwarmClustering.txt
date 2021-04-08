@@ -1,0 +1,8 @@
+ERR3460467   3   Bugula neritina
+ERR3460467   5   Bugula stolonifera
+ERR3460467   3   Cassiopea xamachana
+ERR3460467   3254   Eukaryota
+ERR3460467   3   Hymeniacidon
+ERR3460467   79   Ostrea stentina
+ERR3460467   20   Ostreidae
+ERR3460467   1784   Sabellaria spinulosa

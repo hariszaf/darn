@@ -1,0 +1,10 @@
+---
+- type:            paired-end
+  orientation:     fr
+  left reads:      
+    - /mnt/analysis/arms_coi/3.correct_by_BayesHammer/ERR3460467/corrected/filtered_max_ERR3460467_1.fastq.gz.1P.fastq.00.0_0.cor.fastq
+  right reads:     
+    - /mnt/analysis/arms_coi/3.correct_by_BayesHammer/ERR3460467/corrected/filtered_max_ERR3460467_2.fastq.gz.2P.fastq.00.0_0.cor.fastq
+  single reads:    
+    - /mnt/analysis/arms_coi/3.correct_by_BayesHammer/ERR3460467/corrected/filtered_max_ERR3460467__unpaired.00.0_0.cor.fastq
+...
