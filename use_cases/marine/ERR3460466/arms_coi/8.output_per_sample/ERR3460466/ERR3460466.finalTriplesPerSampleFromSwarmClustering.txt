@@ -1,0 +1,19 @@
+ERR3460466   4   Actiniaria
+ERR3460466   3   Aiptasia pulchella
+ERR3460466   308   Amphibalanus amphitrite
+ERR3460466   55   Anteaeolidiella lurana
+ERR3460466   51   Botryllus schlosseri
+ERR3460466   3   Bugula neritina
+ERR3460466   26   Bugula simplex
+ERR3460466   734   Campanularia hincksii
+ERR3460466   9   Demospongiae
+ERR3460466   3   Dendroceratida
+ERR3460466   6330   Eukaryota
+ERR3460466   15   Herdmania momus
+ERR3460466   65   Hydrozoa
+ERR3460466   80   Hymeniacidon sinapium
+ERR3460466   4   Leptochelia
+ERR3460466   119   Mimachlamys varia
+ERR3460466   41   Oscarella tuberculata
+ERR3460466   520   Ostrea stentina
+ERR3460466   7861   Sabellaria spinulosa

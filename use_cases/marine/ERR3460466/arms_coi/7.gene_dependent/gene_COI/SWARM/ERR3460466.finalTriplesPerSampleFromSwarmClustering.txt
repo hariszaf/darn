@@ -1,0 +1,13 @@
+ERR3460466   221   Amphibalanus amphitrite
+ERR3460466   26   Anteaeolidiella lurana
+ERR3460466   9   Botryllus schlosseri
+ERR3460466   6   Bugula simplex
+ERR3460466   540   Campanularia hincksii
+ERR3460466   4275   Eukaryota
+ERR3460466   3   Gastropoda
+ERR3460466   14   Hydrozoa
+ERR3460466   32   Hymeniacidon sinapium
+ERR3460466   17   Oscarella tuberculata
+ERR3460466   387   Ostrea stentina
+ERR3460466   128   Ostreidae
+ERR3460466   4849   Sabellaria spinulosa
