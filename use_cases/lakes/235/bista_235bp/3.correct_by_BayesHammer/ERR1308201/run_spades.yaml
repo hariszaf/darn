@@ -1,0 +1,62 @@
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: ec_start
+- STAGE: Read error correction
+  args:
+  - /mnt/analysis/bista_235bp/3.correct_by_BayesHammer/ERR1308201/corrected/configs/config.info
+  config_dir: corrected
+  del_after:
+  - /mnt/analysis/bista_235bp/3.correct_by_BayesHammer/ERR1308201/tmp/hammer_WCbX3L
+  output_files:
+  - /mnt/analysis/bista_235bp/3.correct_by_BayesHammer/ERR1308201/corrected/corrected.yaml
+  path: /home/tools/SPAdes/SPAdes-3.14.0/bin/spades-hammer
+  short_name: ec_runtool
+- STAGE: corrected reads compression
+  args:
+  - /home/tools/SPAdes/SPAdes-3.14.0/share/spades/spades_pipeline/scripts/compress_all.py
+  - --input_file
+  - /mnt/analysis/bista_235bp/3.correct_by_BayesHammer/ERR1308201/corrected/corrected.yaml
+  - --ext_python_modules_home
+  - /home/tools/SPAdes/SPAdes-3.14.0/share/spades
+  - --max_threads
+  - '20'
+  - --output_dir
+  - /mnt/analysis/bista_235bp/3.correct_by_BayesHammer/ERR1308201/corrected
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /home/tools/OBI/OBI-env/bin/python
+  short_name: ec_compress
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: ec_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /home/tools/SPAdes/SPAdes-3.14.0/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /mnt/analysis/bista_235bp/3.correct_by_BayesHammer/ERR1308201/scaffolds.fasta
+  - --misc_dir
+  - /mnt/analysis/bista_235bp/3.correct_by_BayesHammer/ERR1308201/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /home/tools/OBI/OBI-env/bin/python
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - /mnt/analysis/bista_235bp/3.correct_by_BayesHammer/ERR1308201/configs
+  output_files: []
+  path: 'true'
+  short_name: terminate

@@ -1,0 +1,6 @@
+- "left reads":
+  - "/mnt/analysis/bista_235bp/2.trimmomatic_output/filtered_max_ERR1308201_1.fastq.gz.1P.fastq.gz"
+  "orientation": "fr"
+  "right reads":
+  - "/mnt/analysis/bista_235bp/2.trimmomatic_output/filtered_max_ERR1308201_2.fastq.gz.2P.fastq.gz"
+  "type": "paired-end"
