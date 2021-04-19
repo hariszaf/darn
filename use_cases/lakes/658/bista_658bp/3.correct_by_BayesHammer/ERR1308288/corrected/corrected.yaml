@@ -1,0 +1,10 @@
+---
+- type:            paired-end
+  orientation:     fr
+  left reads:      
+    - /mnt/analysis/bista_658bp/3.correct_by_BayesHammer/ERR1308288/corrected/filtered_max_ERR1308288_1.fastq.gz.1P.fastq.00.0_0.cor.fastq
+  right reads:     
+    - /mnt/analysis/bista_658bp/3.correct_by_BayesHammer/ERR1308288/corrected/filtered_max_ERR1308288_2.fastq.gz.2P.fastq.00.0_0.cor.fastq
+  single reads:    
+    - /mnt/analysis/bista_658bp/3.correct_by_BayesHammer/ERR1308288/corrected/filtered_max_ERR1308288__unpaired.00.0_0.cor.fastq
+...
