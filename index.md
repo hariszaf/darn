@@ -68,6 +68,21 @@ The following Krona plots are coming from samples that
 
 
 
+## Freshwater samples: lakes
+
+3 samples from the study of Bista et al. (2017) were used. 
+2 of them of 235bp long and one of 658bp. 
+The sequences were analyzed through PEMA. 
+`darn` was then implemented both before and after the ASVs inference . 
+
+
+<iframe
+  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/lakes/lakes.html"
+  style="width:200%; height:900px;"
+></iframe>
+
+
+
 
 
 <!--
