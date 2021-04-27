@@ -13,47 +13,34 @@ and the corresponding supplementary files.
 
 
 
-### Laura's samples
+### Irish samples - Laura's data
 
+Sequences coming from Irish 
 
-
-#### Long sequences 
-
-<iframe
-  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_ireland_long_all_seqs_pres_abs.krona_plot.html"
-  style="width:150%; height:900px;"
-></iframe>
-
-
-
-#### Long sequences that had a taxonomic hit 
+Long sequences, long sequences that had a taxonomic hit, short sequences and short sequences that had a taxonomic hit
 
 <iframe
-  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_ireland_long_assigned_pres_abs.krona_plot.html"
-  style="width:150%; height:900px;"
-></iframe>
-
-
-
-#### Short sequences
-
-<iframe
-  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_ireland_short_all_seqs_pres_abs.krona_plot.html"
-  style="width:150%; height:900px;"
-></iframe>
-
-
-
-### Short sequences that had a taxonomic hit
-<iframe
-  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_ireland_short_assigned_pres_abs.krona_plot.html"
+  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/irish_marine/irish_marine_samples.html"
   style="width:150%; height:900px;"
 ></iframe>
 
 
 
 
--------------------------------------------
+
+### Tropical samples - Sanni's data
+
+
+Reef and mangrove data from Honduras and Kenya. 
+
+
+<iframe
+  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/tropics_marine/tropics.html"
+  style="width:150%; height:900px;"
+></iframe>
+
+
+
 
 
 ### Bulk smaples (Obst et al. 2020)
