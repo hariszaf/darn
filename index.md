@@ -1,6 +1,17 @@
-# DARN on action
+# Dark mAtteR iNvesigator (DARN) <br/> a 
 
-This is a site with all the Krona plots for the DARN paper. 
+This site may be considered as supplementary material for the 
+DARN publication, including all the Krona plots discussed. 
+
+
+A series of samples were investigated to establish the presence of bacterial and non-bacterial 
+dark matter on COI data. 
+To this end, marine, estuarine and samples from lakes were gathered. 
+In the case of marine samples, both bulk and eDNA samples were collected. 
+
+In the sections to follow, we present all the Krona plots of each case in a single plot, meaning that for 
+all the different tests of a single case, all Kronas are embeded on a single plot and you may compare them 
+by clicking on the up-left box where are listed. 
 
 
 ## Marine samples 
@@ -8,9 +19,6 @@ This is a site with all the Krona plots for the DARN paper.
 Both bulk and eDNA marine samples were analysed. 
 For a thorough description of the samples you may see the DARN manuscript 
 and the corresponding supplementary files.
-
-
-
 
 
 ### Irish samples - Laura's data
