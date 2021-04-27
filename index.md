@@ -43,7 +43,7 @@ Reef and mangrove data from Honduras and Kenya.
 
 
 
-### Bulk smaples (Obst et al. 2020)
+### Bulk samples (Obst et al. 2020)
 
 The following Krona plots are coming from samples that 
 
