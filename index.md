@@ -7,7 +7,7 @@ Sediment sample using pre clustered sequences
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_sediment_pre_clustered_pres_abs.krona_plot.html"
-  style="width:100%; height:300px;"
+  style="width:100%; height:600px;"
 ></iframe>
 
 
