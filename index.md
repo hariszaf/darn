@@ -14,7 +14,7 @@ and the corresponding supplementary files.
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_sediment_pre_clustered_pres_abs.krona_plot.html"
-  style="width:100%; height:900px;"
+  style="width:150%; height:900px;"
 ></iframe>
 
 
@@ -24,7 +24,7 @@ and the corresponding supplementary files.
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_sediment_clustered_d_2_pres_abs.krona_plot.html"
-  style="width:100%; height:900px;"
+  style="width:150%; height:900px;"
 ></iframe>
 
 
@@ -34,7 +34,7 @@ and the corresponding supplementary files.
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_sediment_clustered_d_10_pres_abs.krona_plot.html"
-  style="width:100%; height:900px;"
+  style="width:150%; height:900px;"
 ></iframe>
 
 
