@@ -21,6 +21,7 @@ Long sequences, long sequences that had a taxonomic hit, short sequences and sho
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/irish_marine/irish_marine_samples.html"
+  style="width:200%; height:900px;"
 ></iframe>
 
 
@@ -35,7 +36,7 @@ Reef and mangrove data from Honduras and Kenya.
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/tropics_marine/tropics.html"
-  style="width:100%; height:1200px;"
+  style="width:200%; height:900px;"
 ></iframe>
 
 
@@ -59,7 +60,7 @@ The following Krona plots are coming from samples that
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/marine_arms/arms_bulk.html"
-  style="width:200%; height:200%;"
+  style="width:200%; height:900px;"
 ></iframe>
 
 
