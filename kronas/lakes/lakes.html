@@ -5767,17 +5767,9 @@ function setCallBacks()
 	}
 	
 	image = document.getElementById('hiddenImage');
-	
-	if ( image.complete )
+	image.onload = function()
 	{
 		hiddenPattern = context.createPattern(image, 'repeat');
-	}
-	else
-	{
-		image.onload = function()
-		{
-			hiddenPattern = context.createPattern(image, 'repeat');
-		}
 	}
 	
 	var loadingImageElement = document.getElementById('loadingImage');
@@ -6623,55 +6615,259 @@ function zoomOut()
     <attribute display="Unassigned">magnitudeUnassigned</attribute>
    </attributes>
    <datasets>
-    <dataset>darn_counts_rdpClassifierInput_krona</dataset>
+    <dataset>short_pre_clustered_201_krona</dataset>
+    <dataset>short_clustered_201_krona</dataset>
+    <dataset>short_pre_clustered_239_krona</dataset>
+    <dataset>short_clustered_239_krona</dataset>
+    <dataset>long_pre_clustered</dataset>
+    <dataset>long_clustered</dataset>
    </datasets>
 <node name="all">
- <magnitude><val>223</val></magnitude>
+ <magnitude><val>20573</val><val>223</val><val>23233</val><val>251</val><val>23233</val><val>360</val></magnitude>
  <node name="Eukaryota">
-  <magnitudeUnassigned><val>89</val></magnitudeUnassigned>
-  <magnitude><val>218</val></magnitude>
-  <node name="Tardigrada">
-   <magnitude><val>1</val></magnitude>
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-   <node name="Eutardigrada">
-    <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-    <magnitude><val>1</val></magnitude>
-    <node name="Parachela">
-     <magnitude><val>1</val></magnitude>
+  <magnitudeUnassigned><val>9133</val><val>89</val><val>8981</val><val>103</val><val>6420</val><val>126</val></magnitudeUnassigned>
+  <magnitude><val>20295</val><val>218</val><val>22839</val><val>242</val><val>14681</val><val>279</val></magnitude>
+  <node name="Discosea">
+   <magnitude><val>167</val><val>3</val><val>165</val><val>2</val><val>2</val></magnitude>
+   <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+   <node name="Himatismenida">
+    <magnitude><val>101</val><val>2</val><val>165</val><val>2</val><val>2</val></magnitude>
+    <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+    <node name="Himatismenida">
+     <magnitude><val>101</val><val>2</val><val>165</val><val>2</val><val>2</val></magnitude>
+    </node>
+   </node>
+   <node name="Flabellinia">
+    <magnitude><val>66</val><val>1</val></magnitude>
+    <magnitudeUnassigned><val>0</val><val>0</val></magnitudeUnassigned>
+    <node name="Vannellidae">
+     <magnitude><val>66</val><val>1</val></magnitude>
+     <magnitudeUnassigned><val>0</val><val>0</val></magnitudeUnassigned>
+     <node name="Vannellidae">
+      <magnitude><val>66</val><val>1</val></magnitude>
+     </node>
     </node>
    </node>
   </node>
-  <node name="Chordata">
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-   <magnitude><val>1</val></magnitude>
-   <node name="Actinopteri">
-    <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-    <magnitude><val>1</val></magnitude>
-    <node name="Cypriniformes">
-     <magnitude><val>1</val></magnitude>
+  <node name="Nematoda">
+   <magnitudeUnassigned><val>0</val><val></val><val>0</val><val></val><val>3</val><val>0</val></magnitudeUnassigned>
+   <magnitude><val>93</val><val></val><val>26</val><val></val><val>1855</val><val>12</val></magnitude>
+   <node name="Chromadorea">
+    <magnitudeUnassigned><val>2</val><val></val><val>7</val><val></val><val>1749</val><val>8</val></magnitudeUnassigned>
+    <magnitude><val>93</val><val></val><val>21</val><val></val><val>1848</val><val>12</val></magnitude>
+    <node name="Plectida">
+     <magnitude><val></val><val></val><val>2</val><val></val><val>1</val></magnitude>
+    </node>
+    <node name="Araeolaimida">
+     <magnitude><val></val><val></val><val></val><val></val><val>10</val></magnitude>
+    </node>
+    <node name="Desmoscolecida">
+     <magnitudeUnassigned><val>0</val><val></val><val>0</val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+     <magnitude><val>91</val><val></val><val>12</val><val></val><val>88</val><val>4</val></magnitude>
+     <node name="Desmoscolecidae">
+      <magnitudeUnassigned><val>0</val><val></val><val>0</val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+      <magnitude><val>91</val><val></val><val>12</val><val></val><val>88</val><val>4</val></magnitude>
+      <node name="Desmoscolex">
+       <magnitudeUnassigned><val>0</val><val></val><val>0</val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+       <magnitude><val>91</val><val></val><val>12</val><val></val><val>88</val><val>4</val></magnitude>
+       <node name="Desmoscolex_koloensis">
+        <magnitude><val>91</val><val></val><val>12</val><val></val><val>88</val><val>4</val></magnitude>
+       </node>
+      </node>
+     </node>
+    </node>
+   </node>
+   <node name="Enoplea">
+    <magnitude><val></val><val></val><val>5</val><val></val><val>4</val></magnitude>
+    <magnitudeUnassigned><val></val><val></val><val>5</val><val></val><val>3</val></magnitudeUnassigned>
+    <node name="Trichinellida">
+     <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Annelida">
+   <magnitude><val>12</val><val>2</val><val>6</val><val>1</val><val>4</val><val>1</val></magnitude>
+   <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+   <node name="Clitellata">
+    <magnitude><val>12</val><val>2</val><val>6</val><val>1</val><val>4</val><val>1</val></magnitude>
+    <magnitudeUnassigned><val>12</val><val>2</val><val>6</val><val>1</val><val>0</val><val>0</val></magnitudeUnassigned>
+    <node name="Lumbriculida">
+     <magnitude><val></val><val></val><val></val><val></val><val>4</val><val>1</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Bacillariophyta">
+   <magnitude><val>70</val><val>4</val><val>392</val><val>6</val><val>58</val><val>4</val></magnitude>
+   <magnitudeUnassigned><val>63</val><val>3</val><val>363</val><val>6</val><val>51</val><val>4</val></magnitudeUnassigned>
+   <node name="Mediophyceae">
+    <magnitude><val>7</val><val>1</val><val>29</val><val></val><val>1</val></magnitude>
+   </node>
+   <node name="Fragilariophyceae">
+    <magnitude><val></val><val></val><val></val><val></val><val>6</val></magnitude>
+    <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+    <node name="Thalassionemales">
+     <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+     <magnitude><val></val><val></val><val></val><val></val><val>6</val></magnitude>
+     <node name="Thalassionemataceae">
+      <magnitude><val></val><val></val><val></val><val></val><val>6</val></magnitude>
+      <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+      <node name="Thalassionema">
+       <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+       <magnitude><val></val><val></val><val></val><val></val><val>6</val></magnitude>
+       <node name="Thalassionema_nitzschioides">
+        <magnitude><val></val><val></val><val></val><val></val><val>6</val></magnitude>
+       </node>
+      </node>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node name="Cnidaria">
+   <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+   <magnitude><val>368</val><val>16</val><val>1200</val><val>18</val><val>3631</val><val>93</val></magnitude>
+   <node name="Myxozoa">
+    <magnitude><val>368</val><val>16</val><val>1200</val><val>18</val><val>3631</val><val>93</val></magnitude>
+    <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val><val>924</val><val>30</val></magnitudeUnassigned>
+    <node name="Malacovalvulida">
+     <magnitude><val>368</val><val>16</val><val>1200</val><val>18</val><val>2131</val><val>39</val></magnitude>
+     <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+     <node name="Saccosporidae">
+      <magnitude><val>368</val><val>16</val><val>1200</val><val>18</val><val>2131</val><val>39</val></magnitude>
+     </node>
+    </node>
+    <node name="Multivalvulida">
+     <magnitude><val></val><val></val><val></val><val></val><val>576</val><val>24</val></magnitude>
+     <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+     <node name="Kudoidae">
+      <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+      <magnitude><val></val><val></val><val></val><val></val><val>576</val><val>24</val></magnitude>
+      <node name="Kudoa">
+       <magnitude><val></val><val></val><val></val><val></val><val>576</val><val>24</val></magnitude>
+      </node>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node name="Raphidophyceae">
+   <magnitudeUnassigned><val>0</val><val></val><val>0</val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+   <magnitude><val>3</val><val></val><val>10</val><val></val><val>462</val><val>1</val></magnitude>
+   <node name="Raphidophyceae">
+    <magnitudeUnassigned><val>0</val><val></val><val>0</val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+    <magnitude><val>3</val><val></val><val>10</val><val></val><val>462</val><val>1</val></magnitude>
+    <node name="Chattonellales">
+     <magnitude><val>3</val><val></val><val>10</val><val></val><val>462</val><val>1</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Mollusca">
+   <magnitude><val>82</val><val>3</val><val>33</val><val>2</val></magnitude>
+   <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+   <node name="Gastropoda">
+    <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+    <magnitude><val>82</val><val>3</val><val>33</val><val>2</val></magnitude>
+    <node name="Lymnaeidae">
+     <magnitudeUnassigned><val>0</val><val>0</val></magnitudeUnassigned>
+     <magnitude><val>6</val><val>1</val></magnitude>
+     <node name="Lymnaeidae">
+      <magnitude><val>6</val><val>1</val></magnitude>
+     </node>
+    </node>
+    <node name="Physidae">
+     <magnitude><val>40</val><val>1</val><val>10</val><val>1</val></magnitude>
+     <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+     <node name="Physidae">
+      <magnitude><val>40</val><val>1</val><val>10</val><val>1</val></magnitude>
+     </node>
+    </node>
+    <node name="Ancylidae">
+     <magnitude><val>36</val><val>1</val><val>23</val><val>1</val></magnitude>
+     <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+     <node name="Ancylidae">
+      <magnitude><val>36</val><val>1</val><val>23</val><val>1</val></magnitude>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node name="Haptista">
+   <magnitudeUnassigned><val></val><val></val><val>0</val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+   <magnitude><val></val><val></val><val>1</val><val></val><val>302</val><val>10</val></magnitude>
+   <node name="Haptophyta">
+    <magnitudeUnassigned><val></val><val></val><val>1</val><val></val><val>26</val><val>0</val></magnitudeUnassigned>
+    <magnitude><val></val><val></val><val>1</val><val></val><val>302</val><val>10</val></magnitude>
+    <node name="Prymnesiales">
+     <magnitude><val></val><val></val><val></val><val></val><val>276</val><val>10</val></magnitude>
+     <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+     <node name="Chrysochromulinaceae">
+      <magnitude><val></val><val></val><val></val><val></val><val>276</val><val>10</val></magnitude>
+      <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+      <node name="Chrysochromulina">
+       <magnitude><val></val><val></val><val></val><val></val><val>276</val><val>10</val></magnitude>
+      </node>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node name="Collodictyonidae">
+   <magnitude><val>4</val><val></val><val>8</val></magnitude>
+   <magnitudeUnassigned><val>0</val><val></val><val>0</val></magnitudeUnassigned>
+   <node name="Collodictyonidae">
+    <magnitudeUnassigned><val>0</val><val></val><val>0</val></magnitudeUnassigned>
+    <magnitude><val>4</val><val></val><val>8</val></magnitude>
+    <node name="Collodictyonidae">
+     <magnitudeUnassigned><val>0</val><val></val><val>0</val></magnitudeUnassigned>
+     <magnitude><val>4</val><val></val><val>8</val></magnitude>
+     <node name="Collodictyonidae">
+      <magnitude><val>4</val><val></val><val>8</val></magnitude>
+      <magnitudeUnassigned><val>0</val><val></val><val>0</val></magnitudeUnassigned>
+      <node name="Diphylleia">
+       <magnitudeUnassigned><val>0</val><val></val><val>0</val></magnitudeUnassigned>
+       <magnitude><val>4</val><val></val><val>8</val></magnitude>
+       <node name="Diphylleia_rotans">
+        <magnitude><val>4</val><val></val><val>8</val></magnitude>
+       </node>
+      </node>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node name="Xanthophyceae">
+   <magnitudeUnassigned><val>0</val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+   <magnitude><val>6</val><val></val><val>28</val><val>1</val></magnitude>
+   <node name="Xanthophyceae">
+    <magnitude><val>6</val><val></val><val>28</val><val>1</val></magnitude>
+    <magnitudeUnassigned><val>3</val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+    <node name="Mischococcales">
+     <magnitude><val>3</val><val></val><val>28</val><val>1</val></magnitude>
     </node>
    </node>
   </node>
   <node name="Oomycota">
-   <magnitude><val>10</val></magnitude>
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
+   <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+   <magnitude><val>399</val><val>10</val><val>1744</val><val>15</val><val>37</val></magnitude>
    <node name="Oomycota">
-    <magnitudeUnassigned><val>7</val></magnitudeUnassigned>
-    <magnitude><val>10</val></magnitude>
+    <magnitudeUnassigned><val>273</val><val>7</val><val>1641</val><val>12</val><val>24</val></magnitudeUnassigned>
+    <magnitude><val>399</val><val>10</val><val>1744</val><val>15</val><val>37</val></magnitude>
     <node name="Peronosporales">
-     <magnitude><val>2</val></magnitude>
+     <magnitude><val>120</val><val>2</val><val>100</val><val>3</val><val>13</val></magnitude>
+    </node>
+    <node name="Saprolegniales">
+     <magnitudeUnassigned><val></val><val></val><val>0</val></magnitudeUnassigned>
+     <magnitude><val></val><val></val><val>3</val></magnitude>
+     <node name="Saprolegniaceae">
+      <magnitude><val></val><val></val><val>3</val></magnitude>
+     </node>
     </node>
     <node name="Sclerosporales">
-     <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-     <magnitude><val>1</val></magnitude>
+     <magnitudeUnassigned><val>0</val><val>0</val></magnitudeUnassigned>
+     <magnitude><val>6</val><val>1</val></magnitude>
      <node name="Verrucalvaceae">
-      <magnitude><val>1</val></magnitude>
-      <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
+      <magnitudeUnassigned><val>0</val><val>0</val></magnitudeUnassigned>
+      <magnitude><val>6</val><val>1</val></magnitude>
       <node name="Pachymetra">
-       <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-       <magnitude><val>1</val></magnitude>
+       <magnitudeUnassigned><val>0</val><val>0</val></magnitudeUnassigned>
+       <magnitude><val>6</val><val>1</val></magnitude>
        <node name="Pachymetra_chaunorhiza">
-        <magnitude><val>1</val></magnitude>
+        <magnitude><val>6</val><val>1</val></magnitude>
        </node>
       </node>
      </node>
@@ -6679,271 +6875,92 @@ function zoomOut()
    </node>
   </node>
   <node name="Streptophyta">
-   <magnitude><val>1</val></magnitude>
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
+   <magnitude><val>50</val><val>1</val><val>23</val><val>2</val></magnitude>
+   <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
    <node name="Chlorokybophyceae">
-    <magnitude><val>1</val></magnitude>
-    <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
+    <magnitude><val>50</val><val>1</val><val>23</val><val>2</val></magnitude>
+    <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
     <node name="Chlorokybales">
-     <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-     <magnitude><val>1</val></magnitude>
+     <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+     <magnitude><val>50</val><val>1</val><val>23</val><val>2</val></magnitude>
      <node name="Chlorokybaceae">
-      <magnitude><val>1</val></magnitude>
-      <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
+      <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+      <magnitude><val>50</val><val>1</val><val>23</val><val>2</val></magnitude>
       <node name="Chlorokybus">
-       <magnitude><val>1</val></magnitude>
-       <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
+       <magnitude><val>50</val><val>1</val><val>23</val><val>2</val></magnitude>
+       <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
        <node name="Chlorokybus_atmophyticus">
-        <magnitude><val>1</val></magnitude>
+        <magnitude><val>50</val><val>1</val><val>23</val><val>2</val></magnitude>
        </node>
       </node>
      </node>
     </node>
    </node>
   </node>
-  <node name="Discosea">
-   <magnitude><val>3</val></magnitude>
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-   <node name="Himatismenida">
-    <magnitude><val>2</val></magnitude>
-    <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-    <node name="Himatismenida">
-     <magnitude><val>2</val></magnitude>
-    </node>
-   </node>
-   <node name="Flabellinia">
-    <magnitude><val>1</val></magnitude>
-    <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-    <node name="Vannellidae">
-     <magnitude><val>1</val></magnitude>
-     <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-     <node name="Vannellidae">
-      <magnitude><val>1</val></magnitude>
-     </node>
-    </node>
-   </node>
-  </node>
-  <node name="Mollusca">
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-   <magnitude><val>3</val></magnitude>
-   <node name="Gastropoda">
-    <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-    <magnitude><val>3</val></magnitude>
-    <node name="Ancylidae">
-     <magnitude><val>1</val></magnitude>
-     <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-     <node name="Ancylidae">
-      <magnitude><val>1</val></magnitude>
-     </node>
-    </node>
-    <node name="Physidae">
-     <magnitude><val>1</val></magnitude>
-     <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-     <node name="Physidae">
-      <magnitude><val>1</val></magnitude>
-     </node>
-    </node>
-    <node name="Lymnaeidae">
-     <magnitude><val>1</val></magnitude>
-     <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-     <node name="Lymnaeidae">
-      <magnitude><val>1</val></magnitude>
-     </node>
-    </node>
-   </node>
-  </node>
-  <node name="Eustigmatophyceae">
-   <magnitude><val>1</val></magnitude>
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-   <node name="Eustigmatophyceae">
-    <magnitude><val>1</val></magnitude>
-    <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-    <node name="Eustigmatales">
-     <magnitude><val>1</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Arthropoda">
-   <magnitude><val>60</val></magnitude>
-   <magnitudeUnassigned><val>23</val></magnitudeUnassigned>
-   <node name="Branchiopoda">
-    <magnitude><val>4</val></magnitude>
-   </node>
-   <node name="Malacostraca">
-    <magnitude><val>1</val></magnitude>
-   </node>
-   <node name="Hexanauplia">
-    <magnitudeUnassigned><val>2</val></magnitudeUnassigned>
-    <magnitude><val>4</val></magnitude>
-    <node name="Misophrioida">
-     <magnitude><val>1</val></magnitude>
-    </node>
-    <node name="Mormonilloida">
-     <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-     <magnitude><val>1</val></magnitude>
-     <node name="Mormonillidae">
-      <magnitude><val>1</val></magnitude>
-     </node>
-    </node>
-   </node>
-   <node name="Insecta">
-    <magnitude><val>26</val></magnitude>
-    <magnitudeUnassigned><val>8</val></magnitudeUnassigned>
-    <node name="Hymenoptera">
-     <magnitude><val>1</val></magnitude>
-    </node>
-    <node name="Trichoptera">
-     <magnitude><val>3</val></magnitude>
-    </node>
-    <node name="Plecoptera">
-     <magnitude><val>3</val></magnitude>
-    </node>
-    <node name="Diptera">
-     <magnitude><val>6</val></magnitude>
-    </node>
-    <node name="Lepidoptera">
-     <magnitude><val>3</val></magnitude>
-    </node>
-    <node name="Ephemeroptera">
-     <magnitude><val>2</val></magnitude>
-    </node>
-   </node>
-   <node name="Arachnida">
-    <magnitude><val>2</val></magnitude>
-    <magnitudeUnassigned><val>1</val></magnitudeUnassigned>
-    <node name="Ixodida">
-     <magnitude><val>1</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Bacillariophyta">
-   <magnitudeUnassigned><val>3</val></magnitudeUnassigned>
-   <magnitude><val>4</val></magnitude>
-   <node name="Mediophyceae">
-    <magnitude><val>1</val></magnitude>
-   </node>
-  </node>
-  <node name="Glaucocystophyceae">
-   <magnitude><val>6</val></magnitude>
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-   <node name="Glaucocystophyceae">
-    <magnitude><val>6</val></magnitude>
-   </node>
-  </node>
-  <node name="Annelida">
-   <magnitude><val>2</val></magnitude>
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-   <node name="Clitellata">
-    <magnitude><val>2</val></magnitude>
-   </node>
-  </node>
-  <node name="Apusomonadidae">
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-   <magnitude><val>2</val></magnitude>
-   <node name="Apusomonadidae">
-    <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-    <magnitude><val>2</val></magnitude>
-    <node name="Apusomonadidae">
-     <magnitude><val>2</val></magnitude>
-     <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-     <node name="Apusomonadidae">
-      <magnitude><val>2</val></magnitude>
-      <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-      <node name="Thecamonas">
-       <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-       <magnitude><val>2</val></magnitude>
-       <node name="Thecamonas_trahens">
-        <magnitude><val>2</val></magnitude>
-       </node>
-      </node>
-     </node>
-    </node>
-   </node>
-  </node>
-  <node name="Dictyochophyceae">
-   <magnitude><val>2</val></magnitude>
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-   <node name="Dictyochophyceae">
-    <magnitude><val>2</val></magnitude>
-   </node>
-  </node>
-  <node name="Cnidaria">
-   <magnitude><val>16</val></magnitude>
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-   <node name="Myxozoa">
-    <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-    <magnitude><val>16</val></magnitude>
-    <node name="Malacovalvulida">
-     <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-     <magnitude><val>16</val></magnitude>
-     <node name="Saccosporidae">
-      <magnitude><val>16</val></magnitude>
-     </node>
-    </node>
-   </node>
-  </node>
-  <node name="Rhodophyta">
-   <magnitudeUnassigned><val>8</val></magnitudeUnassigned>
-   <magnitude><val>10</val></magnitude>
-   <node name="Bangiophyceae">
-    <magnitude><val>2</val></magnitude>
-    <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-    <node name="Cyanidiales">
-     <magnitude><val>2</val></magnitude>
-     <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-     <node name="Cyanidiaceae">
-      <magnitude><val>2</val></magnitude>
-     </node>
+  <node name="Tardigrada">
+   <magnitudeUnassigned><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+   <magnitude><val>7</val><val>1</val><val>2</val></magnitude>
+   <node name="Eutardigrada">
+    <magnitudeUnassigned><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+    <magnitude><val>7</val><val>1</val><val>2</val></magnitude>
+    <node name="Parachela">
+     <magnitude><val>7</val><val>1</val><val>2</val></magnitude>
     </node>
    </node>
   </node>
   <node name="Cryptophyceae">
-   <magnitude><val>1</val></magnitude>
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
+   <magnitudeUnassigned><val>0</val><val>0</val><val></val><val></val><val>0</val></magnitudeUnassigned>
+   <magnitude><val>11</val><val>1</val><val></val><val></val><val>1</val></magnitude>
    <node name="Cryptophyceae">
-    <magnitude><val>1</val></magnitude>
+    <magnitude><val>11</val><val>1</val><val></val><val></val><val>1</val></magnitude>
+    <magnitudeUnassigned><val>8</val><val>1</val><val></val><val></val><val>0</val></magnitudeUnassigned>
+    <node name="Cryptomonadales">
+     <magnitude><val>3</val><val></val><val></val><val></val><val>1</val></magnitude>
+    </node>
    </node>
   </node>
-  <node name="Bolidophyceae">
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-   <magnitude><val>2</val></magnitude>
-   <node name="Bolidophyceae">
-    <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-    <magnitude><val>2</val></magnitude>
-    <node name="Parmales">
-     <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-     <magnitude><val>2</val></magnitude>
-     <node name="Triparmaceae">
-      <magnitude><val>2</val></magnitude>
-      <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-      <node name="Triparma">
-       <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-       <magnitude><val>2</val></magnitude>
-       <node name="Triparma_laevis">
-        <magnitude><val>2</val></magnitude>
-       </node>
-      </node>
+  <node name="Glaucocystophyceae">
+   <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+   <magnitude><val>89</val><val>6</val><val>3</val><val>1</val><val>2</val></magnitude>
+   <node name="Glaucocystophyceae">
+    <magnitude><val>89</val><val>6</val><val>3</val><val>1</val><val>2</val></magnitude>
+   </node>
+  </node>
+  <node name="Acanthocephala">
+   <magnitude><val></val><val></val><val></val><val></val><val>2</val></magnitude>
+   <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+   <node name="Eoacanthocephala">
+    <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+    <magnitude><val></val><val></val><val></val><val></val><val>2</val></magnitude>
+    <node name="Gyracanthocephala">
+     <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+     <magnitude><val></val><val></val><val></val><val></val><val>2</val></magnitude>
+     <node name="Quadrigyridae">
+      <magnitude><val></val><val></val><val></val><val></val><val>2</val></magnitude>
      </node>
     </node>
    </node>
   </node>
   <node name="Evosea">
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-   <magnitude><val>2</val></magnitude>
+   <magnitude><val>52</val><val>2</val><val>171</val><val>2</val></magnitude>
+   <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+   <node name="Eumycetozoa">
+    <magnitude><val>10</val><val></val><val>146</val></magnitude>
+   </node>
    <node name="Squamamoeba">
-    <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-    <magnitude><val>2</val></magnitude>
+    <magnitude><val>42</val><val>2</val><val>25</val><val>2</val></magnitude>
+    <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
     <node name="Squamamoeba">
-     <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-     <magnitude><val>2</val></magnitude>
+     <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+     <magnitude><val>42</val><val>2</val><val>25</val><val>2</val></magnitude>
      <node name="Squamamoeba">
-      <magnitude><val>2</val></magnitude>
-      <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
+      <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+      <magnitude><val>42</val><val>2</val><val>25</val><val>2</val></magnitude>
       <node name="Squamamoeba">
-       <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-       <magnitude><val>2</val></magnitude>
+       <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+       <magnitude><val>42</val><val>2</val><val>25</val><val>2</val></magnitude>
        <node name="Squamamoeba_japonica">
-        <magnitude><val>2</val></magnitude>
+        <magnitude><val>42</val><val>2</val><val>25</val><val>2</val></magnitude>
        </node>
       </node>
      </node>
@@ -6951,45 +6968,594 @@ function zoomOut()
    </node>
   </node>
   <node name="Chlorophyta">
-   <magnitude><val>2</val></magnitude>
-   <magnitudeUnassigned><val>1</val></magnitudeUnassigned>
+   <magnitude><val>20</val><val>2</val><val>3435</val><val>10</val><val>68</val><val>3</val></magnitude>
+   <magnitudeUnassigned><val>18</val><val>1</val><val>337</val><val>5</val><val>63</val><val>3</val></magnitudeUnassigned>
+   <node name="Pycnococcaceae">
+    <magnitude><val>2</val><val></val><val>1</val><val></val><val>1</val></magnitude>
+    <magnitudeUnassigned><val>0</val><val></val><val>0</val><val></val><val>0</val></magnitudeUnassigned>
+    <node name="Pycnococcaceae">
+     <magnitude><val>2</val><val></val><val>1</val><val></val><val>1</val></magnitude>
+     <magnitudeUnassigned><val>0</val><val></val><val>0</val><val></val><val>0</val></magnitudeUnassigned>
+     <node name="Pycnococcaceae">
+      <magnitudeUnassigned><val>0</val><val></val><val>0</val><val></val><val>0</val></magnitudeUnassigned>
+      <magnitude><val>2</val><val></val><val>1</val><val></val><val>1</val></magnitude>
+      <node name="Pycnococcus">
+       <magnitudeUnassigned><val>0</val><val></val><val>0</val><val></val><val>0</val></magnitudeUnassigned>
+       <magnitude><val>2</val><val></val><val>1</val><val></val><val>1</val></magnitude>
+       <node name="Pycnococcus_provasolii">
+        <magnitude><val>2</val><val></val><val>1</val><val></val><val>1</val></magnitude>
+       </node>
+      </node>
+     </node>
+    </node>
+   </node>
+   <node name="Trebouxiophyceae">
+    <magnitudeUnassigned><val></val><val></val><val>0</val><val></val><val>2</val></magnitudeUnassigned>
+    <magnitude><val></val><val></val><val>1</val><val></val><val>3</val></magnitude>
+    <node name="Jaagichlorella">
+     <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+     <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+     <node name="Jaagichlorella">
+      <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+      <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+      <node name="Jaagichlorella">
+       <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+      </node>
+     </node>
+    </node>
+    <node name="Trebouxiales">
+     <magnitude><val></val><val></val><val>1</val></magnitude>
+     <magnitudeUnassigned><val></val><val></val><val>0</val></magnitudeUnassigned>
+     <node name="Trebouxiaceae">
+      <magnitude><val></val><val></val><val>1</val></magnitude>
+     </node>
+    </node>
+   </node>
    <node name="Tetraedoron">
-    <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-    <magnitude><val>1</val></magnitude>
+    <magnitudeUnassigned><val></val><val>0</val><val>0</val><val></val><val>0</val></magnitudeUnassigned>
+    <magnitude><val></val><val>1</val><val>22</val><val></val><val>1</val></magnitude>
     <node name="Tetraedoron">
-     <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-     <magnitude><val>1</val></magnitude>
+     <magnitudeUnassigned><val></val><val>0</val><val>0</val><val></val><val>0</val></magnitudeUnassigned>
+     <magnitude><val></val><val>1</val><val>22</val><val></val><val>1</val></magnitude>
      <node name="Tetraedoron">
-      <magnitude><val>1</val></magnitude>
-      <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
+      <magnitudeUnassigned><val></val><val>0</val><val>0</val><val></val><val>0</val></magnitudeUnassigned>
+      <magnitude><val></val><val>1</val><val>22</val><val></val><val>1</val></magnitude>
       <node name="Tetraedoron">
-       <magnitude><val>1</val></magnitude>
-       <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
+       <magnitude><val></val><val>1</val><val>22</val><val></val><val>1</val></magnitude>
+       <magnitudeUnassigned><val></val><val>0</val><val>0</val><val></val><val>0</val></magnitudeUnassigned>
        <node name="Tetraedoron_bitridens">
-        <magnitude><val>1</val></magnitude>
+        <magnitude><val></val><val>1</val><val>22</val><val></val><val>1</val></magnitude>
+       </node>
+      </node>
+     </node>
+    </node>
+   </node>
+   <node name="Chlorophyceae">
+    <magnitude><val></val><val></val><val>3074</val><val>5</val></magnitude>
+    <magnitudeUnassigned><val></val><val></val><val>418</val><val>0</val></magnitudeUnassigned>
+    <node name="Sphaeropleales">
+     <magnitude><val></val><val></val><val>2654</val><val>5</val></magnitude>
+    </node>
+    <node name="Chaetophorales">
+     <magnitude><val></val><val></val><val>2</val></magnitude>
+     <magnitudeUnassigned><val></val><val></val><val>0</val></magnitudeUnassigned>
+     <node name="Chaetophoraceae">
+      <magnitude><val></val><val></val><val>2</val></magnitude>
+      <magnitudeUnassigned><val></val><val></val><val>0</val></magnitudeUnassigned>
+      <node name="Stigeoclonium">
+       <magnitude><val></val><val></val><val>2</val></magnitude>
+       <magnitudeUnassigned><val></val><val></val><val>0</val></magnitudeUnassigned>
+       <node name="Stigeoclonium_helveticum">
+        <magnitude><val></val><val></val><val>2</val></magnitude>
        </node>
       </node>
      </node>
     </node>
    </node>
   </node>
- </node>
- <node name="Bacteria">
-  <magnitude><val>5</val></magnitude>
-  <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-  <node name="Proteobacteria">
-   <magnitude><val>5</val></magnitude>
-   <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
-   <node name="Alphaproteobacteria">
-    <magnitude><val>1</val></magnitude>
-   </node>
-   <node name="Betaproteobacteria">
-    <magnitude><val>2</val></magnitude>
-   </node>
-   <node name="Gammaproteobacteria">
-    <magnitude><val>2</val></magnitude>
+  <node name="Bolidophyceae">
+   <magnitude><val>638</val><val>2</val><val>1536</val><val>3</val><val>6</val><val>1</val></magnitude>
+   <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+   <node name="Bolidophyceae">
+    <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+    <magnitude><val>638</val><val>2</val><val>1536</val><val>3</val><val>6</val><val>1</val></magnitude>
+    <node name="Parmales">
+     <magnitude><val>638</val><val>2</val><val>1536</val><val>3</val><val>6</val><val>1</val></magnitude>
+     <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+     <node name="Triparmaceae">
+      <magnitude><val>638</val><val>2</val><val>1536</val><val>3</val><val>6</val><val>1</val></magnitude>
+      <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+      <node name="Triparma">
+       <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+       <magnitude><val>638</val><val>2</val><val>1536</val><val>3</val><val>6</val><val>1</val></magnitude>
+       <node name="Triparma_laevis">
+        <magnitude><val>638</val><val>2</val><val>1536</val><val>3</val><val>6</val><val>1</val></magnitude>
+       </node>
+      </node>
+     </node>
+    </node>
    </node>
   </node>
+  <node name="Chordata">
+   <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val><val>1</val><val>1</val></magnitudeUnassigned>
+   <magnitude><val>7</val><val>1</val><val>40</val><val>2</val><val>1498</val><val>17</val></magnitude>
+   <node name="Thaliacea">
+    <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+    <magnitude><val></val><val></val><val></val><val></val><val>1497</val><val>16</val></magnitude>
+    <node name="Pyrosomata">
+     <magnitude><val></val><val></val><val></val><val></val><val>1497</val><val>16</val></magnitude>
+     <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+     <node name="Pyrosomatidae">
+      <magnitude><val></val><val></val><val></val><val></val><val>1497</val><val>16</val></magnitude>
+      <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+      <node name="Pyrostremma">
+       <magnitude><val></val><val></val><val></val><val></val><val>1497</val><val>16</val></magnitude>
+       <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+       <node name="Pyrostremma_spinosum">
+        <magnitude><val></val><val></val><val></val><val></val><val>1497</val><val>16</val></magnitude>
+       </node>
+      </node>
+     </node>
+    </node>
+   </node>
+   <node name="Actinopteri">
+    <magnitude><val>7</val><val>1</val><val>36</val><val>1</val></magnitude>
+    <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+    <node name="Cypriniformes">
+     <magnitude><val>7</val><val>1</val><val>36</val><val>1</val></magnitude>
+    </node>
+   </node>
+   <node name="Mammalia">
+    <magnitude><val></val><val></val><val>4</val><val>1</val></magnitude>
+   </node>
+  </node>
+  <node name="Arthropoda">
+   <magnitude><val>8975</val><val>60</val><val>4462</val><val>61</val><val>1</val></magnitude>
+   <magnitudeUnassigned><val>3460</val><val>23</val><val>2108</val><val>26</val><val>0</val></magnitudeUnassigned>
+   <node name="Collembola">
+    <magnitude><val>1</val><val></val><val>1</val></magnitude>
+    <magnitudeUnassigned><val>0</val><val></val><val>1</val></magnitudeUnassigned>
+    <node name="Entomobryomorpha">
+     <magnitude><val>1</val></magnitude>
+    </node>
+   </node>
+   <node name="Hexanauplia">
+    <magnitude><val>1969</val><val>4</val><val>517</val><val>2</val><val>1</val></magnitude>
+    <magnitudeUnassigned><val>438</val><val>2</val><val>318</val><val>2</val><val>0</val></magnitudeUnassigned>
+    <node name="Misophrioida">
+     <magnitude><val>37</val><val>1</val></magnitude>
+    </node>
+    <node name="Sessilia">
+     <magnitude><val>1486</val><val></val><val>199</val></magnitude>
+    </node>
+    <node name="Calanoida">
+     <magnitude><val>5</val></magnitude>
+    </node>
+    <node name="Mormonilloida">
+     <magnitudeUnassigned><val>0</val><val>0</val><val></val><val></val><val>0</val></magnitudeUnassigned>
+     <magnitude><val>3</val><val>1</val><val></val><val></val><val>1</val></magnitude>
+     <node name="Mormonillidae">
+      <magnitude><val>3</val><val>1</val><val></val><val></val><val>1</val></magnitude>
+     </node>
+    </node>
+   </node>
+   <node name="Malacostraca">
+    <magnitudeUnassigned><val>15</val><val>1</val><val>1</val></magnitudeUnassigned>
+    <magnitude><val>44</val><val>1</val><val>3</val></magnitude>
+    <node name="Stomatopoda">
+     <magnitude><val>1</val><val></val><val>2</val></magnitude>
+    </node>
+    <node name="Euphausiacea">
+     <magnitude><val>1</val></magnitude>
+    </node>
+    <node name="Thermosbaenacea">
+     <magnitude><val>27</val></magnitude>
+    </node>
+   </node>
+   <node name="Branchiopoda">
+    <magnitudeUnassigned><val>47</val><val>4</val><val>3</val><val>1</val></magnitudeUnassigned>
+    <magnitude><val>49</val><val>4</val><val>3</val><val>1</val></magnitude>
+    <node name="Notostraca">
+     <magnitude><val>2</val></magnitude>
+     <magnitudeUnassigned><val>0</val></magnitudeUnassigned>
+     <node name="Triopsidae">
+      <magnitude><val>2</val></magnitude>
+     </node>
+    </node>
+   </node>
+   <node name="Arachnida">
+    <magnitude><val>52</val><val>2</val><val>174</val><val>2</val></magnitude>
+    <magnitudeUnassigned><val>18</val><val>1</val><val>140</val><val>1</val></magnitudeUnassigned>
+    <node name="Opiliones">
+     <magnitude><val></val><val></val><val>2</val></magnitude>
+    </node>
+    <node name="Ixodida">
+     <magnitude><val>34</val><val>1</val><val>32</val><val>1</val></magnitude>
+    </node>
+   </node>
+   <node name="Insecta">
+    <magnitude><val>3400</val><val>26</val><val>1654</val><val>30</val></magnitude>
+    <magnitudeUnassigned><val>281</val><val>8</val><val>202</val><val>10</val></magnitudeUnassigned>
+    <node name="Hymenoptera">
+     <magnitude><val>14</val><val>1</val><val>877</val><val>6</val></magnitude>
+    </node>
+    <node name="Lepidoptera">
+     <magnitude><val>315</val><val>3</val><val>3</val><val>1</val></magnitude>
+    </node>
+    <node name="Trichoptera">
+     <magnitude><val>89</val><val>3</val><val>59</val><val>2</val></magnitude>
+    </node>
+    <node name="Plecoptera">
+     <magnitude><val>72</val><val>3</val><val>42</val><val>3</val></magnitude>
+    </node>
+    <node name="Diptera">
+     <magnitude><val>2613</val><val>6</val><val>458</val><val>8</val></magnitude>
+    </node>
+    <node name="Ephemeroptera">
+     <magnitude><val>16</val><val>2</val></magnitude>
+    </node>
+    <node name="Raphidioptera">
+     <magnitude><val></val><val></val><val>13</val></magnitude>
+    </node>
+   </node>
+   <node name="Pycnogonida">
+    <magnitudeUnassigned><val></val><val></val><val>0</val></magnitudeUnassigned>
+    <magnitude><val></val><val></val><val>2</val></magnitude>
+    <node name="Pantopoda">
+     <magnitude><val></val><val></val><val>2</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Chytridiomycota">
+   <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+   <magnitude><val></val><val></val><val></val><val></val><val>131</val><val>3</val></magnitude>
+   <node name="Chytridiomycetes">
+    <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+    <magnitude><val></val><val></val><val></val><val></val><val>131</val><val>3</val></magnitude>
+    <node name="Synchytriales">
+     <magnitude><val></val><val></val><val></val><val></val><val>131</val><val>3</val></magnitude>
+     <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+     <node name="Synchytriaceae">
+      <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+      <magnitude><val></val><val></val><val></val><val></val><val>131</val><val>3</val></magnitude>
+      <node name="Synchytrium">
+       <magnitude><val></val><val></val><val></val><val></val><val>131</val><val>3</val></magnitude>
+      </node>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node name="Rotifera">
+   <magnitudeUnassigned><val></val><val></val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+   <magnitude><val></val><val></val><val>51</val><val>1</val><val>3</val></magnitude>
+   <node name="Monogononta">
+    <magnitude><val></val><val></val><val>51</val><val>1</val><val>1</val></magnitude>
+    <magnitudeUnassigned><val></val><val></val><val>51</val><val>1</val><val>0</val></magnitudeUnassigned>
+    <node name="Ploima">
+     <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+    </node>
+   </node>
+   <node name="Bdelloidea">
+    <magnitude><val></val><val></val><val></val><val></val><val>2</val></magnitude>
+   </node>
+  </node>
+  <node name="Dictyochophyceae">
+   <magnitude><val>11</val><val>2</val><val>344</val><val>3</val></magnitude>
+   <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+   <node name="Dictyochophyceae">
+    <magnitude><val>11</val><val>2</val><val>344</val><val>3</val></magnitude>
+    <magnitudeUnassigned><val>11</val><val>2</val><val>341</val><val>3</val></magnitudeUnassigned>
+    <node name="Pedinellales">
+     <magnitudeUnassigned><val></val><val></val><val>0</val></magnitudeUnassigned>
+     <magnitude><val></val><val></val><val>2</val></magnitude>
+     <node name="Pseudopedinella">
+      <magnitudeUnassigned><val></val><val></val><val>0</val></magnitudeUnassigned>
+      <magnitude><val></val><val></val><val>2</val></magnitude>
+      <node name="Pseudopedinella">
+       <magnitude><val></val><val></val><val>2</val></magnitude>
+       <magnitudeUnassigned><val></val><val></val><val>0</val></magnitudeUnassigned>
+       <node name="Pseudopedinella_elastica">
+        <magnitude><val></val><val></val><val>2</val></magnitude>
+       </node>
+      </node>
+     </node>
+    </node>
+    <node name="Florenciellales">
+     <magnitudeUnassigned><val></val><val></val><val>0</val></magnitudeUnassigned>
+     <magnitude><val></val><val></val><val>1</val></magnitude>
+     <node name="Pseudochattonella">
+      <magnitude><val></val><val></val><val>1</val></magnitude>
+      <magnitudeUnassigned><val></val><val></val><val>0</val></magnitudeUnassigned>
+      <node name="Pseudochattonella">
+       <magnitude><val></val><val></val><val>1</val></magnitude>
+      </node>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node name="Basidiomycota">
+   <magnitudeUnassigned><val></val><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+   <magnitude><val></val><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+   <node name="Agaricomycetes">
+    <magnitude><val></val><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+    <magnitudeUnassigned><val></val><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+    <node name="Geastrales">
+     <magnitude><val></val><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+     <magnitudeUnassigned><val></val><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+     <node name="Sphaerobolaceae">
+      <magnitudeUnassigned><val></val><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+      <magnitude><val></val><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+      <node name="Sphaerobolus">
+       <magnitudeUnassigned><val></val><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+       <magnitude><val></val><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+       <node name="Sphaerobolus_stellatus">
+        <magnitude><val></val><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+       </node>
+      </node>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node name="Porifera">
+   <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+   <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+   <node name="Calcarea">
+    <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+    <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+    <node name="Clathrinida">
+     <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+     <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+     <node name="Clathrinidae">
+      <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+      <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+      <node name="Clathrina">
+       <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+       <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+       <node name="Clathrina_clathrus">
+        <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+       </node>
+      </node>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node name="Euglenozoa">
+   <magnitude><val></val><val></val><val>21</val><val></val><val>158</val><val>4</val></magnitude>
+   <magnitudeUnassigned><val></val><val></val><val>0</val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+   <node name="Euglenida">
+    <magnitudeUnassigned><val></val><val></val><val>21</val><val></val><val>140</val><val>4</val></magnitudeUnassigned>
+    <magnitude><val></val><val></val><val>21</val><val></val><val>157</val><val>4</val></magnitude>
+    <node name="Euglenales">
+     <magnitude><val></val><val></val><val></val><val></val><val>17</val></magnitude>
+    </node>
+   </node>
+   <node name="Kinetoplastea">
+    <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+   </node>
+  </node>
+  <node name="Eustigmatophyceae">
+   <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+   <magnitude><val>10</val><val>1</val><val>30</val><val>2</val></magnitude>
+   <node name="Eustigmatophyceae">
+    <magnitude><val>10</val><val>1</val><val>30</val><val>2</val></magnitude>
+    <magnitudeUnassigned><val>1</val><val>0</val><val>17</val><val>1</val></magnitudeUnassigned>
+    <node name="Eustigmatales">
+     <magnitude><val>9</val><val>1</val><val>13</val><val>1</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Ciliophora">
+   <magnitude><val></val><val></val><val></val><val></val><val>8</val></magnitude>
+   <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+   <node name="Karyorelictea">
+    <magnitude><val></val><val></val><val></val><val></val><val>3</val></magnitude>
+    <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+    <node name="Protoheterotrichida">
+     <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+     <magnitude><val></val><val></val><val></val><val></val><val>3</val></magnitude>
+     <node name="Geleiidae">
+      <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+      <magnitude><val></val><val></val><val></val><val></val><val>3</val></magnitude>
+      <node name="Corlissina">
+       <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+       <magnitude><val></val><val></val><val></val><val></val><val>3</val></magnitude>
+       <node name="Corlissina_maricaensis">
+        <magnitude><val></val><val></val><val></val><val></val><val>3</val></magnitude>
+       </node>
+      </node>
+     </node>
+    </node>
+   </node>
+   <node name="Spirotrichea">
+    <magnitude><val></val><val></val><val></val><val></val><val>5</val></magnitude>
+   </node>
+  </node>
+  <node name="Rhodophyta">
+   <magnitudeUnassigned><val>48</val><val>8</val><val>71</val><val>3</val><val>22</val></magnitudeUnassigned>
+   <magnitude><val>69</val><val>10</val><val>72</val><val>3</val><val>23</val></magnitude>
+   <node name="Bangiophyceae">
+    <magnitude><val>21</val><val>2</val><val>1</val><val></val><val>1</val></magnitude>
+    <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val></val><val>0</val></magnitudeUnassigned>
+    <node name="Cyanidiales">
+     <magnitude><val>21</val><val>2</val><val>1</val><val></val><val>1</val></magnitude>
+     <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val></val><val>0</val></magnitudeUnassigned>
+     <node name="Cyanidiaceae">
+      <magnitude><val>21</val><val>2</val><val>1</val><val></val><val>1</val></magnitude>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node name="Bigyra">
+   <magnitudeUnassigned><val>0</val><val></val><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+   <magnitude><val>8</val><val></val><val>33</val><val>1</val><val>6</val><val>1</val></magnitude>
+   <node name="Bigyra">
+    <magnitude><val>8</val><val></val><val>33</val><val>1</val><val>6</val><val>1</val></magnitude>
+    <magnitudeUnassigned><val>0</val><val></val><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+    <node name="Bicosoecida">
+     <magnitude><val>8</val><val></val><val>9</val><val></val><val>6</val><val>1</val></magnitude>
+    </node>
+    <node name="Thraustochytrida">
+     <magnitude><val></val><val></val><val>24</val><val>1</val></magnitude>
+     <magnitudeUnassigned><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+     <node name="Thraustochytriaceae">
+      <magnitude><val></val><val></val><val>24</val><val>1</val></magnitude>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node name="Apusomonadidae">
+   <magnitude><val>10</val><val>2</val><val>9</val><val>1</val></magnitude>
+   <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+   <node name="Apusomonadidae">
+    <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+    <magnitude><val>10</val><val>2</val><val>9</val><val>1</val></magnitude>
+    <node name="Apusomonadidae">
+     <magnitude><val>10</val><val>2</val><val>9</val><val>1</val></magnitude>
+     <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+     <node name="Apusomonadidae">
+      <magnitude><val>10</val><val>2</val><val>9</val><val>1</val></magnitude>
+      <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+      <node name="Thecamonas">
+       <magnitude><val>10</val><val>2</val><val>9</val><val>1</val></magnitude>
+       <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+       <node name="Thecamonas_trahens">
+        <magnitude><val>10</val><val>2</val><val>9</val><val>1</val></magnitude>
+       </node>
+      </node>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node name="Phaeophyceae">
+   <magnitude><val>1</val><val></val><val>13</val><val>2</val></magnitude>
+   <magnitudeUnassigned><val>0</val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+   <node name="Phaeophyceae">
+    <magnitude><val>1</val><val></val><val>13</val><val>2</val></magnitude>
+   </node>
+  </node>
+  <node name="Platyhelminthes">
+   <magnitude><val></val><val></val><val></val><val></val><val>2</val><val>2</val></magnitude>
+   <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>1</val><val>0</val></magnitudeUnassigned>
+   <node name="Cestoda">
+    <magnitude><val></val><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+   </node>
+   <node name="Monogenea">
+    <magnitude><val></val><val></val><val></val><val></val><val>1</val><val>1</val></magnitude>
+   </node>
+  </node>
+ </node>
+ <node name="Bacteria">
+  <magnitude><val>276</val><val>5</val><val>390</val><val>9</val><val>8274</val><val>75</val></magnitude>
+  <magnitudeUnassigned><val>0</val><val>0</val><val>53</val><val>1</val><val>192</val><val>20</val></magnitudeUnassigned>
+  <node name="Firmicutes">
+   <magnitude><val></val><val></val><val></val><val></val><val>8</val><val>1</val></magnitude>
+   <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+   <node name="Bacilli">
+    <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+    <magnitude><val></val><val></val><val></val><val></val><val>8</val><val>1</val></magnitude>
+    <node name="Lactobacillales">
+     <magnitude><val></val><val></val><val></val><val></val><val>8</val><val>1</val></magnitude>
+     <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+     <node name="Lactobacillaceae">
+      <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+      <magnitude><val></val><val></val><val></val><val></val><val>8</val><val>1</val></magnitude>
+      <node name="Agrilactobacillus">
+       <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+       <magnitude><val></val><val></val><val></val><val></val><val>8</val><val>1</val></magnitude>
+       <node name="Agrilactobacillus_composti_DSM_18527_=_JCM_14202">
+        <magnitude><val></val><val></val><val></val><val></val><val>8</val><val>1</val></magnitude>
+       </node>
+      </node>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node name="Proteobacteria">
+   <magnitude><val>276</val><val>5</val><val>337</val><val>8</val><val>8074</val><val>54</val></magnitude>
+   <magnitudeUnassigned><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val><val>0</val></magnitudeUnassigned>
+   <node name="Betaproteobacteria">
+    <magnitude><val>229</val><val>2</val><val>280</val><val>1</val><val>12</val><val>3</val></magnitude>
+   </node>
+   <node name="Alphaproteobacteria">
+    <magnitude><val>25</val><val>1</val><val>32</val><val>4</val><val>136</val><val>7</val></magnitude>
+    <magnitudeUnassigned><val>25</val><val>1</val><val>32</val><val>4</val><val>62</val><val>3</val></magnitudeUnassigned>
+    <node name="Rickettsiales">
+     <magnitude><val></val><val></val><val></val><val></val><val>68</val><val>4</val></magnitude>
+    </node>
+    <node name="Holosporales">
+     <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+     <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+     <node name="Caedimonadaceae">
+      <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+      <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+      <node name="Candidatus_Paracaedimonas">
+       <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+       <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+       <node name="Candidatus_Paracaedimonas_acanthamoebae">
+        <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+       </node>
+      </node>
+     </node>
+    </node>
+    <node name="Pelagibacterales">
+     <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+     <magnitude><val></val><val></val><val></val><val></val><val>5</val></magnitude>
+     <node name="Pelagibacteraceae">
+      <magnitude><val></val><val></val><val></val><val></val><val>5</val></magnitude>
+     </node>
+    </node>
+   </node>
+   <node name="Gammaproteobacteria">
+    <magnitudeUnassigned><val>22</val><val>2</val><val>19</val><val>2</val><val>956</val><val>17</val></magnitudeUnassigned>
+    <magnitude><val>22</val><val>2</val><val>25</val><val>3</val><val>7926</val><val>44</val></magnitude>
+    <node name="Vibrionales">
+     <magnitude><val></val><val></val><val>2</val></magnitude>
+    </node>
+    <node name="Legionellales">
+     <magnitude><val></val><val></val><val>4</val><val>1</val><val>6969</val><val>27</val></magnitude>
+    </node>
+    <node name="Thiotrichales">
+     <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+     <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val></magnitudeUnassigned>
+     <node name="Piscirickettsiaceae">
+      <magnitude><val></val><val></val><val></val><val></val><val>1</val></magnitude>
+     </node>
+    </node>
+   </node>
+  </node>
+ </node>
+ <node name="Archaea">
+  <magnitudeUnassigned><val>0</val><val></val><val>0</val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+  <magnitude><val>2</val><val></val><val>2</val><val></val><val>30</val><val>2</val></magnitude>
+  <node name="Euryarchaeota">
+   <magnitude><val>2</val><val></val><val>2</val><val></val><val>26</val><val>1</val></magnitude>
+   <magnitudeUnassigned><val>0</val><val></val><val>0</val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+   <node name="environmental_samples">
+    <magnitudeUnassigned><val>0</val><val></val><val>0</val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+    <magnitude><val>2</val><val></val><val>2</val><val></val><val>26</val><val>1</val></magnitude>
+    <node name="uncultured_marine_group_II/III">
+     <magnitudeUnassigned><val>1</val><val></val><val>2</val><val></val><val>26</val><val>1</val></magnitudeUnassigned>
+     <magnitude><val>2</val><val></val><val>2</val><val></val><val>26</val><val>1</val></magnitude>
+     <node name="euryarchaeote_AD1000_61_A07">
+      <magnitude><val>1</val></magnitude>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node name="TACK_group">
+   <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+   <magnitude><val></val><val></val><val></val><val></val><val>4</val><val>1</val></magnitude>
+   <node name="Crenarchaeota">
+    <magnitude><val></val><val></val><val></val><val></val><val>4</val><val>1</val></magnitude>
+    <magnitudeUnassigned><val></val><val></val><val></val><val></val><val>0</val><val>0</val></magnitudeUnassigned>
+    <node name="Thermoprotei">
+     <magnitude><val></val><val></val><val></val><val></val><val>4</val><val>1</val></magnitude>
+    </node>
+   </node>
+  </node>
+ </node>
+ <node name="DISTANT">
+  <magnitude><val></val><val></val><val>2</val><val></val><val>248</val><val>4</val></magnitude>
  </node>
 </node>
   </krona>
