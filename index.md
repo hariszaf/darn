@@ -21,7 +21,7 @@ and the corresponding supplementary files.
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_ireland_long_all_seqs_pres_abs.krona_plot.html"
-  style="width:100%; height:900px;"
+  style="width:150%; height:900px;"
 ></iframe>
 
 
@@ -30,7 +30,7 @@ and the corresponding supplementary files.
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_ireland_long_assigned_pres_abs.krona_plot.html"
-  style="width:100%; height:900px;"
+  style="width:150%; height:900px;"
 ></iframe>
 
 
@@ -39,7 +39,7 @@ and the corresponding supplementary files.
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_ireland_short_all_seqs_pres_abs.krona_plot.html"
-  style="width:100%; height:900px;"
+  style="width:150%; height:900px;"
 ></iframe>
 
 
@@ -47,7 +47,7 @@ and the corresponding supplementary files.
 ### Short sequences that had a taxonomic hit
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_ireland_short_assigned_pres_abs.krona_plot.html"
-  style="width:100%; height:900px;"
+  style="width:150%; height:900px;"
 ></iframe>
 
 
@@ -97,6 +97,6 @@ The following Krona plots are coming from samples that
 
 <iframe
   src="https://htmlpreview.github.io/?"
-  style="width:100%; height:900px;"
+  style="width:150%; height:900px;"
 ></iframe>
 
