@@ -21,7 +21,7 @@ Long sequences, long sequences that had a taxonomic hit, short sequences and sho
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/irish_marine/irish_marine_samples.html"
-  style="width:150%; height:900px;"
+  style="width:100%; height:1200px;"
 ></iframe>
 
 
@@ -36,7 +36,7 @@ Reef and mangrove data from Honduras and Kenya.
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/tropics_marine/tropics.html"
-  style="width:150%; height:900px;"
+  style="width:100%; height:1200px;"
 ></iframe>
 
 
@@ -47,43 +47,33 @@ Reef and mangrove data from Honduras and Kenya.
 
 The following Krona plots are coming from samples that 
 
-### Sediment sample using pre clustered sequences
+* ARMS sample on EtOH using pre clustered sequences 
+* ARMS sample on EtOH using ASVs after running Swarm v2 with *d*=2
+* ARMS sample on EtOH using ASVs after running Swarm v2 with *d*=10 
+* ARMS sample on DMSO using pre clustered sequences 
+* ARMS sample on DMSO using ASVs after running Swarm v2 with *d*=2
+* ARMS sample on DMSO using ASVs after running Swarm v2 with *d*=10  
+* Sediment sample using pre clustered sequences
+* Sediment sample using ASVs after running Swarm v2 with *d*=2
+* Sediment sample using ASVs after running Swarm v2 with *d*=10
+
 
 <iframe
-  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_sediment_pre_clustered_pres_abs.krona_plot.html"
-  style="width:150%; height:900px;"
+  src="https://github.com/hariszaf/darn/blob/gh-pages/kronas/marine_arms/arms_bulk.html"
+  style="width:100%; height:1200px;"
 ></iframe>
 
 
 
 
-### Sediment sample using ASVs after running Swarm v2 with *d*=2
-
-<iframe
-  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_sediment_clustered_d_2_pres_abs.krona_plot.html"
-  style="width:150%; height:900px;"
-></iframe>
 
 
 
 
-### Sediment sample using ASVs after running Swarm v2 with *d*=10
-
-<iframe
-  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_sediment_clustered_d_10_pres_abs.krona_plot.html"
-  style="width:150%; height:900px;"
-></iframe>
-
-
----------------------------------------
-
-
-
-
-
-
+<!--
 <iframe
   src="https://htmlpreview.github.io/?"
   style="width:150%; height:900px;"
 ></iframe>
 
+-->
