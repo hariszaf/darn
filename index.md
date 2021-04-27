@@ -21,7 +21,7 @@ Long sequences, long sequences that had a taxonomic hit, short sequences and sho
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/irish_marine/irish_marine_samples.html"
-  style="width:100%; height:1200px;"
+  style="width:200%; height:200%;"
 ></iframe>
 
 
@@ -59,8 +59,8 @@ The following Krona plots are coming from samples that
 
 
 <iframe
-  src="https://github.com/hariszaf/darn/blob/gh-pages/kronas/marine_arms/arms_bulk.html"
-  style="width:100%; height:1200px;"
+  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/marine_arms/arms_bulk.html"
+  style="width:200%; height:200%;"
 ></iframe>
 
 
