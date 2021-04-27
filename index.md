@@ -17,19 +17,43 @@ and the corresponding supplementary files.
 
 
 
+#### Long sequences 
+
+<iframe
+  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_ireland_long_all_seqs_pres_abs.krona_plot.html"
+  style="width:100%; height:900px;"
+></iframe>
+
+
+
+#### Long sequences that had a taxonomic hit 
+
+<iframe
+  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_ireland_long_assigned_pres_abs.krona_plot.html"
+  style="width:100%; height:900px;"
+></iframe>
+
+
+
+#### Short sequences
+
+<iframe
+  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_ireland_short_all_seqs_pres_abs.krona_plot.html"
+  style="width:100%; height:900px;"
+></iframe>
+
+
+
+### Short sequences that had a taxonomic hit
+<iframe
+  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/darn_ireland_short_assigned_pres_abs.krona_plot.html"
+  style="width:100%; height:900px;"
+></iframe>
 
 
 
 
-
-
-
-
-
-
-
-
-
+-------------------------------------------
 
 
 ### Bulk smaples (Obst et al. 2020)
