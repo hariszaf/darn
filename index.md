@@ -34,8 +34,6 @@ Long sequences, long sequences that had a taxonomic hit, short sequences and sho
 
 
 
-
-
 ### Tropical samples - Sanni's data
 
 
@@ -46,8 +44,6 @@ Reef and mangrove data from Honduras and Kenya.
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/tropics_marine/tropics.html"
   style="width:200%; height:900px;"
 ></iframe>
-
-
 
 
 
@@ -73,9 +69,6 @@ The following Krona plots are coming from samples that
 
 
 
-
-
-
 ## Freshwater samples: lakes
 
 3 samples from the study of Bista et al. (2017) were used. 
@@ -88,6 +81,20 @@ The sequences were analyzed through PEMA.
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/lakes/lakes.html"
   style="width:200%; height:900px;"
 ></iframe>
+
+
+
+## Estuarine samples (Bellisario et al. 2021)
+
+From the Bellisario et al. 2021 preprint we got 2 samples, 1 from the Vigo sample site, a V-shaped estuarine basin classified as a fjord, 
+and a second one from Ría de Aveiro, a coastal lagoon connected directly to the ocean and dominated mainly by tidal forces.
+
+
+<iframe
+  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/estuarine/estuarine.html"
+  style="width:200%; height:900px;"
+></iframe>
+
 
 
 
