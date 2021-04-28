@@ -1,0 +1,10 @@
+---
+- type:            paired-end
+  orientation:     fr
+  left reads:      
+    - /mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870/corrected/filtered_max_SRR1808870_1.fastq.gz.1P.fastq.00.0_0.cor.fastq
+  right reads:     
+    - /mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870/corrected/filtered_max_SRR1808870_2.fastq.gz.2P.fastq.00.0_0.cor.fastq
+  single reads:    
+    - /mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870/corrected/filtered_max_SRR1808870__unpaired.00.0_0.cor.fastq
+...

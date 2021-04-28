@@ -1,0 +1,141 @@
+Command line: /home/tools/SPAdes/SPAdes-3.14.0/bin/spades.py	--only-error-correction	--threads	20	-o	/mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870	-1	/mnt/analysis/vigo_d_10/2.trimmomatic_output/filtered_max_SRR1808870_1.fastq.gz.1P.fastq.gz	-2	/mnt/analysis/vigo_d_10/2.trimmomatic_output/filtered_max_SRR1808870_2.fastq.gz.2P.fastq.gz	--disable-gzip-output	
+
+System information:
+  SPAdes version: 3.14.0
+  Python version: 2.7.12
+  OS: Linux-5.8.0-48-generic-x86_64-with-Ubuntu-16.04-xenial
+
+Output dir: /mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870
+Mode: ONLY read error correction (without assembling)
+Debug mode is turned OFF
+
+Dataset parameters:
+  Standard mode
+  For multi-cell/isolate data we recommend to use '--isolate' option; for single-cell MDA data use '--sc'; for metagenomic data use '--meta'; for RNA-Seq use '--rna'.
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/mnt/analysis/vigo_d_10/2.trimmomatic_output/filtered_max_SRR1808870_1.fastq.gz.1P.fastq.gz']
+      right reads: ['/mnt/analysis/vigo_d_10/2.trimmomatic_output/filtered_max_SRR1808870_2.fastq.gz.2P.fastq.gz']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will NOT be compressed
+Other parameters:
+  Dir for temp files: /mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870/tmp
+  Threads: 20
+  Memory limit (in Gb): 141
+
+
+======= SPAdes pipeline started. Log can be found here: /mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870/spades.log
+
+
+===== Read error correction started. 
+
+
+===== Read error correction started. 
+
+
+== Running: /home/tools/SPAdes/SPAdes-3.14.0/bin/spades-hammer /mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870/corrected/configs/config.info
+
+  0:00:00.000     5M / 13M   INFO    General                 (main.cpp                  :  75)   Starting BayesHammer, built from N/A, git revision N/A
+  0:00:00.000     5M / 13M   INFO    General                 (main.cpp                  :  76)   Loading config from /mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870/corrected/configs/config.info
+  0:00:00.001     6M / 13M   INFO    General                 (main.cpp                  :  78)   Maximum # of threads to use (adjusted due to OMP capabilities): 20
+  0:00:00.001     6M / 13M   INFO    General                 (memory_limit.cpp          :  49)   Memory limit set to 141 Gb
+  0:00:00.001     6M / 13M   INFO    General                 (main.cpp                  :  86)   Trying to determine PHRED offset
+  0:00:00.001     6M / 13M   INFO    General                 (main.cpp                  :  92)   Determined value is 33
+  0:00:00.001     6M / 13M   INFO    General                 (hammer_tools.cpp          :  38)   Hamming graph threshold tau=1, k=21, subkmer positions = [ 0 10 ]
+  0:00:00.001     6M / 13M   INFO    General                 (main.cpp                  : 113)   Size of aux. kmer data 24 bytes
+     === ITERATION 0 begins ===
+  0:00:00.001     6M / 13M   INFO   K-mer Index Building     (kmer_index_builder.hpp    : 301)   Building kmer index
+  0:00:00.001     6M / 13M   INFO    General                 (kmer_index_builder.hpp    : 117)   Splitting kmer instances into 320 files using 20 threads. This might take a while.
+  0:00:00.002     6M / 13M   INFO    General                 (file_limit.hpp            :  32)   Open file limit set to 1048576
+  0:00:00.002     6M / 13M   INFO    General                 (kmer_splitters.hpp        :  89)   Memory available for splitting buffers: 2.34999 Gb
+  0:00:00.002     6M / 13M   INFO    General                 (kmer_splitters.hpp        :  97)   Using cell size of 209715
+  0:00:00.023    13G / 13G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /mnt/analysis/vigo_d_10/2.trimmomatic_output/filtered_max_SRR1808870_1.fastq.gz.1P.fastq.gz
+  0:00:07.684    13G / 13G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 580857 reads
+  0:00:07.685    13G / 13G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /mnt/analysis/vigo_d_10/2.trimmomatic_output/filtered_max_SRR1808870_2.fastq.gz.2P.fastq.gz
+  0:00:15.497    13G / 13G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 1161714 reads
+  0:00:15.498    13G / 13G   INFO   K-mer Splitting          (kmer_data.cpp             : 112)   Total 1161714 reads processed
+  0:00:15.765   368M / 3G    INFO    General                 (kmer_index_builder.hpp    : 120)   Starting k-mer counting.
+  0:00:16.054   369M / 3G    INFO    General                 (kmer_index_builder.hpp    : 127)   K-mer counting done. There are 24822270 kmers in total.
+  0:00:16.054   369M / 3G    INFO    General                 (kmer_index_builder.hpp    : 133)   Merging temporary buckets.
+  0:00:16.309   369M / 3G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 314)   Building perfect hash indices
+  0:00:16.989   370M / 3G    INFO    General                 (kmer_index_builder.hpp    : 150)   Merging final buckets.
+  0:00:17.586   370M / 3G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 336)   Index built. Total 11518008 bytes occupied (3.71215 bits per kmer).
+  0:00:17.588   364M / 3G    INFO   K-mer Counting           (kmer_data.cpp             : 351)   Arranging kmers in hash map order
+  0:00:18.503   750M / 3G    INFO    General                 (main.cpp                  : 148)   Clustering Hamming graph.
+  0:00:36.737   750M / 3G    INFO    General                 (main.cpp                  : 155)   Extracting clusters
+  0:00:45.092   790M / 3G    INFO    General                 (main.cpp                  : 167)   Clustering done. Total clusters: 14513455
+  0:00:45.112   598M / 3G    INFO   K-mer Counting           (kmer_data.cpp             : 371)   Collecting K-mer information, this takes a while.
+  0:00:45.423     2G / 3G    INFO   K-mer Counting           (kmer_data.cpp             : 377)   Processing /mnt/analysis/vigo_d_10/2.trimmomatic_output/filtered_max_SRR1808870_1.fastq.gz.1P.fastq.gz
+  0:00:57.939     2G / 3G    INFO   K-mer Counting           (kmer_data.cpp             : 377)   Processing /mnt/analysis/vigo_d_10/2.trimmomatic_output/filtered_max_SRR1808870_2.fastq.gz.2P.fastq.gz
+  0:01:09.715     2G / 3G    INFO   K-mer Counting           (kmer_data.cpp             : 384)   Collection done, postprocessing.
+  0:01:09.842     2G / 3G    INFO   K-mer Counting           (kmer_data.cpp             : 398)   There are 24822270 kmers in total. Among them 15312078 (61.6869%) are singletons.
+  0:01:09.842     2G / 3G    INFO    General                 (main.cpp                  : 173)   Subclustering Hamming graph
+  0:03:20.716     2G / 3G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 649)   Subclustering done. Total 942 non-read kmers were generated.
+  0:03:20.717     2G / 3G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 650)   Subclustering statistics:
+  0:03:20.718     2G / 3G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 651)     Total singleton hamming clusters: 12542336. Among them 6036376 (48.128%) are good
+  0:03:20.718     2G / 3G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 652)     Total singleton subclusters: 77844. Among them 77471 (99.5208%) are good
+  0:03:20.719     2G / 3G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 653)     Total non-singleton subcluster centers: 2266727. Among them 1215749 (53.6346%) are good
+  0:03:20.719     2G / 3G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 654)     Average size of non-trivial subcluster: 5.42079 kmers
+  0:03:20.720     2G / 3G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 655)     Average number of sub-clusters per non-singleton cluster: 1.18946
+  0:03:20.720     2G / 3G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 656)     Total solid k-mers: 7329596
+  0:03:20.721     2G / 3G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 657)     Substitution probabilities: [4,4]((0.905037,0.0261125,0.0316712,0.0371795),(0.0294259,0.921456,0.0157174,0.0334007),(0.0309418,0.0147211,0.922573,0.0317639),(0.035052,0.0304155,0.0248207,0.909712))
+  0:03:20.746     2G / 3G    INFO    General                 (main.cpp                  : 178)   Finished clustering.
+  0:03:20.746     2G / 3G    INFO    General                 (main.cpp                  : 197)   Starting solid k-mers expansion in 20 threads.
+  0:03:32.414   974M / 3G    INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 0 produced 1818885 new k-mers.
+  0:03:43.995   958M / 3G    INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 1 produced 166289 new k-mers.
+  0:03:55.005   945M / 3G    INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 2 produced 9009 new k-mers.
+  0:04:06.193   923M / 3G    INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 3 produced 770 new k-mers.
+  0:04:16.869   910M / 3G    INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 4 produced 0 new k-mers.
+  0:04:16.870   910M / 3G    INFO    General                 (main.cpp                  : 222)   Solid k-mers finalized
+  0:04:16.871   910M / 3G    INFO    General                 (hammer_tools.cpp          : 222)   Starting read correction in 20 threads.
+  0:04:16.871   910M / 3G    INFO    General                 (hammer_tools.cpp          : 235)   Correcting pair of reads: /mnt/analysis/vigo_d_10/2.trimmomatic_output/filtered_max_SRR1808870_1.fastq.gz.1P.fastq.gz and /mnt/analysis/vigo_d_10/2.trimmomatic_output/filtered_max_SRR1808870_2.fastq.gz.2P.fastq.gz
+  0:04:27.190     3G / 3G    INFO    General                 (hammer_tools.cpp          : 170)   Prepared batch 0 of 580857 reads.
+  0:05:04.562     3G / 3G    INFO    General                 (hammer_tools.cpp          : 177)   Processed batch 0
+  0:05:07.448     3G / 3G    INFO    General                 (hammer_tools.cpp          : 187)   Written batch 0
+  0:05:07.794     2G / 3G    INFO    General                 (hammer_tools.cpp          : 276)   Correction done. Changed 395802 bases in 121657 reads.
+  0:05:07.795     2G / 3G    INFO    General                 (hammer_tools.cpp          : 277)   Failed to correct 0 bases out of 315668128.
+  0:05:07.877   829M / 3G    INFO    General                 (main.cpp                  : 255)   Saving corrected dataset description to /mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870/corrected/corrected.yaml
+  0:05:07.878   829M / 3G    INFO    General                 (main.cpp                  : 262)   All done. Exiting.
+
+===== Read error correction finished. 
+
+
+===== corrected reads compression started. 
+
+
+== Running: /home/tools/OBI/OBI-env/bin/python /home/tools/SPAdes/SPAdes-3.14.0/share/spades/spades_pipeline/scripts/compress_all.py --input_file /mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870/corrected/corrected.yaml --ext_python_modules_home /home/tools/SPAdes/SPAdes-3.14.0/share/spades --max_threads 20 --output_dir /mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870/corrected
+
+
+===== corrected reads compression finished. 
+
+
+===== Read error correction finished. 
+
+
+===== Breaking scaffolds started. 
+
+
+== Running: /home/tools/OBI/OBI-env/bin/python /home/tools/SPAdes/SPAdes-3.14.0/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py --result_scaffolds_filename /mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870/scaffolds.fasta --misc_dir /mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870/misc --threshold_for_breaking_scaffolds 3
+
+
+===== Breaking scaffolds finished. 
+
+
+===== Terminate started. 
+
+
+===== Terminate finished. 
+
+ * Corrected reads are in /mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870/corrected/
+
+======= SPAdes pipeline finished.
+
+SPAdes log can be found here: /mnt/analysis/vigo_d_10/3.correct_by_BayesHammer/SRR1808870/spades.log
+
+Thank you for using SPAdes!
