@@ -1,4 +1,4 @@
-# Dark mAtteR iNvesigator (DARN) <br/> a 
+# Dark mAtteR iNvesigator (DARN) <br/> understanding the unknown unknowns 
 
 This site may be considered as supplementary material for the 
 DARN publication, including all the Krona plots discussed. 
