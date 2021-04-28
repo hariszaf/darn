@@ -1,0 +1,142 @@
+Command line: /home/tools/SPAdes/SPAdes-3.14.0/bin/spades.py	--only-error-correction	--threads	20	-o	/mnt/analysis/aveiro_d_10/3.correct_by_BayesHammer/SRR1808872	-1	/mnt/analysis/aveiro_d_10/2.trimmomatic_output/filtered_max_SRR1808872_1.fastq.gz.1P.fastq.gz	-2	/mnt/analysis/aveiro_d_10/2.trimmomatic_output/filtered_max_SRR1808872_2.fastq.gz.2P.fastq.gz	--disable-gzip-output	
+
+System information:
+  SPAdes version: 3.14.0
+  Python version: 2.7.12
+  OS: Linux-5.8.0-48-generic-x86_64-with-Ubuntu-16.04-xenial
+
+Output dir: /mnt/analysis/aveiro_d_10/3.correct_by_BayesHammer/SRR1808872
+Mode: ONLY read error correction (without assembling)
+Debug mode is turned OFF
+
+Dataset parameters:
+  Standard mode
+  For multi-cell/isolate data we recommend to use '--isolate' option; for single-cell MDA data use '--sc'; for metagenomic data use '--meta'; for RNA-Seq use '--rna'.
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/mnt/analysis/aveiro_d_10/2.trimmomatic_output/filtered_max_SRR1808872_1.fastq.gz.1P.fastq.gz']
+      right reads: ['/mnt/analysis/aveiro_d_10/2.trimmomatic_output/filtered_max_SRR1808872_2.fastq.gz.2P.fastq.gz']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will NOT be compressed
+Other parameters:
+  Dir for temp files: /mnt/analysis/aveiro_d_10/3.correct_by_BayesHammer/SRR1808872/tmp
+  Threads: 20
+  Memory limit (in Gb): 141
+
+
+======= SPAdes pipeline started. Log can be found here: /mnt/analysis/aveiro_d_10/3.correct_by_BayesHammer/SRR1808872/spades.log
+
+
+===== Read error correction started. 
+
+
+===== Read error correction started. 
+
+
+== Running: /home/tools/SPAdes/SPAdes-3.14.0/bin/spades-hammer /mnt/analysis/aveiro_d_10/3.correct_by_BayesHammer/SRR1808872/corrected/configs/config.info
+
+  0:00:00.000     5M / 14M   INFO    General                 (main.cpp                  :  75)   Starting BayesHammer, built from N/A, git revision N/A
+  0:00:00.000     5M / 14M   INFO    General                 (main.cpp                  :  76)   Loading config from /mnt/analysis/aveiro_d_10/3.correct_by_BayesHammer/SRR1808872/corrected/configs/config.info
+  0:00:00.001     6M / 14M   INFO    General                 (main.cpp                  :  78)   Maximum # of threads to use (adjusted due to OMP capabilities): 20
+  0:00:00.001     6M / 14M   INFO    General                 (memory_limit.cpp          :  49)   Memory limit set to 141 Gb
+  0:00:00.001     6M / 14M   INFO    General                 (main.cpp                  :  86)   Trying to determine PHRED offset
+  0:00:00.001     6M / 14M   INFO    General                 (main.cpp                  :  92)   Determined value is 33
+  0:00:00.001     6M / 14M   INFO    General                 (hammer_tools.cpp          :  38)   Hamming graph threshold tau=1, k=21, subkmer positions = [ 0 10 ]
+  0:00:00.001     6M / 14M   INFO    General                 (main.cpp                  : 113)   Size of aux. kmer data 24 bytes
+     === ITERATION 0 begins ===
+  0:00:00.002     6M / 14M   INFO   K-mer Index Building     (kmer_index_builder.hpp    : 301)   Building kmer index
+  0:00:00.002     6M / 14M   INFO    General                 (kmer_index_builder.hpp    : 117)   Splitting kmer instances into 320 files using 20 threads. This might take a while.
+  0:00:00.002     6M / 14M   INFO    General                 (file_limit.hpp            :  32)   Open file limit set to 1048576
+  0:00:00.002     6M / 14M   INFO    General                 (kmer_splitters.hpp        :  89)   Memory available for splitting buffers: 2.34999 Gb
+  0:00:00.002     6M / 14M   INFO    General                 (kmer_splitters.hpp        :  97)   Using cell size of 209715
+  0:00:00.024    13G / 13G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /mnt/analysis/aveiro_d_10/2.trimmomatic_output/filtered_max_SRR1808872_1.fastq.gz.1P.fastq.gz
+  0:00:09.095    13G / 13G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 639845 reads
+  0:00:09.096    13G / 13G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /mnt/analysis/aveiro_d_10/2.trimmomatic_output/filtered_max_SRR1808872_2.fastq.gz.2P.fastq.gz
+  0:00:18.298    13G / 13G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 1279690 reads
+  0:00:18.299    13G / 13G   INFO   K-mer Splitting          (kmer_data.cpp             : 112)   Total 1279690 reads processed
+  0:00:18.623   310M / 4G    INFO    General                 (kmer_index_builder.hpp    : 120)   Starting k-mer counting.
+  0:00:18.935   310M / 4G    INFO    General                 (kmer_index_builder.hpp    : 127)   K-mer counting done. There are 25942078 kmers in total.
+  0:00:18.935   310M / 4G    INFO    General                 (kmer_index_builder.hpp    : 133)   Merging temporary buckets.
+  0:00:19.280   310M / 4G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 314)   Building perfect hash indices
+  0:00:19.971   317M / 4G    INFO    General                 (kmer_index_builder.hpp    : 150)   Merging final buckets.
+  0:00:20.588   317M / 4G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 336)   Index built. Total 12037360 bytes occupied (3.71207 bits per kmer).
+  0:00:20.590   307M / 4G    INFO   K-mer Counting           (kmer_data.cpp             : 351)   Arranging kmers in hash map order
+  0:00:21.543   757M / 4G    INFO    General                 (main.cpp                  : 148)   Clustering Hamming graph.
+  0:00:41.134   757M / 4G    INFO    General                 (main.cpp                  : 155)   Extracting clusters
+  0:00:49.627   860M / 4G    INFO    General                 (main.cpp                  : 167)   Clustering done. Total clusters: 14842026
+  0:00:49.649   636M / 4G    INFO   K-mer Counting           (kmer_data.cpp             : 371)   Collecting K-mer information, this takes a while.
+  0:00:49.971     2G / 4G    INFO   K-mer Counting           (kmer_data.cpp             : 377)   Processing /mnt/analysis/aveiro_d_10/2.trimmomatic_output/filtered_max_SRR1808872_1.fastq.gz.1P.fastq.gz
+  0:01:04.201     2G / 4G    INFO   K-mer Counting           (kmer_data.cpp             : 377)   Processing /mnt/analysis/aveiro_d_10/2.trimmomatic_output/filtered_max_SRR1808872_2.fastq.gz.2P.fastq.gz
+  0:01:18.355     2G / 4G    INFO   K-mer Counting           (kmer_data.cpp             : 384)   Collection done, postprocessing.
+  0:01:18.466     2G / 4G    INFO   K-mer Counting           (kmer_data.cpp             : 398)   There are 25942078 kmers in total. Among them 16140242 (62.2165%) are singletons.
+  0:01:18.467     2G / 4G    INFO    General                 (main.cpp                  : 173)   Subclustering Hamming graph
+  0:03:45.412     2G / 4G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 649)   Subclustering done. Total 915 non-read kmers were generated.
+  0:03:45.414     2G / 4G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 650)   Subclustering statistics:
+  0:03:45.414     2G / 4G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 651)     Total singleton hamming clusters: 12834786. Among them 5768962 (44.9479%) are good
+  0:03:45.415     2G / 4G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 652)     Total singleton subclusters: 68907. Among them 68373 (99.225%) are good
+  0:03:45.415     2G / 4G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 653)     Total non-singleton subcluster centers: 2318399. Among them 1138607 (49.1118%) are good
+  0:03:45.416     2G / 4G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 654)     Average size of non-trivial subcluster: 5.6586 kmers
+  0:03:45.416     2G / 4G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 655)     Average number of sub-clusters per non-singleton cluster: 1.18935
+  0:03:45.417     2G / 4G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 656)     Total solid k-mers: 6975942
+  0:03:45.417     2G / 4G    INFO   Hamming Subclustering    (kmer_cluster.cpp          : 657)     Substitution probabilities: [4,4]((0.904549,0.0282921,0.0309428,0.0362156),(0.0302603,0.919812,0.0158889,0.0340389),(0.031212,0.0147601,0.921218,0.03281),(0.0341456,0.0300209,0.0268649,0.908969))
+  0:03:45.444     2G / 4G    INFO    General                 (main.cpp                  : 178)   Finished clustering.
+  0:03:45.444     2G / 4G    INFO    General                 (main.cpp                  : 197)   Starting solid k-mers expansion in 20 threads.
+  0:03:58.053     2G / 4G    INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 0 produced 1761222 new k-mers.
+  0:04:11.165  1017M / 4G    INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 1 produced 211719 new k-mers.
+  0:04:24.917   976M / 4G    INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 2 produced 19030 new k-mers.
+  0:04:38.822   946M / 4G    INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 3 produced 1070 new k-mers.
+  0:04:52.159   946M / 4G    INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 4 produced 87 new k-mers.
+  0:05:04.886   942M / 4G    INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 5 produced 0 new k-mers.
+  0:05:04.887   942M / 4G    INFO    General                 (main.cpp                  : 222)   Solid k-mers finalized
+  0:05:04.888   942M / 4G    INFO    General                 (hammer_tools.cpp          : 222)   Starting read correction in 20 threads.
+  0:05:04.888   942M / 4G    INFO    General                 (hammer_tools.cpp          : 235)   Correcting pair of reads: /mnt/analysis/aveiro_d_10/2.trimmomatic_output/filtered_max_SRR1808872_1.fastq.gz.1P.fastq.gz and /mnt/analysis/aveiro_d_10/2.trimmomatic_output/filtered_max_SRR1808872_2.fastq.gz.2P.fastq.gz
+  0:05:17.112     3G / 4G    INFO    General                 (hammer_tools.cpp          : 170)   Prepared batch 0 of 639845 reads.
+  0:06:15.830     3G / 4G    INFO    General                 (hammer_tools.cpp          : 177)   Processed batch 0
+  0:06:19.418     3G / 4G    INFO    General                 (hammer_tools.cpp          : 187)   Written batch 0
+  0:06:19.753     2G / 4G    INFO    General                 (hammer_tools.cpp          : 276)   Correction done. Changed 541116 bases in 199080 reads.
+  0:06:19.754     2G / 4G    INFO    General                 (hammer_tools.cpp          : 277)   Failed to correct 0 bases out of 377724111.
+  0:06:19.831   925M / 4G    INFO    General                 (main.cpp                  : 255)   Saving corrected dataset description to /mnt/analysis/aveiro_d_10/3.correct_by_BayesHammer/SRR1808872/corrected/corrected.yaml
+  0:06:19.832   925M / 4G    INFO    General                 (main.cpp                  : 262)   All done. Exiting.
+
+===== Read error correction finished. 
+
+
+===== corrected reads compression started. 
+
+
+== Running: /home/tools/OBI/OBI-env/bin/python /home/tools/SPAdes/SPAdes-3.14.0/share/spades/spades_pipeline/scripts/compress_all.py --input_file /mnt/analysis/aveiro_d_10/3.correct_by_BayesHammer/SRR1808872/corrected/corrected.yaml --ext_python_modules_home /home/tools/SPAdes/SPAdes-3.14.0/share/spades --max_threads 20 --output_dir /mnt/analysis/aveiro_d_10/3.correct_by_BayesHammer/SRR1808872/corrected
+
+
+===== corrected reads compression finished. 
+
+
+===== Read error correction finished. 
+
+
+===== Breaking scaffolds started. 
+
+
+== Running: /home/tools/OBI/OBI-env/bin/python /home/tools/SPAdes/SPAdes-3.14.0/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py --result_scaffolds_filename /mnt/analysis/aveiro_d_10/3.correct_by_BayesHammer/SRR1808872/scaffolds.fasta --misc_dir /mnt/analysis/aveiro_d_10/3.correct_by_BayesHammer/SRR1808872/misc --threshold_for_breaking_scaffolds 3
+
+
+===== Breaking scaffolds finished. 
+
+
+===== Terminate started. 
+
+
+===== Terminate finished. 
+
+ * Corrected reads are in /mnt/analysis/aveiro_d_10/3.correct_by_BayesHammer/SRR1808872/corrected/
+
+======= SPAdes pipeline finished.
+
+SPAdes log can be found here: /mnt/analysis/aveiro_d_10/3.correct_by_BayesHammer/SRR1808872/spades.log
+
+Thank you for using SPAdes!
