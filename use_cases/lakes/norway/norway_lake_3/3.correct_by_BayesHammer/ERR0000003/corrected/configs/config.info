@@ -1,7 +1,7 @@
 ; = HAMMER =
 ; input options: working dir, input files, offset, and possibly kmers
 dataset /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/input_dataset.yaml
-input_working_dir /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/tmp/hammer_PXd640
+input_working_dir /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/tmp/hammer_zBPv7_
 input_trim_quality			4
 input_qvoffset				
 output_dir /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/corrected

@@ -292,7 +292,7 @@ clusteringAlgoForCOI_ITS	algo_SWARM
 # will be grouped if they hav e integer (or less) differences. This is swarm's most important
 # parameter
 #
-d	2
+d	10
 #
 #
 # when using the option --fastidious (-f), define the minimum mass of a large ASV. 

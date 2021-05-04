@@ -10,7 +10,7 @@
   - /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/corrected/configs/config.info
   config_dir: corrected
   del_after:
-  - /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/tmp/hammer_PXd640
+  - /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/tmp/hammer_zBPv7_
   output_files:
   - /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/corrected/corrected.yaml
   path: /home/tools/SPAdes/SPAdes-3.14.0/bin/spades-hammer
