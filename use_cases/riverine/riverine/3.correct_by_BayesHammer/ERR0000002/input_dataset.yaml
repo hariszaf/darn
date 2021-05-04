@@ -1,0 +1,6 @@
+- "left reads":
+  - "/mnt/analysis/riverine/2.trimmomatic_output/filtered_max_ERR0000002_1.fastq.gz.1P.fastq.gz"
+  "orientation": "fr"
+  "right reads":
+  - "/mnt/analysis/riverine/2.trimmomatic_output/filtered_max_ERR0000002_2.fastq.gz.2P.fastq.gz"
+  "type": "paired-end"
