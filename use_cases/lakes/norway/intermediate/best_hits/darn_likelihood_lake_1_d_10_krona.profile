@@ -1,0 +1,28 @@
+87.42459999999996	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III
+0.507	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III	euryarchaeote_AD1000_61_A07
+1.203	Archaea	TACK_group	Crenarchaeota	Thermoprotei
+3.30765	Bacteria
+0.2292	Bacteria	Proteobacteria
+58.705439999999996	DISTANT
+104.64679999999998	Eukaryota
+1.2495	Eukaryota	Arthropoda	Branchiopoda
+2.0336999999999996	Eukaryota	Arthropoda	Hexanauplia	Cyclopoida
+2.7196	Eukaryota	Arthropoda	Insecta
+1.8047	Eukaryota	Arthropoda	Insecta	Coleoptera
+0.5263	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales	Sphaerobolaceae	Sphaerobolus	Sphaerobolus_stellatus
+0.6245	Eukaryota	Bryozoa	Phylactolaemata	Fredericellidae	Fredericellidae	Fredericella	Fredericella_sultana
+3.0	Eukaryota	Chlorophyta	Chlorophyceae	Protosiphonales	Protosiphonaceae	Protosiphon	Protosiphon_botryoides
+0.4844	Eukaryota	Chlorophyta	Ulvophyceae	Ulotrichales
+1.1694	Eukaryota	Ciliophora	Heterotrichea	Heterotrichida
+3.657	Eukaryota	Cnidaria	Myxozoa
+1.9964	Eukaryota	Cnidaria	Myxozoa	Malacovalvulida	Saccosporidae
+6.236199999999999	Eukaryota	Cnidaria	Myxozoa	Multivalvulida	Kudoidae	Kudoa
+2.1723000000000003	Eukaryota	Cryptophyceae	Cryptophyceae	Cryptomonadales
+0.5206	Eukaryota	Cryptophyceae	Cryptophyceae	Kathablepharidacea	Katablepharidaceae	Leucocryptos	Leucocryptos_marina
+0.7114	Eukaryota	Euglenozoa	Euglenida
+0.5072	Eukaryota	Mucoromycota	Glomeromycetes
+8.2971	Eukaryota	Nematoda	Chromadorea
+1.6822	Eukaryota	Nematoda	Chromadorea	Plectida
+0.3359	Eukaryota	Platyhelminthes	Cestoda
+0.40073169	Eukaryota	Streptophyta	Coleochaetophyceae	Coleochaetales
+1.0622	Eukaryota	Streptophyta	Haplomitriopsida	Treubiales	Treubiaceae	Treubia	Treubia_lacunosa

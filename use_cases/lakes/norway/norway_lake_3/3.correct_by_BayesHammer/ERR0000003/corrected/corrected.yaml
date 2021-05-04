@@ -1,0 +1,10 @@
+---
+- type:            paired-end
+  orientation:     fr
+  left reads:      
+    - /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/corrected/filtered_max_ERR0000003_1.fastq.gz.1P.fastq.00.0_0.cor.fastq
+  right reads:     
+    - /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/corrected/filtered_max_ERR0000003_2.fastq.gz.2P.fastq.00.0_0.cor.fastq
+  single reads:    
+    - /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/corrected/filtered_max_ERR0000003__unpaired.00.0_0.cor.fastq
+...

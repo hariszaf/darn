@@ -1,0 +1,140 @@
+Command line: /home/tools/SPAdes/SPAdes-3.14.0/bin/spades.py	--only-error-correction	--threads	20	-o	/mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003	-1	/mnt/analysis/norway_lake_3/2.trimmomatic_output/filtered_max_ERR0000003_1.fastq.gz.1P.fastq.gz	-2	/mnt/analysis/norway_lake_3/2.trimmomatic_output/filtered_max_ERR0000003_2.fastq.gz.2P.fastq.gz	--disable-gzip-output	
+
+System information:
+  SPAdes version: 3.14.0
+  Python version: 2.7.12
+  OS: Linux-5.8.0-48-generic-x86_64-with-Ubuntu-16.04-xenial
+
+Output dir: /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003
+Mode: ONLY read error correction (without assembling)
+Debug mode is turned OFF
+
+Dataset parameters:
+  Standard mode
+  For multi-cell/isolate data we recommend to use '--isolate' option; for single-cell MDA data use '--sc'; for metagenomic data use '--meta'; for RNA-Seq use '--rna'.
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/mnt/analysis/norway_lake_3/2.trimmomatic_output/filtered_max_ERR0000003_1.fastq.gz.1P.fastq.gz']
+      right reads: ['/mnt/analysis/norway_lake_3/2.trimmomatic_output/filtered_max_ERR0000003_2.fastq.gz.2P.fastq.gz']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will NOT be compressed
+Other parameters:
+  Dir for temp files: /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/tmp
+  Threads: 20
+  Memory limit (in Gb): 141
+
+
+======= SPAdes pipeline started. Log can be found here: /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/spades.log
+
+
+===== Read error correction started. 
+
+
+===== Read error correction started. 
+
+
+== Running: /home/tools/SPAdes/SPAdes-3.14.0/bin/spades-hammer /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/corrected/configs/config.info
+
+  0:00:00.000     5M / 13M   INFO    General                 (main.cpp                  :  75)   Starting BayesHammer, built from N/A, git revision N/A
+  0:00:00.000     5M / 13M   INFO    General                 (main.cpp                  :  76)   Loading config from /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/corrected/configs/config.info
+  0:00:00.001     6M / 13M   INFO    General                 (main.cpp                  :  78)   Maximum # of threads to use (adjusted due to OMP capabilities): 20
+  0:00:00.001     6M / 13M   INFO    General                 (memory_limit.cpp          :  49)   Memory limit set to 141 Gb
+  0:00:00.001     6M / 13M   INFO    General                 (main.cpp                  :  86)   Trying to determine PHRED offset
+  0:00:00.001     6M / 13M   INFO    General                 (main.cpp                  :  92)   Determined value is 33
+  0:00:00.001     6M / 13M   INFO    General                 (hammer_tools.cpp          :  38)   Hamming graph threshold tau=1, k=21, subkmer positions = [ 0 10 ]
+  0:00:00.001     6M / 13M   INFO    General                 (main.cpp                  : 113)   Size of aux. kmer data 24 bytes
+     === ITERATION 0 begins ===
+  0:00:00.001     6M / 13M   INFO   K-mer Index Building     (kmer_index_builder.hpp    : 301)   Building kmer index
+  0:00:00.001     6M / 13M   INFO    General                 (kmer_index_builder.hpp    : 117)   Splitting kmer instances into 320 files using 20 threads. This might take a while.
+  0:00:00.002     6M / 13M   INFO    General                 (file_limit.hpp            :  32)   Open file limit set to 1048576
+  0:00:00.002     6M / 13M   INFO    General                 (kmer_splitters.hpp        :  89)   Memory available for splitting buffers: 2.34999 Gb
+  0:00:00.002     6M / 13M   INFO    General                 (kmer_splitters.hpp        :  97)   Using cell size of 209715
+  0:00:00.024    13G / 13G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /mnt/analysis/norway_lake_3/2.trimmomatic_output/filtered_max_ERR0000003_1.fastq.gz.1P.fastq.gz
+  0:00:01.474    13G / 13G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 129046 reads
+  0:00:01.475    13G / 13G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /mnt/analysis/norway_lake_3/2.trimmomatic_output/filtered_max_ERR0000003_2.fastq.gz.2P.fastq.gz
+  0:00:02.745    13G / 13G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 258092 reads
+  0:00:02.746    13G / 13G   INFO   K-mer Splitting          (kmer_data.cpp             : 112)   Total 258092 reads processed
+  0:00:02.816   350M / 635M  INFO    General                 (kmer_index_builder.hpp    : 120)   Starting k-mer counting.
+  0:00:02.921   350M / 635M  INFO    General                 (kmer_index_builder.hpp    : 127)   K-mer counting done. There are 7194958 kmers in total.
+  0:00:02.922   350M / 635M  INFO    General                 (kmer_index_builder.hpp    : 133)   Merging temporary buckets.
+  0:00:03.014   350M / 635M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 314)   Building perfect hash indices
+  0:00:03.201   348M / 635M  INFO    General                 (kmer_index_builder.hpp    : 150)   Merging final buckets.
+  0:00:03.369   348M / 635M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 336)   Index built. Total 3344784 bytes occupied (3.71903 bits per kmer).
+  0:00:03.370   348M / 635M  INFO   K-mer Counting           (kmer_data.cpp             : 351)   Arranging kmers in hash map order
+  0:00:03.627   460M / 635M  INFO    General                 (main.cpp                  : 148)   Clustering Hamming graph.
+  0:00:07.718   460M / 635M  INFO    General                 (main.cpp                  : 155)   Extracting clusters
+  0:00:09.924   339M / 635M  INFO    General                 (main.cpp                  : 167)   Clustering done. Total clusters: 4900561
+  0:00:09.930   283M / 635M  INFO   K-mer Counting           (kmer_data.cpp             : 371)   Collecting K-mer information, this takes a while.
+  0:00:10.021   477M / 635M  INFO   K-mer Counting           (kmer_data.cpp             : 377)   Processing /mnt/analysis/norway_lake_3/2.trimmomatic_output/filtered_max_ERR0000003_1.fastq.gz.1P.fastq.gz
+  0:00:12.223   411M / 635M  INFO   K-mer Counting           (kmer_data.cpp             : 377)   Processing /mnt/analysis/norway_lake_3/2.trimmomatic_output/filtered_max_ERR0000003_2.fastq.gz.2P.fastq.gz
+  0:00:14.096   412M / 635M  INFO   K-mer Counting           (kmer_data.cpp             : 384)   Collection done, postprocessing.
+  0:00:14.132   412M / 635M  INFO   K-mer Counting           (kmer_data.cpp             : 398)   There are 7194958 kmers in total. Among them 4321780 (60.0668%) are singletons.
+  0:00:14.133   412M / 635M  INFO    General                 (main.cpp                  : 173)   Subclustering Hamming graph
+  0:00:32.091   409M / 635M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 649)   Subclustering done. Total 203 non-read kmers were generated.
+  0:00:32.092   409M / 635M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 650)   Subclustering statistics:
+  0:00:32.093   409M / 635M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 651)     Total singleton hamming clusters: 4381366. Among them 2521106 (57.5416%) are good
+  0:00:32.093   409M / 635M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 652)     Total singleton subclusters: 23580. Among them 23554 (99.8897%) are good
+  0:00:32.094   409M / 635M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 653)     Total non-singleton subcluster centers: 603270. Among them 442068 (73.2786%) are good
+  0:00:32.094   409M / 635M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 654)     Average size of non-trivial subcluster: 4.66464 kmers
+  0:00:32.095   409M / 635M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 655)     Average number of sub-clusters per non-singleton cluster: 1.20735
+  0:00:32.095   409M / 635M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 656)     Total solid k-mers: 2986728
+  0:00:32.096   409M / 635M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 657)     Substitution probabilities: [4,4]((0.907769,0.0428859,0.0209191,0.028426),(0.0289812,0.931072,0.0124642,0.0274831),(0.025038,0.0117665,0.929814,0.0333818),(0.0267294,0.01959,0.0398573,0.913823))
+  0:00:32.106   409M / 635M  INFO    General                 (main.cpp                  : 178)   Finished clustering.
+  0:00:32.106   409M / 635M  INFO    General                 (main.cpp                  : 197)   Starting solid k-mers expansion in 20 threads.
+  0:00:34.311   410M / 635M  INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 0 produced 323802 new k-mers.
+  0:00:36.530   397M / 635M  INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 1 produced 10896 new k-mers.
+  0:00:38.758   392M / 635M  INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 2 produced 208 new k-mers.
+  0:00:40.975   392M / 635M  INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 3 produced 0 new k-mers.
+  0:00:40.976   392M / 635M  INFO    General                 (main.cpp                  : 222)   Solid k-mers finalized
+  0:00:40.977   392M / 635M  INFO    General                 (hammer_tools.cpp          : 222)   Starting read correction in 20 threads.
+  0:00:40.977   392M / 635M  INFO    General                 (hammer_tools.cpp          : 235)   Correcting pair of reads: /mnt/analysis/norway_lake_3/2.trimmomatic_output/filtered_max_ERR0000003_1.fastq.gz.1P.fastq.gz and /mnt/analysis/norway_lake_3/2.trimmomatic_output/filtered_max_ERR0000003_2.fastq.gz.2P.fastq.gz
+  0:00:43.056   973M / 973M  INFO    General                 (hammer_tools.cpp          : 170)   Prepared batch 0 of 129046 reads.
+  0:00:45.195   898M / 904M  INFO    General                 (hammer_tools.cpp          : 177)   Processed batch 0
+  0:00:45.756   898M / 904M  INFO    General                 (hammer_tools.cpp          : 187)   Written batch 0
+  0:00:45.870   448M / 904M  INFO    General                 (hammer_tools.cpp          : 276)   Correction done. Changed 86539 bases in 40918 reads.
+  0:00:45.871   448M / 904M  INFO    General                 (hammer_tools.cpp          : 277)   Failed to correct 1931 bases out of 58393117.
+  0:00:45.893   200M / 904M  INFO    General                 (main.cpp                  : 255)   Saving corrected dataset description to /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/corrected/corrected.yaml
+  0:00:45.894   200M / 904M  INFO    General                 (main.cpp                  : 262)   All done. Exiting.
+
+===== Read error correction finished. 
+
+
+===== corrected reads compression started. 
+
+
+== Running: /home/tools/OBI/OBI-env/bin/python /home/tools/SPAdes/SPAdes-3.14.0/share/spades/spades_pipeline/scripts/compress_all.py --input_file /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/corrected/corrected.yaml --ext_python_modules_home /home/tools/SPAdes/SPAdes-3.14.0/share/spades --max_threads 20 --output_dir /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/corrected
+
+
+===== corrected reads compression finished. 
+
+
+===== Read error correction finished. 
+
+
+===== Breaking scaffolds started. 
+
+
+== Running: /home/tools/OBI/OBI-env/bin/python /home/tools/SPAdes/SPAdes-3.14.0/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py --result_scaffolds_filename /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/scaffolds.fasta --misc_dir /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/misc --threshold_for_breaking_scaffolds 3
+
+
+===== Breaking scaffolds finished. 
+
+
+===== Terminate started. 
+
+
+===== Terminate finished. 
+
+ * Corrected reads are in /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/corrected/
+
+======= SPAdes pipeline finished.
+
+SPAdes log can be found here: /mnt/analysis/norway_lake_3/3.correct_by_BayesHammer/ERR0000003/spades.log
+
+Thank you for using SPAdes!
