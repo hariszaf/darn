@@ -69,7 +69,10 @@ The following Krona plots are coming from samples that
 
 
 
-## Freshwater samples: lakes
+## Freshwater samples 
+
+
+### Bista et al. (2017)
 
 3 samples from the study of Bista et al. (2017) were used. 
 2 of them of 235bp long and one of 658bp. 
@@ -84,7 +87,7 @@ The sequences were analyzed through PEMA.
 
 
 
-## Estuarine samples (Bellisario et al. 2021)
+<!-- ## Estuarine samples (Bellisario et al. 2021)
 
 From the Bellisario et al. 2021 preprint we got 2 samples, 1 from the Vigo sample site, a V-shaped estuarine basin classified as a fjord, 
 and a second one from Ría de Aveiro, a coastal lagoon connected directly to the ocean and dominated mainly by tidal forces.
@@ -93,17 +96,18 @@ and a second one from Ría de Aveiro, a coastal lagoon connected directly to the
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/estuarine/estuarine.html"
   style="width:200%; height:900px;"
-></iframe>
+></iframe> -->
 
+### Norway lakes samples
 
+Here are the first two of them. 
 
+We know only that are coming from some vikings for the time being. We add more once we know! :) 
 
-
-
-<!--
 <iframe
-  src="https://htmlpreview.github.io/?"
-  style="width:150%; height:900px;"
-></iframe>
+  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/norway_lakes/norway_lakes.html"
+  style="width:200%; height:900px;"
+></iframe> 
 
--->
+
+
