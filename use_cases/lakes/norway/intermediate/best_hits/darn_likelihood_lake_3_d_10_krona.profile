@@ -1,0 +1,34 @@
+167.9804	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III
+2.3040000000000003	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III	euryarchaeote_AD1000_61_A07
+2.941	Archaea	TACK_group	Crenarchaeota	Thermoprotei
+1.199503194	Bacteria
+0.226	Bacteria	Proteobacteria
+103.23299999999998	DISTANT
+193.54789999999997	Eukaryota
+1.1029	Eukaryota	Arthropoda	Branchiopoda
+0.5445	Eukaryota	Arthropoda	Branchiopoda	Anostraca
+8.2651	Eukaryota	Arthropoda	Insecta
+0.4936	Eukaryota	Arthropoda	Insecta	Coleoptera
+0.7103	Eukaryota	Arthropoda	Insecta	Mecoptera
+0.4318	Eukaryota	Ascomycota	Lecanoromycetes	Caliciales	Physciaceae	Heterodermia
+2.0349	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales	Sphaerobolaceae	Sphaerobolus	Sphaerobolus_stellatus
+0.602	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae	Rhodotorula
+0.9945	Eukaryota	Bryozoa	Phylactolaemata	Fredericellidae	Fredericellidae	Fredericella	Fredericella_sultana
+10.6341	Eukaryota	Chlorophyta	Chlorophyceae	Protosiphonales	Protosiphonaceae	Protosiphon	Protosiphon_botryoides
+0.4959	Eukaryota	Choanoflagellata	Choanoflagellata	Craspedida	Salpingoecidae	Monosiga	Monosiga_brevicollis
+0.5497	Eukaryota	Chordata	Appendicularia	Copelata	Oikopleuridae
+0.5023	Eukaryota	Chytridiomycota	Chytridiomycetes	Synchytriales	Synchytriaceae	Synchytrium
+0.9934000000000001	Eukaryota	Ciliophora	Heterotrichea	Heterotrichida
+4.5062999999999995	Eukaryota	Cnidaria	Myxozoa
+2.0	Eukaryota	Cnidaria	Myxozoa	Malacovalvulida	Saccosporidae
+8.5636	Eukaryota	Cnidaria	Myxozoa	Multivalvulida	Kudoidae	Kudoa
+0.527	Eukaryota	Cryptophyceae	Cryptophyceae	Kathablepharidacea	Katablepharidaceae	Leucocryptos	Leucocryptos_marina
+0.5778	Eukaryota	Euglenozoa	Euglenida
+0.4426	Eukaryota	Mucoromycota	Glomeromycetes
+0.7447	Eukaryota	Mucoromycota	Mortierellomycetes	Mortierellales	Mortierellaceae	Mortierella
+0.3048	Eukaryota	Nematoda
+61.8422	Eukaryota	Nematoda	Chromadorea
+0.7524	Eukaryota	Nematoda	Chromadorea	Desmoscolecida	Desmoscolecidae	Desmoscolex	Desmoscolex_koloensis
+3.8117	Eukaryota	Nematoda	Chromadorea	Plectida
+0.6966199999999999	Eukaryota	Streptophyta	Coleochaetophyceae	Coleochaetales
+1.2428	Eukaryota	Streptophyta	Haplomitriopsida	Treubiales	Treubiaceae	Treubia	Treubia_lacunosa
