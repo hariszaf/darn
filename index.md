@@ -111,3 +111,15 @@ We know only that are coming from some vikings for the time being. We add more o
 
 
 
+### Norway river sample
+
+Finally, reivers
+
+
+
+<iframe
+  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/rivers/rivers.html"
+  style="width:200%; height:900px;"
+></iframe>
+
+
