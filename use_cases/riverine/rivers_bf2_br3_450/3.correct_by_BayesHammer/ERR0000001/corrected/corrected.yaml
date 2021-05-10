@@ -1,0 +1,10 @@
+---
+- type:            paired-end
+  orientation:     fr
+  left reads:      
+    - /mnt/analysis/rivers_bf2_br3_450/3.correct_by_BayesHammer/ERR0000001/corrected/filtered_max_ERR0000001_1.fastq.gz.1P.fastq.00.0_0.cor.fastq
+  right reads:     
+    - /mnt/analysis/rivers_bf2_br3_450/3.correct_by_BayesHammer/ERR0000001/corrected/filtered_max_ERR0000001_2.fastq.gz.2P.fastq.00.0_0.cor.fastq
+  single reads:    
+    - /mnt/analysis/rivers_bf2_br3_450/3.correct_by_BayesHammer/ERR0000001/corrected/filtered_max_ERR0000001__unpaired.00.0_0.cor.fastq
+...
