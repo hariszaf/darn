@@ -118,7 +118,7 @@ Finally, reivers
 
 
 <iframe
-  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/rivers/rivers.html"
+  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/river/river.html"
   style="width:200%; height:900px;"
 ></iframe>
 
