@@ -1,0 +1,6 @@
+- "left reads":
+  - "/mnt/analysis/lauras_test_C10_200/2.trimmomatic_output/filtered_max_ERR0000001_1.fastq.gz.1P.fastq.gz"
+  "orientation": "fr"
+  "right reads":
+  - "/mnt/analysis/lauras_test_C10_200/2.trimmomatic_output/filtered_max_ERR0000001_2.fastq.gz.2P.fastq.gz"
+  "type": "paired-end"
