@@ -21,11 +21,15 @@ For a thorough description of the samples you may see the DARN manuscript
 and the corresponding supplementary files.
 
 
-### Irish samples - Laura's data
+### Ireland
 
-Sequences coming from Irish 
+Samples were analysed in 2 ways;
+through [PEMA](http://pema.hcmr.gr/) ([Zafeiropoulos et al. 2020](https://doi.org/10.1093/gigascience/giaa022))
+and also through [DADA2](https://benjjneb.github.io/dada2/index.html).
 
-Long sequences, long sequences that had a taxonomic hit, short sequences and short sequences that had a taxonomic hit
+> Primer set: jgHCO2198 - jgLCO1490 and LoboF1 - LoboR1
+
+The results in both cases are rather similar. 
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/irish_marine/irish_marine_samples.html"
@@ -33,11 +37,17 @@ Long sequences, long sequences that had a taxonomic hit, short sequences and sho
 ></iframe>
 
 
+We need to mention here that these Kronas are from all the samples used in the study, not just from a single one. 
 
-### Tropical samples - Sanni's data
+### Kenya & Honduras
 
 
-Reef and mangrove data from Honduras and Kenya. 
+Reef and mangrove data from these two samples were also analyzed in 2 ways; again through PEMA and DADA2
+to investigate how much our approach can be affected by bioinformatics analysis. 
+As assumed, our approach is robust as long as paramaters tuning in the bioinformatics analysis of the raw data
+are not too distinct. 
+
+> Primer set: mlCOIintF - jgHCO2198
 
 
 <iframe
@@ -46,8 +56,20 @@ Reef and mangrove data from Honduras and Kenya.
 ></iframe>
 
 
+We need to mention here that these Kronas are from all the samples used in the study, not just from a single one. 
 
-### Bulk samples (Obst et al. 2020)
+### Bulk Vs eDNA samples
+
+Using samples from the same study ([Obst et al. 2020](https://doi.org/10.3389/fmars.2020.572680))
+we compared the dark matter in bulk and environmental samples. 
+
+We also tested how our results change, when we set another *d* parameter value, meaning 
+increasing or decreasing the number of ASVs returned from the same sample. 
+
+Finally, we compared how the dark matter changes when our samples have been preserved. 
+
+
+> Primer set: mlCOIintF - jgHCO2198
 
 The following Krona plots are coming from samples that 
 
@@ -68,11 +90,14 @@ The following Krona plots are coming from samples that
 ></iframe>
 
 
+Unlike with the previous Kronas, those presented here represent a single sample. 
+In all the cases to follow, Krona plots always stand for a single sample.
+
 
 ## Freshwater samples 
 
 
-### Bista et al. (2017)
+### Lakes in Canada
 
 3 samples from the study of Bista et al. (2017) were used. 
 2 of them of 235bp long and one of 658bp. 
@@ -85,41 +110,34 @@ The sequences were analyzed through PEMA.
   style="width:200%; height:900px;"
 ></iframe>
 
+As already mentioned, each Krona represents a single sample. 
 
-
-<!-- ## Estuarine samples (Bellisario et al. 2021)
-
-From the Bellisario et al. 2021 preprint we got 2 samples, 1 from the Vigo sample site, a V-shaped estuarine basin classified as a fjord, 
-and a second one from Ría de Aveiro, a coastal lagoon connected directly to the ocean and dominated mainly by tidal forces.
-
-
-<iframe
-  src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/estuarine/estuarine.html"
-  style="width:200%; height:900px;"
-></iframe> -->
-
-### Norway lakes samples
+### Lakes in Norway
 
 Here are the first two of them. 
 
 We know only that are coming from some vikings for the time being. We add more once we know! :) 
+
+> Primer set: fwhF2 - EPTDr2
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/norway_lakes/norway_lakes.html"
   style="width:200%; height:900px;"
 ></iframe> 
 
+As already mentioned, each Krona represents a single sample. 
 
 
 ### Norway river sample
 
-Finally, reivers
+Last but not least, one riverine sample was analysed through PEMA and then used to run DARN. 
 
-
+> Primer set: BF3 - BR2
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/river/river.html"
   style="width:200%; height:900px;"
 ></iframe>
 
+As already mentioned, each Krona represents a single sample. 
 
