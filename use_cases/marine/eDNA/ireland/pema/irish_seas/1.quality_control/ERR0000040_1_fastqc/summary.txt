@@ -1,0 +1,10 @@
+PASS	Basic Statistics	ERR0000040_1.fastq.gz
+WARN	Per base sequence quality	ERR0000040_1.fastq.gz
+PASS	Per sequence quality scores	ERR0000040_1.fastq.gz
+FAIL	Per base sequence content	ERR0000040_1.fastq.gz
+FAIL	Per sequence GC content	ERR0000040_1.fastq.gz
+PASS	Per base N content	ERR0000040_1.fastq.gz
+FAIL	Sequence Length Distribution	ERR0000040_1.fastq.gz
+WARN	Sequence Duplication Levels	ERR0000040_1.fastq.gz
+WARN	Overrepresented sequences	ERR0000040_1.fastq.gz
+PASS	Adapter Content	ERR0000040_1.fastq.gz
