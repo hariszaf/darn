@@ -1,0 +1,71 @@
+101.33909999999999	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III
+0.2782	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III	euryarchaeote_AD1000_11_G05
+16.7072	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III	euryarchaeote_AD1000_61_A07
+1.2724	Archaea	TACK_group	Crenarchaeota	Thermoprotei
+4.049115930000001	Bacteria
+1.0	Bacteria	Firmicutes	Bacilli	Bacillales
+1.3565	Bacteria	Proteobacteria
+110.01987000000007	Bacteria	Proteobacteria	Alphaproteobacteria
+1.0765	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	Alphaproteobacteria	Alphaproteobacteria	SAR116_cluster_alpha_proteobacterium_HIMB100
+1.0026000000000002	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria_incertae_sedis
+1.6438	Bacteria	Proteobacteria	Alphaproteobacteria	Holosporales	Caedimonadaceae	Candidatus_Paracaedimonas	Candidatus_Paracaedimonas_acanthamoebae
+2.5855	Bacteria	Proteobacteria	Alphaproteobacteria	Pelagibacterales	Pelagibacteraceae
+1.0312000000000001	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales
+1.8078	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales
+4.8056	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales
+1.0201	Bacteria	Proteobacteria	Alphaproteobacteria	c_Alphaproteobacteria	c_o_Alphaproteobacteria	c_o_f_Alphaproteobacteria
+0.371	Bacteria	Proteobacteria	Betaproteobacteria
+5.322299999999999	Bacteria	Proteobacteria	Betaproteobacteria	Nitrosomonadales
+2.3609	Bacteria	Proteobacteria	Gammaproteobacteria
+1.000007533	Bacteria	candidate_division_Zixibacteria	p_candidate_division_Zixibacteria	p_c_candidate_division_Zixibacteria	p_c_o_candidate_division_Zixibacteria	p_c_o_f_candidate_division_Zixibacteria	candidate_division_Zixibacteria_bacterium_RBG1
+72.46763889999998	DISTANT
+50.42529999999999	Eukaryota
+0.8143	Eukaryota	Annelida
+3.4611	Eukaryota	Annelida	Clitellata
+4.1113	Eukaryota	Annelida	Polychaeta
+1.217	Eukaryota	Arthropoda
+0.5293	Eukaryota	Arthropoda	Collembola	Poduromorpha
+0.6549	Eukaryota	Arthropoda	Hexanauplia
+0.7752	Eukaryota	Arthropoda	Hexanauplia	Calanoida
+0.5938	Eukaryota	Arthropoda	Insecta	Blattodea
+6.9267	Eukaryota	Ascomycota
+0.7779	Eukaryota	Ascomycota	Dothideomycetes	Dothideales	Dothioraceae	Sydowia	Sydowia_polyspora
+4.7026	Eukaryota	Ascomycota	Eurotiomycetes
+4.768000000000001	Eukaryota	Ascomycota	Eurotiomycetes	Eurotiales
+3.1952999999999996	Eukaryota	Ascomycota	Sordariomycetes	Sordariales
+0.8926	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales
+0.5208	Eukaryota	Bacillariophyta	Mediophyceae
+0.49	Eukaryota	Basidiomycota	Agaricomycetes	Cantharellales
+0.6582	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales	Sphaerobolaceae	Sphaerobolus	Sphaerobolus_stellatus
+0.711	Eukaryota	Bryozoa	Gymnolaemata	Ctenostomatida
+2.36	Eukaryota	Chlorophyta
+3.6292	Eukaryota	Chlorophyta	Chlorophyceae	Sphaeropleales
+0.8932	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales
+0.4991	Eukaryota	Chlorophyta	Picocystophyceae	Picocystales	Picocystaceae	Picocystis	Picocystis_salinarum
+1.7279	Eukaryota	Chlorophyta	Pycnococcaceae	Pycnococcaceae	Pycnococcaceae	Pycnococcus	Pycnococcus_provasolii
+1.0188	Eukaryota	Chlorophyta	Trebouxiophyceae	Coccomyxa	Coccomyxa	Coccomyxa	Coccomyxa_subellipsoidea
+0.5629	Eukaryota	Chlorophyta	Trebouxiophyceae	Jaagichlorella	Jaagichlorella	Jaagichlorella
+0.8556	Eukaryota	Chordata
+2.1695	Eukaryota	Chordata	Actinopteri
+0.499	Eukaryota	Chordata	Actinopteri	Cichliformes
+1.0756999999999999	Eukaryota	Chordata	Actinopteri	Cyprinodontiformes
+0.9886	Eukaryota	Chordata	Mammalia	Artiodactyla
+0.5	Eukaryota	Chytridiomycota
+0.7624	Eukaryota	Ciliophora	Heterotrichea	Heterotrichida
+0.5159	Eukaryota	Cnidaria	Anthozoa	Actiniaria
+1.5366078459999999	Eukaryota	Cnidaria	Myxozoa
+1.0	Eukaryota	Cnidaria	Myxozoa	Malacovalvulida	Saccosporidae
+0.3561	Eukaryota	Cnidaria	Myxozoa	Multivalvulida	Kudoidae	Kudoa
+0.6207	Eukaryota	Ctenophora
+3.5197	Eukaryota	Dinophyceae	Dinophyceae
+0.8053	Eukaryota	Dinophyceae	Dinophyceae	Suessiales
+0.8802	Eukaryota	Echinodermata	Echinoidea
+0.8517	Eukaryota	Gastrotricha	Chaetonotida	Chaetonotida
+0.9221	Eukaryota	Haptista	Haptophyta
+0.6863	Eukaryota	Jakobida	Jakobida	Jakobida
+0.7295	Eukaryota	Mollusca	Bivalvia
+3.8661	Eukaryota	Porifera	Calcarea
+0.186	Eukaryota	Porifera	Calcarea	Clathrinida	Clathrinidae	Clathrina	Clathrina_clathrus
+2.3425000000000002	Eukaryota	Rotifera	Monogononta	Ploima
+0.6106	Eukaryota	Streptophyta	Coleochaetophyceae	Coleochaetales
+2.8247	Eukaryota	Streptophyta	Haplomitriopsida	Treubiales	Treubiaceae	Treubia	Treubia_lacunosa
