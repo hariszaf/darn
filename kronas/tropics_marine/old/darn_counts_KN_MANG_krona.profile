@@ -1,0 +1,456 @@
+	Archaea
+	Archaea	Euryarchaeota
+8.0	Archaea	Euryarchaeota	Diaforarchaea_group_Thermoplasmata_Thermoplasmatales
+	Archaea	Euryarchaeota	environmental_samples
+1848.0	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III
+349.0	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III	euryarchaeote_AD1000_61_A07
+	Archaea	TACK_group
+	Archaea	TACK_group	Crenarchaeota
+62.0	Archaea	TACK_group	Crenarchaeota	Thermoprotei
+188.0	Bacteria
+	Bacteria	Chlamydiae
+3.0	Bacteria	Chlamydiae	Chlamydiia
+	Bacteria	Chlamydiae	Chlamydiia	Chlamydiales
+	Bacteria	Chlamydiae	Chlamydiia	Chlamydiales	Chlamydiaceae
+	Bacteria	Chlamydiae	Chlamydiia	Chlamydiales	Chlamydiaceae	Candidatus_Rubidus
+1.0	Bacteria	Chlamydiae	Chlamydiia	Chlamydiales	Chlamydiaceae	Candidatus_Rubidus	Candidatus_Rubidus_massiliensis
+1.0	Bacteria	Chloroflexi
+	Bacteria	Chloroflexi	Anaerolineae
+	Bacteria	Chloroflexi	Anaerolineae	Anaerolineales
+	Bacteria	Chloroflexi	Anaerolineae	Anaerolineales	Anaerolineaceae
+	Bacteria	Chloroflexi	Anaerolineae	Anaerolineales	Anaerolineaceae	Anaerolinea
+1.0	Bacteria	Chloroflexi	Anaerolineae	Anaerolineales	Anaerolineaceae	Anaerolinea	Anaerolinea_thermophila_UNI1
+	Bacteria	Cyanobacteria
+1.0	Bacteria	Cyanobacteria	p_Cyanobacteria
+	Bacteria	Firmicutes
+	Bacteria	Firmicutes	Bacilli
+1.0	Bacteria	Firmicutes	Bacilli	Bacillales
+	Bacteria	Planctomycetes
+2.0	Bacteria	Planctomycetes	Planctomycetia
+	Bacteria	Planctomycetes	Planctomycetia	Pirellulales
+1.0	Bacteria	Planctomycetes	Planctomycetia	Pirellulales	Pirellulaceae
+5.0	Bacteria	Proteobacteria
+2551.0	Bacteria	Proteobacteria	Alphaproteobacteria
+	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria
+	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	Alphaproteobacteria
+	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	Alphaproteobacteria	Alphaproteobacteria
+53.0	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	Alphaproteobacteria	Alphaproteobacteria	SAR116_cluster_alpha_proteobacterium_HIMB100
+52.0	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria_incertae_sedis
+	Bacteria	Proteobacteria	Alphaproteobacteria	Caulobacterales
+11.0	Bacteria	Proteobacteria	Alphaproteobacteria	Caulobacterales	Caulobacteraceae
+	Bacteria	Proteobacteria	Alphaproteobacteria	Holosporales
+	Bacteria	Proteobacteria	Alphaproteobacteria	Holosporales	Caedimonadaceae
+	Bacteria	Proteobacteria	Alphaproteobacteria	Holosporales	Caedimonadaceae	Candidatus_Paracaedimonas
+16.0	Bacteria	Proteobacteria	Alphaproteobacteria	Holosporales	Caedimonadaceae	Candidatus_Paracaedimonas	Candidatus_Paracaedimonas_acanthamoebae
+	Bacteria	Proteobacteria	Alphaproteobacteria	Maricaulales
+	Bacteria	Proteobacteria	Alphaproteobacteria	Maricaulales	Maricaulaceae
+	Bacteria	Proteobacteria	Alphaproteobacteria	Maricaulales	Maricaulaceae	Maricaulis
+2.0	Bacteria	Proteobacteria	Alphaproteobacteria	Maricaulales	Maricaulaceae	Maricaulis	Maricaulis_maris_MCS10
+	Bacteria	Proteobacteria	Alphaproteobacteria	Parvularculales
+	Bacteria	Proteobacteria	Alphaproteobacteria	Parvularculales	Parvularculaceae
+	Bacteria	Proteobacteria	Alphaproteobacteria	Parvularculales	Parvularculaceae	Parvularcula
+2.0	Bacteria	Proteobacteria	Alphaproteobacteria	Parvularculales	Parvularculaceae	Parvularcula	Parvularcula_bermudensis_HTCC2503
+	Bacteria	Proteobacteria	Alphaproteobacteria	Pelagibacterales
+193.0	Bacteria	Proteobacteria	Alphaproteobacteria	Pelagibacterales	Pelagibacteraceae
+12.0	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales
+30.0	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales
+19.0	Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales
+52.0	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales
+	Bacteria	Proteobacteria	Alphaproteobacteria	c_Alphaproteobacteria
+	Bacteria	Proteobacteria	Alphaproteobacteria	c_Alphaproteobacteria	c_o_Alphaproteobacteria
+1.0	Bacteria	Proteobacteria	Alphaproteobacteria	c_Alphaproteobacteria	c_o_Alphaproteobacteria	c_o_f_Alphaproteobacteria
+	Bacteria	Proteobacteria	Oligoflexia
+1.0	Bacteria	Proteobacteria	Oligoflexia	Bacteriovoracales
+	Bacteria	candidate_division_Zixibacteria
+	Bacteria	candidate_division_Zixibacteria	p_candidate_division_Zixibacteria
+	Bacteria	candidate_division_Zixibacteria	p_candidate_division_Zixibacteria	p_c_candidate_division_Zixibacteria
+	Bacteria	candidate_division_Zixibacteria	p_candidate_division_Zixibacteria	p_c_candidate_division_Zixibacteria	p_c_o_candidate_division_Zixibacteria
+	Bacteria	candidate_division_Zixibacteria	p_candidate_division_Zixibacteria	p_c_candidate_division_Zixibacteria	p_c_o_candidate_division_Zixibacteria	p_c_o_f_candidate_division_Zixibacteria
+21.0	Bacteria	candidate_division_Zixibacteria	p_candidate_division_Zixibacteria	p_c_candidate_division_Zixibacteria	p_c_o_candidate_division_Zixibacteria	p_c_o_f_candidate_division_Zixibacteria	candidate_division_Zixibacteria_bacterium_RBG1
+1404.0	DISTANT
+1648.0	Eukaryota
+1.0	Eukaryota	Annelida
+1.0	Eukaryota	Annelida	Clitellata
+18.0	Eukaryota	Annelida	Polychaeta
+2.0	Eukaryota	Annelida	Polychaeta	Eunicida
+	Eukaryota	Annelida	Polychaeta	Nerillidae
+1.0	Eukaryota	Annelida	Polychaeta	Nerillidae	Nerillidae
+1.0	Eukaryota	Annelida	Polychaeta	Spionida
+1.0	Eukaryota	Annelida	Polychaeta	Terebellida
+	Eukaryota	Apusomonadidae
+	Eukaryota	Apusomonadidae	Apusomonadidae
+	Eukaryota	Apusomonadidae	Apusomonadidae	Apusomonadidae
+	Eukaryota	Apusomonadidae	Apusomonadidae	Apusomonadidae	Apusomonadidae
+	Eukaryota	Apusomonadidae	Apusomonadidae	Apusomonadidae	Apusomonadidae	Thecamonas
+3.0	Eukaryota	Apusomonadidae	Apusomonadidae	Apusomonadidae	Apusomonadidae	Thecamonas	Thecamonas_trahens
+8.0	Eukaryota	Arthropoda
+2.0	Eukaryota	Arthropoda	Arachnida
+	Eukaryota	Arthropoda	Collembola
+	Eukaryota	Arthropoda	Collembola	Neelipleona
+1.0	Eukaryota	Arthropoda	Collembola	Neelipleona	Neelidae
+15.0	Eukaryota	Arthropoda	Hexanauplia
+1.0	Eukaryota	Arthropoda	Hexanauplia	Calanoida
+5.0	Eukaryota	Arthropoda	Insecta
+1.0	Eukaryota	Arthropoda	Insecta	Diptera
+	Eukaryota	Arthropoda	Malacostraca
+2.0	Eukaryota	Arthropoda	Malacostraca	Decapoda
+7.0	Eukaryota	Ascomycota
+4.0	Eukaryota	Ascomycota	Dothideomycetes
+2.0	Eukaryota	Ascomycota	Eurotiomycetes
+4.0	Eukaryota	Ascomycota	Eurotiomycetes	Eurotiales
+	Eukaryota	Ascomycota	Leotiomycetes
+1.0	Eukaryota	Ascomycota	Leotiomycetes	Helotiales
+	Eukaryota	Ascomycota	Orbiliomycetes
+	Eukaryota	Ascomycota	Orbiliomycetes	Orbiliales
+3.0	Eukaryota	Ascomycota	Orbiliomycetes	Orbiliales	Orbiliaceae
+	Eukaryota	Ascomycota	Pezizomycetes
+4.0	Eukaryota	Ascomycota	Pezizomycetes	Pezizales
+	Eukaryota	Ascomycota	Sordariomycetes
+	Eukaryota	Ascomycota	Sordariomycetes	Koralionastetales
+	Eukaryota	Ascomycota	Sordariomycetes	Koralionastetales	Koralionastetaceae
+	Eukaryota	Ascomycota	Sordariomycetes	Koralionastetales	Koralionastetaceae	Pontogeneia
+1.0	Eukaryota	Ascomycota	Sordariomycetes	Koralionastetales	Koralionastetaceae	Pontogeneia	Pontogeneia_inermis
+10.0	Eukaryota	Ascomycota	Sordariomycetes	Sordariales
+32.0	Eukaryota	Bacillariophyta
+3.0	Eukaryota	Bacillariophyta	Bacillariophyceae
+	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales
+31.0	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae
+4.0	Eukaryota	Bacillariophyta	Bacillariophyceae	Cymbellales
+1.0	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales
+	Eukaryota	Bacillariophyta	Coscinodiscophyceae
+	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales
+1.0	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae
+	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Leptocylindrales
+	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Leptocylindrales	Leptocylindraceae
+	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Leptocylindrales	Leptocylindraceae	Leptocylindrus
+1.0	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Leptocylindrales	Leptocylindraceae	Leptocylindrus	Leptocylindrus_danicus
+11.0	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales
+8.0	Eukaryota	Bacillariophyta	Mediophyceae
+	Eukaryota	Bacillariophyta	Mediophyceae	Lithodesmiales
+1.0	Eukaryota	Bacillariophyta	Mediophyceae	Lithodesmiales	Lithodesmiaceae
+	Eukaryota	Basidiomycota
+1.0	Eukaryota	Basidiomycota	Agaricomycetes
+1.0	Eukaryota	Basidiomycota	Agaricomycetes	Cantharellales
+	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales
+	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales	Sphaerobolaceae
+	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales	Sphaerobolaceae	Sphaerobolus
+74.0	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales	Sphaerobolaceae	Sphaerobolus	Sphaerobolus_stellatus
+	Eukaryota	Basidiomycota	Microbotryomycetes
+	Eukaryota	Basidiomycota	Microbotryomycetes	Microbotryales
+	Eukaryota	Basidiomycota	Microbotryomycetes	Microbotryales	Microbotryaceae
+	Eukaryota	Basidiomycota	Microbotryomycetes	Microbotryales	Microbotryaceae	Microbotryum
+1.0	Eukaryota	Basidiomycota	Microbotryomycetes	Microbotryales	Microbotryaceae	Microbotryum	Microbotryum_lychnidisdioicae
+	Eukaryota	Basidiomycota	Pucciniomycetes
+1.0	Eukaryota	Basidiomycota	Pucciniomycetes	Pucciniales
+	Eukaryota	Bigyra
+	Eukaryota	Bigyra	Bigyra
+	Eukaryota	Bigyra	Bigyra	Thraustochytrida
+26.0	Eukaryota	Bigyra	Bigyra	Thraustochytrida	Thraustochytriaceae
+	Eukaryota	Bolidophyceae
+	Eukaryota	Bolidophyceae	Bolidophyceae
+	Eukaryota	Bolidophyceae	Bolidophyceae	Parmales
+	Eukaryota	Bolidophyceae	Bolidophyceae	Parmales	Triparmaceae
+	Eukaryota	Bolidophyceae	Bolidophyceae	Parmales	Triparmaceae	Triparma
+15.0	Eukaryota	Bolidophyceae	Bolidophyceae	Parmales	Triparmaceae	Triparma	Triparma_laevis
+	Eukaryota	Bryozoa
+	Eukaryota	Bryozoa	Gymnolaemata
+3.0	Eukaryota	Bryozoa	Gymnolaemata	Ctenostomatida
+	Eukaryota	Cercozoa
+24.0	Eukaryota	Cercozoa	Chlorarachniophyceae
+	Eukaryota	Cercozoa	Chlorarachniophyceae	Bigelowiella
+	Eukaryota	Cercozoa	Chlorarachniophyceae	Bigelowiella	Bigelowiella
+	Eukaryota	Cercozoa	Chlorarachniophyceae	Bigelowiella	Bigelowiella	Bigelowiella
+1.0	Eukaryota	Cercozoa	Chlorarachniophyceae	Bigelowiella	Bigelowiella	Bigelowiella	Bigelowiella_natans
+	Eukaryota	Cercozoa	Chlorarachniophyceae	Chlorarachnion
+	Eukaryota	Cercozoa	Chlorarachniophyceae	Chlorarachnion	Chlorarachnion
+	Eukaryota	Cercozoa	Chlorarachniophyceae	Chlorarachnion	Chlorarachnion	Chlorarachnion
+1.0	Eukaryota	Cercozoa	Chlorarachniophyceae	Chlorarachnion	Chlorarachnion	Chlorarachnion	Chlorarachnion_reptans
+	Eukaryota	Cercozoa	Chlorarachniophyceae	Lotharella
+	Eukaryota	Cercozoa	Chlorarachniophyceae	Lotharella	Lotharella
+	Eukaryota	Cercozoa	Chlorarachniophyceae	Lotharella	Lotharella	Lotharella
+2.0	Eukaryota	Cercozoa	Chlorarachniophyceae	Lotharella	Lotharella	Lotharella	Lotharella_oceanica
+54.0	Eukaryota	Chlorophyta
+	Eukaryota	Chlorophyta	Chlorophyceae
+	Eukaryota	Chlorophyta	Chlorophyceae	Protosiphonales
+	Eukaryota	Chlorophyta	Chlorophyceae	Protosiphonales	Protosiphonaceae
+	Eukaryota	Chlorophyta	Chlorophyceae	Protosiphonales	Protosiphonaceae	Protosiphon
+2.0	Eukaryota	Chlorophyta	Chlorophyceae	Protosiphonales	Protosiphonaceae	Protosiphon	Protosiphon_botryoides
+	Eukaryota	Chlorophyta	Mamiellophyceae
+13.0	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales
+7.0	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales
+	Eukaryota	Chlorophyta	Nephroselmidophyceae
+	Eukaryota	Chlorophyta	Nephroselmidophyceae	Nephroselmidales
+	Eukaryota	Chlorophyta	Nephroselmidophyceae	Nephroselmidales	Nephroselmidaceae
+1.0	Eukaryota	Chlorophyta	Nephroselmidophyceae	Nephroselmidales	Nephroselmidaceae	Nephroselmis
+	Eukaryota	Chlorophyta	Palmophyllophyceae
+	Eukaryota	Chlorophyta	Palmophyllophyceae	Prasinococcales
+3.0	Eukaryota	Chlorophyta	Palmophyllophyceae	Prasinococcales	Prasinococcaceae
+	Eukaryota	Chlorophyta	Pycnococcaceae
+	Eukaryota	Chlorophyta	Pycnococcaceae	Pycnococcaceae
+	Eukaryota	Chlorophyta	Pycnococcaceae	Pycnococcaceae	Pycnococcaceae
+	Eukaryota	Chlorophyta	Pycnococcaceae	Pycnococcaceae	Pycnococcaceae	Pycnococcus
+4.0	Eukaryota	Chlorophyta	Pycnococcaceae	Pycnococcaceae	Pycnococcaceae	Pycnococcus	Pycnococcus_provasolii
+	Eukaryota	Chlorophyta	Tetraedoron
+	Eukaryota	Chlorophyta	Tetraedoron	Tetraedoron
+	Eukaryota	Chlorophyta	Tetraedoron	Tetraedoron	Tetraedoron
+	Eukaryota	Chlorophyta	Tetraedoron	Tetraedoron	Tetraedoron	Tetraedoron
+5.0	Eukaryota	Chlorophyta	Tetraedoron	Tetraedoron	Tetraedoron	Tetraedoron	Tetraedoron_bitridens
+	Eukaryota	Chlorophyta	Trebouxiophyceae
+	Eukaryota	Chlorophyta	Trebouxiophyceae	Jaagichlorella
+	Eukaryota	Chlorophyta	Trebouxiophyceae	Jaagichlorella	Jaagichlorella
+5.0	Eukaryota	Chlorophyta	Trebouxiophyceae	Jaagichlorella	Jaagichlorella	Jaagichlorella
+	Eukaryota	Chlorophyta	Trebouxiophyceae	Trebouxiales
+18.0	Eukaryota	Chlorophyta	Trebouxiophyceae	Trebouxiales	Trebouxiaceae
+	Eukaryota	Chlorophyta	Ulvophyceae
+3.0	Eukaryota	Chlorophyta	Ulvophyceae	Ulotrichales
+	Eukaryota	Chlorophyta	Ulvophyceae	Ulvales
+	Eukaryota	Chlorophyta	Ulvophyceae	Ulvales	Ulvaceae
+1.0	Eukaryota	Chlorophyta	Ulvophyceae	Ulvales	Ulvaceae	Ulva
+3.0	Eukaryota	Chordata
+17.0	Eukaryota	Chordata	Actinopteri
+1.0	Eukaryota	Chordata	Actinopteri	Acanthuriformes
+	Eukaryota	Chordata	Actinopteri	Callanthiidae
+	Eukaryota	Chordata	Actinopteri	Callanthiidae	Callanthiidae
+1.0	Eukaryota	Chordata	Actinopteri	Callanthiidae	Callanthiidae	Callanthias
+	Eukaryota	Chordata	Actinopteri	Dinolestidae
+	Eukaryota	Chordata	Actinopteri	Dinolestidae	Dinolestidae
+	Eukaryota	Chordata	Actinopteri	Dinolestidae	Dinolestidae	Dinolestes
+1.0	Eukaryota	Chordata	Actinopteri	Dinolestidae	Dinolestidae	Dinolestes	Dinolestes_lewini
+1.0	Eukaryota	Chordata	Actinopteri	Ephippiformes
+	Eukaryota	Chordata	Actinopteri	Gerreiformes
+1.0	Eukaryota	Chordata	Actinopteri	Gerreiformes	Gerreidae
+1.0	Eukaryota	Chordata	Actinopteri	Lutjaniformes
+	Eukaryota	Chordata	Actinopteri	Monodactylidae
+	Eukaryota	Chordata	Actinopteri	Monodactylidae	Monodactylidae
+1.0	Eukaryota	Chordata	Actinopteri	Monodactylidae	Monodactylidae	Monodactylus
+	Eukaryota	Chordata	Actinopteri	Plesiopidae
+1.0	Eukaryota	Chordata	Actinopteri	Plesiopidae	Plesiopidae
+1.0	Eukaryota	Chordata	Actinopteri	Syngnathiformes
+1.0	Eukaryota	Chordata	Ascidiacea
+30.0	Eukaryota	Chytridiomycota
+	Eukaryota	Chytridiomycota	Chytridiomycetes
+1.0	Eukaryota	Chytridiomycota	Chytridiomycetes	Spizellomycetales
+	Eukaryota	Chytridiomycota	Chytridiomycetes	Synchytriales
+	Eukaryota	Chytridiomycota	Chytridiomycetes	Synchytriales	Synchytriaceae
+4.0	Eukaryota	Chytridiomycota	Chytridiomycetes	Synchytriales	Synchytriaceae	Synchytrium
+1.0	Eukaryota	Ciliophora
+	Eukaryota	Ciliophora	Heterotrichea
+15.0	Eukaryota	Ciliophora	Heterotrichea	Heterotrichida
+	Eukaryota	Ciliophora	Karyorelictea
+	Eukaryota	Ciliophora	Karyorelictea	Protoheterotrichida
+	Eukaryota	Ciliophora	Karyorelictea	Protoheterotrichida	Geleiidae
+	Eukaryota	Ciliophora	Karyorelictea	Protoheterotrichida	Geleiidae	Corlissina
+2.0	Eukaryota	Ciliophora	Karyorelictea	Protoheterotrichida	Geleiidae	Corlissina	Corlissina_maricaensis
+7.0	Eukaryota	Ciliophora	Spirotrichea
+1.0	Eukaryota	Cnidaria
+5.0	Eukaryota	Cnidaria	Anthozoa
+1.0	Eukaryota	Cnidaria	Anthozoa	Actiniaria
+2.0	Eukaryota	Cnidaria	Anthozoa	Alcyonacea
+5.0	Eukaryota	Cnidaria	Cubozoa
+3.0	Eukaryota	Cnidaria	Hydrozoa
+2.0	Eukaryota	Cnidaria	Hydrozoa	Anthoathecata
+26.0	Eukaryota	Cnidaria	Myxozoa
+	Eukaryota	Cnidaria	Myxozoa	Malacovalvulida
+25.0	Eukaryota	Cnidaria	Myxozoa	Malacovalvulida	Saccosporidae
+	Eukaryota	Cnidaria	Myxozoa	Multivalvulida
+	Eukaryota	Cnidaria	Myxozoa	Multivalvulida	Kudoidae
+8.0	Eukaryota	Cnidaria	Myxozoa	Multivalvulida	Kudoidae	Kudoa
+	Eukaryota	Cnidaria	Scyphozoa
+1.0	Eukaryota	Cnidaria	Scyphozoa	Rhizostomeae
+	Eukaryota	Cnidaria	Staurozoa
+1.0	Eukaryota	Cnidaria	Staurozoa	Stauromedusae
+	Eukaryota	Collodictyonidae
+	Eukaryota	Collodictyonidae	Collodictyonidae
+	Eukaryota	Collodictyonidae	Collodictyonidae	Collodictyonidae
+	Eukaryota	Collodictyonidae	Collodictyonidae	Collodictyonidae	Collodictyonidae
+	Eukaryota	Collodictyonidae	Collodictyonidae	Collodictyonidae	Collodictyonidae	Diphylleia
+23.0	Eukaryota	Collodictyonidae	Collodictyonidae	Collodictyonidae	Collodictyonidae	Diphylleia	Diphylleia_rotans
+	Eukaryota	Cryptophyceae
+12.0	Eukaryota	Cryptophyceae	Cryptophyceae
+4.0	Eukaryota	Cryptophyceae	Cryptophyceae	Cryptomonadales
+12.0	Eukaryota	Cryptophyceae	Cryptophyceae	Cyathomonadacea
+	Eukaryota	Cryptophyceae	Cryptophyceae	Kathablepharidacea
+	Eukaryota	Cryptophyceae	Cryptophyceae	Kathablepharidacea	Katablepharidaceae
+	Eukaryota	Cryptophyceae	Cryptophyceae	Kathablepharidacea	Katablepharidaceae	Leucocryptos
+2.0	Eukaryota	Cryptophyceae	Cryptophyceae	Kathablepharidacea	Katablepharidaceae	Leucocryptos	Leucocryptos_marina
+	Eukaryota	Dictyochophyceae
+8.0	Eukaryota	Dictyochophyceae	Dictyochophyceae
+	Eukaryota	Dictyochophyceae	Dictyochophyceae	Florenciellales
+	Eukaryota	Dictyochophyceae	Dictyochophyceae	Florenciellales	Pseudochattonella
+2.0	Eukaryota	Dictyochophyceae	Dictyochophyceae	Florenciellales	Pseudochattonella	Pseudochattonella
+	Eukaryota	Dinophyceae
+10.0	Eukaryota	Dinophyceae	Dinophyceae
+1.0	Eukaryota	Dinophyceae	Dinophyceae	Suessiales
+	Eukaryota	Discosea
+	Eukaryota	Discosea	Flabellinia
+1.0	Eukaryota	Discosea	Flabellinia	Dactylopodida
+	Eukaryota	Discosea	Flabellinia	Vannellidae
+1.0	Eukaryota	Discosea	Flabellinia	Vannellidae	Vannellidae
+	Eukaryota	Discosea	Himatismenida
+2.0	Eukaryota	Discosea	Himatismenida	Himatismenida
+	Eukaryota	Discosea	Longamoebia
+1.0	Eukaryota	Discosea	Longamoebia	Longamoebia
+	Eukaryota	Echinodermata
+1.0	Eukaryota	Echinodermata	Asteroidea
+2.0	Eukaryota	Echinodermata	Echinoidea
+3.0	Eukaryota	Echinodermata	Echinoidea	Echinoida
+1.0	Eukaryota	Echinodermata	Echinoidea	Spatangoida
+1.0	Eukaryota	Echinodermata	Ophiuroidea
+3.0	Eukaryota	Echinodermata	Ophiuroidea	Ophiurida
+	Eukaryota	Euglenozoa
+	Eukaryota	Euglenozoa	Diplonemea
+1.0	Eukaryota	Euglenozoa	Diplonemea	Diplonemea
+2.0	Eukaryota	Euglenozoa	Euglenida
+2.0	Eukaryota	Euglenozoa	Euglenida	Euglenales
+	Eukaryota	Eustigmatophyceae
+3.0	Eukaryota	Eustigmatophyceae	Eustigmatophyceae
+2.0	Eukaryota	Eustigmatophyceae	Eustigmatophyceae	Eustigmatales
+	Eukaryota	Eustigmatophyceae	Eustigmatophyceae	Goniochloridales
+	Eukaryota	Eustigmatophyceae	Eustigmatophyceae	Goniochloridales	Trachydiscus
+	Eukaryota	Eustigmatophyceae	Eustigmatophyceae	Goniochloridales	Trachydiscus	Trachydiscus
+1.0	Eukaryota	Eustigmatophyceae	Eustigmatophyceae	Goniochloridales	Trachydiscus	Trachydiscus	Trachydiscus_minutus
+	Eukaryota	Evosea
+1.0	Eukaryota	Evosea	Eumycetozoa
+	Eukaryota	Evosea	Eumycetozoa	Dictyosteliales
+	Eukaryota	Evosea	Eumycetozoa	Dictyosteliales	Dictyosteliaceae
+1.0	Eukaryota	Evosea	Eumycetozoa	Dictyosteliales	Dictyosteliaceae	Dictyostelium
+	Eukaryota	Evosea	Squamamoeba
+	Eukaryota	Evosea	Squamamoeba	Squamamoeba
+	Eukaryota	Evosea	Squamamoeba	Squamamoeba	Squamamoeba
+	Eukaryota	Evosea	Squamamoeba	Squamamoeba	Squamamoeba	Squamamoeba
+3.0	Eukaryota	Evosea	Squamamoeba	Squamamoeba	Squamamoeba	Squamamoeba	Squamamoeba_japonica
+52.0	Eukaryota	Evosea	Variosea
+	Eukaryota	Filasterea
+4.0	Eukaryota	Filasterea	Filasterea
+	Eukaryota	Gastrotricha
+	Eukaryota	Gastrotricha	Chaetonotida
+1.0	Eukaryota	Gastrotricha	Chaetonotida	Chaetonotida
+	Eukaryota	Glaucocystophyceae
+2.0	Eukaryota	Glaucocystophyceae	Glaucocystophyceae
+	Eukaryota	Haptista
+212.0	Eukaryota	Haptista	Haptophyta
+	Eukaryota	Haptista	Haptophyta	Pavlovales
+8.0	Eukaryota	Haptista	Haptophyta	Pavlovales	Pavlovaceae
+	Eukaryota	Haptista	Haptophyta	Phaeocystales
+	Eukaryota	Haptista	Haptophyta	Phaeocystales	Phaeocystaceae
+3.0	Eukaryota	Haptista	Haptophyta	Phaeocystales	Phaeocystaceae	Phaeocystis
+	Eukaryota	Haptista	Haptophyta	Prymnesiales
+	Eukaryota	Haptista	Haptophyta	Prymnesiales	Chrysochromulinaceae
+4.0	Eukaryota	Haptista	Haptophyta	Prymnesiales	Chrysochromulinaceae	Chrysochromulina
+6.0	Eukaryota	Heterolobosea
+	Eukaryota	Heterolobosea	Vahlkampfiidae
+	Eukaryota	Heterolobosea	Vahlkampfiidae	Vahlkampfiidae
+4.0	Eukaryota	Heterolobosea	Vahlkampfiidae	Vahlkampfiidae	Vahlkampfiidae
+	Eukaryota	Jakobida
+	Eukaryota	Jakobida	Jakobida
+5.0	Eukaryota	Jakobida	Jakobida	Jakobida
+3.0	Eukaryota	Mollusca
+1.0	Eukaryota	Mollusca	Bivalvia
+1.0	Eukaryota	Mollusca	Bivalvia	Myoida
+	Eukaryota	Mollusca	Bivalvia	Mytiloida
+1.0	Eukaryota	Mollusca	Bivalvia	Mytiloida	Mytilidae
+7.0	Eukaryota	Mollusca	Gastropoda
+1.0	Eukaryota	Mollusca	Gastropoda	Aplysiida
+1.0	Eukaryota	Mollusca	Gastropoda	Cephalaspidea
+	Eukaryota	Mollusca	Gastropoda	Cornirostridae
+	Eukaryota	Mollusca	Gastropoda	Cornirostridae	Cornirostridae
+	Eukaryota	Mollusca	Gastropoda	Cornirostridae	Cornirostridae	Cornirostra
+1.0	Eukaryota	Mollusca	Gastropoda	Cornirostridae	Cornirostridae	Cornirostra	Cornirostra_pellucida
+1.0	Eukaryota	Mollusca	Gastropoda	Cycloneritida
+1.0	Eukaryota	Mollusca	Gastropoda	Nudibranchia
+	Eukaryota	Mucoromycota
+13.0	Eukaryota	Mucoromycota	Glomeromycetes
+8.0	Eukaryota	Mucoromycota	Glomeromycetes	Diversisporales
+	Eukaryota	Nematoda
+3.0	Eukaryota	Nematoda	Chromadorea
+2.0	Eukaryota	Nematoda	Enoplea
+1.0	Eukaryota	Nematoda	Enoplea	Triplonchida
+	Eukaryota	Oomycota
+7.0	Eukaryota	Oomycota	Oomycota
+1.0	Eukaryota	Oomycota	Oomycota	Peronosporales
+	Eukaryota	Phaeophyceae
+24.0	Eukaryota	Phaeophyceae	Phaeophyceae
+	Eukaryota	Phaeophyceae	Phaeophyceae	Ascoseirales
+	Eukaryota	Phaeophyceae	Phaeophyceae	Ascoseirales	Ascoseira
+	Eukaryota	Phaeophyceae	Phaeophyceae	Ascoseirales	Ascoseira	Ascoseira
+1.0	Eukaryota	Phaeophyceae	Phaeophyceae	Ascoseirales	Ascoseira	Ascoseira	Ascoseira_mirabilis
+2.0	Eukaryota	Phaeophyceae	Phaeophyceae	Desmarestiales
+4.0	Eukaryota	Phaeophyceae	Phaeophyceae	Dictyotales
+2.0	Eukaryota	Phaeophyceae	Phaeophyceae	Ectocarpales
+4.0	Eukaryota	Phaeophyceae	Phaeophyceae	Fucales
+	Eukaryota	Phaeophyceae	Phaeophyceae	Phaeostrophionaceae
+	Eukaryota	Phaeophyceae	Phaeophyceae	Phaeostrophionaceae	Phaeostrophionaceae
+	Eukaryota	Phaeophyceae	Phaeophyceae	Phaeostrophionaceae	Phaeostrophionaceae	Phaeostrophion
+2.0	Eukaryota	Phaeophyceae	Phaeophyceae	Phaeostrophionaceae	Phaeostrophionaceae	Phaeostrophion	Phaeostrophion_irregulare
+5.0	Eukaryota	Phaeophyceae	Phaeophyceae	Ralfsiales
+	Eukaryota	Pinguiophyceae
+	Eukaryota	Pinguiophyceae	Pinguiophyceae
+	Eukaryota	Pinguiophyceae	Pinguiophyceae	Pinguiochrysidales
+4.0	Eukaryota	Pinguiophyceae	Pinguiophyceae	Pinguiochrysidales	Pinguiochrysidaceae
+	Eukaryota	Platyhelminthes
+1.0	Eukaryota	Platyhelminthes	Monogenea
+	Eukaryota	Porifera
+26.0	Eukaryota	Porifera	Calcarea
+	Eukaryota	Porifera	Calcarea	Clathrinida
+	Eukaryota	Porifera	Calcarea	Clathrinida	Clathrinidae
+	Eukaryota	Porifera	Calcarea	Clathrinida	Clathrinidae	Clathrina
+4.0	Eukaryota	Porifera	Calcarea	Clathrinida	Clathrinidae	Clathrina	Clathrina_clathrus
+9.0	Eukaryota	Porifera	Demospongiae
+4.0	Eukaryota	Porifera	Demospongiae	Agelasida
+1.0	Eukaryota	Porifera	Demospongiae	Biemnida
+	Eukaryota	Porifera	Demospongiae	Chondrillida
+2.0	Eukaryota	Porifera	Demospongiae	Chondrillida	Chondrillidae
+4.0	Eukaryota	Porifera	Demospongiae	Dictyoceratida
+1.0	Eukaryota	Porifera	Demospongiae	Haplosclerida
+2.0	Eukaryota	Porifera	Demospongiae	Poecilosclerida
+8.0	Eukaryota	Porifera	Demospongiae	Suberitida
+	Eukaryota	Raphidophyceae
+	Eukaryota	Raphidophyceae	Raphidophyceae
+	Eukaryota	Raphidophyceae	Raphidophyceae	Haramonas
+	Eukaryota	Raphidophyceae	Raphidophyceae	Haramonas	Haramonas
+	Eukaryota	Raphidophyceae	Raphidophyceae	Haramonas	Haramonas	Haramonas
+1.0	Eukaryota	Raphidophyceae	Raphidophyceae	Haramonas	Haramonas	Haramonas	Haramonas_dimorpha
+3.0	Eukaryota	Rhodophyta
+	Eukaryota	Rhodophyta	Bangiophyceae
+	Eukaryota	Rhodophyta	Bangiophyceae	Cyanidiales
+4.0	Eukaryota	Rhodophyta	Bangiophyceae	Cyanidiales	Cyanidiaceae
+6.0	Eukaryota	Rhodophyta	Florideophyceae
+1.0	Eukaryota	Rhodophyta	Florideophyceae	Bonnemaisoniales
+5.0	Eukaryota	Rhodophyta	Florideophyceae	Ceramiales
+1.0	Eukaryota	Streptophyta
+	Eukaryota	Streptophyta	Chlorokybophyceae
+	Eukaryota	Streptophyta	Chlorokybophyceae	Chlorokybales
+	Eukaryota	Streptophyta	Chlorokybophyceae	Chlorokybales	Chlorokybaceae
+	Eukaryota	Streptophyta	Chlorokybophyceae	Chlorokybales	Chlorokybaceae	Chlorokybus
+6.0	Eukaryota	Streptophyta	Chlorokybophyceae	Chlorokybales	Chlorokybaceae	Chlorokybus	Chlorokybus_atmophyticus
+	Eukaryota	Streptophyta	Coleochaetophyceae
+36.0	Eukaryota	Streptophyta	Coleochaetophyceae	Coleochaetales
+	Eukaryota	Streptophyta	Haplomitriopsida
+	Eukaryota	Streptophyta	Haplomitriopsida	Treubiales
+	Eukaryota	Streptophyta	Haplomitriopsida	Treubiales	Treubiaceae
+	Eukaryota	Streptophyta	Haplomitriopsida	Treubiales	Treubiaceae	Treubia
+37.0	Eukaryota	Streptophyta	Haplomitriopsida	Treubiales	Treubiaceae	Treubia	Treubia_lacunosa
+	Eukaryota	Streptophyta	Magnoliopsida
+	Eukaryota	Streptophyta	Magnoliopsida	Celastrales
+3.0	Eukaryota	Streptophyta	Magnoliopsida	Celastrales	Celastraceae
+	Eukaryota	Streptophyta	Mesostigmatophyceae
+	Eukaryota	Streptophyta	Mesostigmatophyceae	Mesostigmatales
+	Eukaryota	Streptophyta	Mesostigmatophyceae	Mesostigmatales	Mesostigmataceae
+	Eukaryota	Streptophyta	Mesostigmatophyceae	Mesostigmatales	Mesostigmataceae	Mesostigma
+1.0	Eukaryota	Streptophyta	Mesostigmatophyceae	Mesostigmatales	Mesostigmataceae	Mesostigma	Mesostigma_viride
+1.0	Eukaryota	Streptophyta	Zygnemophyceae
+	Eukaryota	Tsukubamonadida
+	Eukaryota	Tsukubamonadida	Tsukubamonadida
+	Eukaryota	Tsukubamonadida	Tsukubamonadida	Tsukubamonadida
+	Eukaryota	Tsukubamonadida	Tsukubamonadida	Tsukubamonadida	Tsukubamonadidae
+	Eukaryota	Tsukubamonadida	Tsukubamonadida	Tsukubamonadida	Tsukubamonadidae	Tsukubamonas
+1.0	Eukaryota	Tsukubamonadida	Tsukubamonadida	Tsukubamonadida	Tsukubamonadidae	Tsukubamonas	Tsukubamonas_globosa
+	Eukaryota	Tubulinea
+	Eukaryota	Tubulinea	Echinamoebida
+	Eukaryota	Tubulinea	Echinamoebida	Vermamoeba
+	Eukaryota	Tubulinea	Echinamoebida	Vermamoeba	Vermamoeba
+	Eukaryota	Tubulinea	Echinamoebida	Vermamoeba	Vermamoeba	Vermamoeba
+1.0	Eukaryota	Tubulinea	Echinamoebida	Vermamoeba	Vermamoeba	Vermamoeba	Vermamoeba_vermiformis
+	Eukaryota	Xenacoelomorpha
+	Eukaryota	Xenacoelomorpha	Acoela
+3.0	Eukaryota	Xenacoelomorpha	Acoela	Acoela
