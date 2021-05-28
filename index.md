@@ -1,13 +1,12 @@
 # Dark mAtteR iNvesigator (DARN) <br/> understanding the unknown unknowns 
 
-This site may be considered as supplementary material for the 
-DARN publication, including all the Krona plots discussed. 
-
+On this page, we present the Krona plots returned by DARN 
+regarding the analyses implemented 
+for its corresponding publication. 
 
 A series of samples were investigated to establish the presence of bacterial and non-bacterial 
-dark matter on COI data. 
-To this end, marine, estuarine and samples from lakes were gathered. 
-In the case of marine samples, both bulk and eDNA samples were collected. 
+dark matter on COI data, in an attempt to represent the various feautures thay may affect 
+such studies.  
 
 In the sections to follow, we present all the Krona plots of each case in a single plot, meaning that for 
 all the different tests of a single case, all Kronas are embeded on a single plot and you may compare them 
@@ -23,13 +22,15 @@ and the corresponding supplementary files.
 
 ### Ireland
 
-Samples were analysed in 2 ways;
-through [PEMA](http://pema.hcmr.gr/) ([Zafeiropoulos et al. 2020](https://doi.org/10.1093/gigascience/giaa022))
-and also through [DADA2](https://benjjneb.github.io/dada2/index.html).
-
 > Primer set: jgHCO2198 - jgLCO1490 and LoboF1 - LoboR1
 
-The results in both cases are rather similar. 
+A dataset of 57 marine, surface water eDNA samples (PRJEB45030) were analysed in 2 ways: 
+
+* using [QIIME2](https://qiime2.org/) and [DADA2](https://benjjneb.github.io/dada2/index.html) and
+* through [PEMA](http://pema.hcmr.gr/), using the Swarm clustering algorithm option with *d* = 10 
+
+The ASVs returned in both cases, were used as input to run DARN. 
+
 
 <iframe
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/irish_marine/irish_marine_samples.html"
@@ -37,17 +38,16 @@ The results in both cases are rather similar.
 ></iframe>
 
 
-We need to mention here that these Kronas are from all the samples used in the study, not just from a single one. 
-
-### Kenya & Honduras
 
 
-Reef and mangrove data from these two samples were also analyzed in 2 ways; again through PEMA and DADA2
-to investigate how much our approach can be affected by bioinformatics analysis. 
-As assumed, our approach is robust as long as paramaters tuning in the bioinformatics analysis of the raw data
-are not too distinct. 
+### Honduras
 
 > Primer set: mlCOIintF - jgHCO2198
+
+
+Reef and mangrove data from Honduras were also analyzed in 2 ways:
+* using the [DnoisE](https://github.com/adriantich/DnoisE) and 
+* PEMA (again using the Swarm clustering algorithn - *d* = 10)
 
 
 <iframe
@@ -56,7 +56,11 @@ are not too distinct.
 ></iframe>
 
 
-We need to mention here that these Kronas are from all the samples used in the study, not just from a single one. 
+DARN output is rather similar comparing one bioinformatics pipeline with the other, especially in the case of the reef samples. 
+
+The differences 
+
+
 
 ### Bulk Vs eDNA samples
 
@@ -90,14 +94,15 @@ The following Krona plots are coming from samples that
 ></iframe>
 
 
-Unlike with the previous Kronas, those presented here represent a single sample. 
-In all the cases to follow, Krona plots always stand for a single sample.
+Unlike the previous Kronas, those presented here represent a **single** sample; not a complete dataset. 
+
+> In all the cases to follow, Krona plots always stand for a single sample.
 
 
 ## Freshwater samples 
 
 
-### Lakes in Canada
+<!-- ### Lakes in Canada
 
 3 samples from the study of Bista et al. (2017) were used. 
 2 of them of 235bp long and one of 658bp. 
@@ -109,7 +114,7 @@ The sequences were analyzed through PEMA.
   src="https://htmlpreview.github.io/?https://github.com/hariszaf/darn/blob/gh-pages/kronas/lakes/lakes.html"
   style="width:200%; height:900px;"
 ></iframe>
-
+ -->
 As already mentioned, each Krona represents a single sample. 
 
 ### Lakes in Norway
