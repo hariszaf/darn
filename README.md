@@ -8,6 +8,8 @@ DARN uses a COI reference tree of life to assign your sequences to the 3 domains
 
 Its purpose is not to provide you with certain taxonomic assignment but to give an overview of the species present. 
 
+You may find DARN as a Docker image at DockerHub on this [link](https://hub.docker.com/r/hariszaf/darn). 
+
 ## Methodology
 
 To build DARN we had to build a COI-oriented tree of life. Here is the approach we followed. 
