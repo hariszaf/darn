@@ -2,19 +2,130 @@
 
 # DARN - Dark mAtteR iNvestigator
 
-This is the Dark mAtteR iNvestigator tool (DARN).
+This is the Dark mAtteR iNvestigator (DARN) software package.
 
-DARN uses a COI reference tree of life to assign your sequences to the 3 domains of life.
+DARN uses a COI reference tree covering all domains of life (eukaryotes, bacteria, archaea) 
+to assign your sequences to the 3 domains of life.
 
 Its purpose is not to provide you with certain taxonomic assignment but to give an overview of the species present. 
 
-You may find DARN as a Docker image at DockerHub on this [link](https://hub.docker.com/r/hariszaf/darn). 
 
-## Methodology
+## Installation 
 
-To build DARN we had to build a COI-oriented tree of life. Here is the approach we followed. 
+`darn` is a available as a container, meaning you need a containerized technology to use it. 
+And that its only dependency! 🥳
 
-<img src="https://raw.githubusercontent.com/hariszaf/darn/main/figures/darn_workflow.png" width="700" height="950">
+If you are about to use `darn` locally, on your **personal computer**, then probably you will find [Docker](https://www.docker.com/) as the easiest way to go for it. 
+
+However, if you are working on a server or in a  **High Performance Computing (HPC)** environment, then [Singulariy](https://singularityhub.github.io/) is the best if not (in cases where your admin does not allow Docker) the oncly choice.
+
+
+### As a Docker container
+
+To install Docker you may follow there instructions [here](https://docs.docker.com/get-docker/)
+depending on the operation system you are working at. 
+
+Once Docker is set, you may get `darn` as a Docker image by running: 
+
+```
+docker pull hariszaf/darn
+```
+
+### As a Singularity container
+
+To install Singularity you may follow the instructions described [here](https://sylabs.io/guides/3.0/user-guide/installation.html) or you can probably ask your sys-admin to do that for you, 
+in case you are working in a server, HPC, cloud etc. 
+
+Once Singularity is set, you will need to build your `.sif` file based on the Docker image. 
+To do so, you may run: 
+
+```
+singularity pull darn.sif  docker://hariszaf/darn
+```
+
+
+## How to use
+
+All `darn` needs as input is a fasta `input.fasta` file with the sequnces you wish to run. 
+
+Overall, running `darn` is a 2-steps process:
+
+* first, you need to **mount** the directory at your actual computer where your `input.fasta` is located (`dir`, e.g. `/home/haris/Desktop/my_darn_analysis`) in a certain directory of the container.
+This works as a *bridge* between your computer and the container, allowing the container
+to have access on the files of the directory you mount and vice-versa.
+* then, you run `darn` from inside the container 
+
+**In all cases**, `darn` will always return its **output** in the `dir` directory you mount. 
+
+
+### Run `darn` as a Docker container
+
+To mount the directory `<dir>` where your `input.fasta` is located to `darn` 
+you may run 
+
+```
+docker run --rm -it -v <dir>/:/mnt darn
+```
+
+> The `-v` parameter denotes your bridge; the `<dir>` directory of your computer,
+will be mounted in the `/mnt` path of the `darn` container. Parameter `--rm` is simply there
+to make sure that your Docker container will be completely removed when you will exit from it, while the `-it` enables running shell for the container you are about to initiate. 
+
+
+Once the shell is on you just need to run:
+
+```
+./darn.sh -s /mnt/input.fasta -t <number_of_threads>
+```
+
+The output of `darn` will be returned in the same directory that you mount, i.e you may find your results under `dir`.
+
+
+Here is a shell recording for how to get and run `darn` assuming you have already set Docker on your computing system.
+[![asciicast](https://asciinema.org/a/427103.svg)](https://asciinema.org/a/427103)
+
+
+### Run `darn` as a Singularity container
+
+Likewise, you need to first mount the `<dir>` path where you `input.fasta` is located in the container. 
+
+Now, you may run `darn` with a sole command 
+
+```
+singularity run --bind <dir>/:/mnt darn_latest.sif -s /mnt/query_freshwater_short_all_seqs.fasta -t 20
+```
+
+Or, by using the same way as in the Docker case, meaning you first open a shell 
+
+```
+singularity shell --bind <dir>/:/mnt darn_latest.sif
+```
+
+and once shell appears:
+
+```
+cd /home
+./darn.sh -s /mnt/your_sample.fasta -t <number_of_threads_available>
+```
+
+In case you are are working on a HPC system, depending on the queing system used, 
+you need to build a *job* script. 
+Assuming SLURM is used, here is an example file:
+
+```
+#!/bin/bash
+
+#SBATCH --partition=<a computational part of the HPC>
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=20
+#SBATCH --job-name="darn"
+#SBATCH --output=darn_example.output
+#SBATCH --mail-user=<your_email>
+
+
+singularity run --bind /<path_to_your_sample>/:/mnt darn.sif /mnt/query_freshwater_short_all_seqs.fasta -t 20
+```
+
 
 
 ## Output
@@ -39,71 +150,7 @@ You may have a look on the DARN output over [here](https://github.com/hariszaf/d
 
 
 
-## How to run 
 
-You may get DARN as a Docker image by running: 
-
-```
-docker pull hariszaf/darn
-```
-
-and then run it by mounting a directory on your physical maching to the container 
-
-```
-docker run --rm -it -v /path_to_your_sample/:/mnt darn
-```
-
-and once the shell is on you just need to run:
-
-```
-./darn.sh -s /mnt/your_sample.fasta -t <number_of_threads_available>
-```
-
-In case, you are working on Singularity, you follow the following steps
-
-
-```
-singularity pull shub://hariszaf/darn
-```
-
-Then, in case you are are working on a High Performance Computing sustem, depending on the queing system used, 
-you need to build a *job* script. Assuming SLURM is used, here is an example file:
-
-```
-#!/bin/bash
-
-#SBATCH --partition=<a computational part of the HPC>
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=20
-#SBATCH --job-name="darn"
-#SBATCH --output=darn_example.output
-#SBATCH --mail-user=<your_email>
-
-
-singularity run --bind /<path_to_your_sample>/:/mnt darn_latest.sif s /mnt/query_freshwater_short_all_seqs.fasta -t 20
-```
-
-
-In case you need to run Singularity without a *job* script, you can do that either by running the command showed above:
-
-```
-singularity run --bind /<path_to_your_sample>/:/mnt darn_latest.sif s /mnt/query_freshwater_short_all_seqs.fasta -t 20
-```
-
-Or, by using the same way as in the Docker case, meaning you first open a shell 
-
-```
-singularity shell --bind /<path_to_your_sample>/:/mnt darn_latest.sif
-```
-
-and once shell appears:
-
-```
-cd /home
-./darn.sh -s /mnt/your_sample.fasta -t <number_of_threads_available>
-```
-
-> In all cases, the output of DARN will be returned in the path you mount!
 
 
 ## Licences
