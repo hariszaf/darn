@@ -84,6 +84,7 @@ The output of `darn` will be returned in the same directory that you mount, i.e 
 Here is a shell recording for how to get and run `darn` assuming you have already set Docker on your computing system.
 [![asciicast](https://asciinema.org/a/427103.svg)](https://asciinema.org/a/427103)
 
+The `marine_part.fasta` file that is used as an `input.fasta` here, along with the `darn` outcome, can be found under the [`analysis`](https://github.com/hariszaf/darn/tree/main/analysis) folder of this repo.
 
 ### Run `darn` as a Singularity container
 
@@ -109,28 +110,17 @@ cd /home
 ```
 
 In case you are are working on a HPC system, depending on the queing system used, 
-you need to build a *job* script. 
-Assuming SLURM is used, here is an example file:
-
-```
-#!/bin/bash
-
-#SBATCH --partition=<a computational part of the HPC>
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=20
-#SBATCH --job-name="darn"
-#SBATCH --output=darn_example.output
-#SBATCH --mail-user=<your_email>
-
-
-singularity run --bind /<path_to_your_sample>/:/mnt darn.sif /mnt/query_freshwater_short_all_seqs.fasta -t 20
-```
+you need to build a *job* script first and include the previous commands into it. 
 
 
 
 ## Output
 
-Once you run DARN against your sample, you will get 2 Krona interactive plots, in `.html` format as the one here:
+Once `darn` is completed, 2 new directories will be available in the `dir` folder:
+* one called `intermediate`, including `gappa` best and exhaustive hits as well as the `.jplace` tree file with the assignments of the query sequences in the phylogenetic tree
+* and a second one, called `final_outcome` where a `.json` file with the entries assigned in each domain of life and a `.fasta` file with the sequences assigned in each of these domain can be found, as well as a Krona plot, as `.html` file, representing the composition of the sequence sample based on the number of species found per taxonomic group. 
+
+An example of such a Krona plot can be found 
 
 <img src="https://raw.githubusercontent.com/hariszaf/darn/main/figures/darn_krona.png" width="800" height="500">
 
@@ -154,12 +144,13 @@ You may have a look on the DARN output over [here](https://github.com/hariszaf/d
 
 
 ## Licences
-DARN makes use of the following software:
+`darn` is under the GNU GPLv3 license (for 3rd party components separate licenses apply).
+
+`darn` makes use of the following software:
 * [PaPaRa](https://cme.h-its.org/exelixis/web/software/papara/index.html) and EPA-ng algorithms. 
 * [EPA-ng](https://github.com/Pbdas/epa-ng)
 * [gappa](https://github.com/lczech/gappa/)
 * [krona](https://github.com/marbl/Krona/wiki)
 
-Their corresponding licenses apply. 
 
 
