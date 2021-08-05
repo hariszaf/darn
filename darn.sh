@@ -72,6 +72,10 @@ nameFile=${sample##*/}
 
 #---------------------------------------------------------------------------------------------------
 
+###########################
+#   Prepare your sample   #
+###########################
+
 # If darn has been used again in the same directory, the epa log output must be removed if has not changed
 cd /mnt
 [[ -f epa_info.log ]] && rm epa_info.log
@@ -80,12 +84,9 @@ cd /mnt
 sampleName=${nameFile::-6}
 
 # Keep the headers of the seqs in a file
-# awk -v n=1 '{if($x~/>/) {print $0 "_Query" n; n++} else {print $0}}' $sample > darn_$sampleName.fasta
 awk -v n=1 '{if($x~/>/) {printf "%s\t%s\n",$0,"Query"n;n++} else {print $0}}' $sample > darn.fasta.tmp
 cat darn.fasta.tmp | tr -d '\r' > darn.fasta.tmp.2
 sed 's/\t/_/' darn.fasta.tmp.2 > darn_$sampleName.fasta
-
-cp darn_$sampleName.fasta query.fasta
 rm darn.fasta.tmp*
 
 # To relabel the Otus on the multiline fasta
@@ -94,7 +95,18 @@ awk -v n=1 '{if($x~/>/){sub(/>.*/, ">Query" n); print; n++} else {print $0}}' $s
 # To convert single line fasta to multi line
 sed '/^>/!s/.\{80\}/&\n/g' labeled_$nameFile > multiline_labeled_$nameFile
 
+# Remove blank spaces
 sed -i '/^[[:space:]]*$/d' multiline_labeled_$name_file
+
+
+# Make sure the sequences of the .fasta file are with capital letters 
+awk '{if ($0 ~ />/ ){print $0} else {print toupper($0)}}' multiline_labeled_$name_file  > caps_multiline_labeled_$name_file
+mv caps_multiline_labeled_$name_file multiline_labeled_$name_file
+
+
+################################
+#    query MSA and placement   #
+################################
 
 # Run PaPaRa
 /home/tools/papara_nt-2.5/papara \
@@ -105,19 +117,12 @@ sed -i '/^[[:space:]]*$/d' multiline_labeled_$name_file
 	-r \
 	-j $threads
 
-# Remove ref seqs
-tail -23234 papara_alignment.papara > papara.phy
+# Remove ref seqs from the query MSA
+/home/tools/epa/bin/epa-ng --split /home/docs/magic_tree_aln.phy papara_alignment.papara
 
-sed -i '1d' papara.phy
-awk '{print ">"$0}' papara.phy > tmp
-
-sed 's/ \{1,\}/ /g ; s/ /\n/' tmp > tmp2
-sed '/^>/!s/.\{80\}/&\n/g' tmp2 > papara.fasta
-
-rm tmp tmp2
 
 # Run EPA-ng
-/home/tools/epa/bin/epa-ng -t /home/docs/magicTree.bestTree -s /home/docs/magic_tree_aln.fasta -m GTR+FO+G4m -q papara.fasta
+/home/tools/epa/bin/epa-ng -t /home/docs/magicTree.bestTree -s /home/docs/magic_tree_aln.fasta -m GTR+FO+G4m -q query.fasta 
 
 # Run gappa to build krona input
 # IMPORTANT HINT! Darn will build Krona plots based on the BEST HITS assignments; both based on the likelihood values and in a binary way. 
@@ -160,9 +165,10 @@ mv darn_processed_counts.profile darn_counts_$sampleName\_krona.profile
 ktImportText darn_counts_$sampleName\_krona.profile -o darn_$sampleName\_pres_abs.krona_plot.html
 ktImportText darn_likelihood_$sampleName\_krona.profile -o darn_$sampleName\_likelihood.krona_plot.html
 
-#############
-# Make output 
-#############
+
+###########################
+#    Build darn output    #
+###########################
 
 # Move krona plots and important files to mount directory
 rm query.fasta
@@ -200,6 +206,6 @@ mv /mnt/darn_*.fasta  /mnt/final_outcome
 
 # Remove the rest
 cd /mnt
-rm epa_info.log papara* multiline* labeled_*
+rm epa_info.log papara* multiline* labeled_* reference.fasta
 
 echo "DARN has been completed. You may dive into the dark matter.."
