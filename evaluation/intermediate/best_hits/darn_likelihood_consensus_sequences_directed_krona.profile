@@ -652,7 +652,6 @@
 0.9995	Eukaryota	Ascomycota	Dothideomycetes	Cladosporiales	Cladosporiaceae	Cladosporium
 0.9996	Eukaryota	Ascomycota	Dothideomycetes	Dothideales	Dothioraceae	Sydowia	Sydowia_polyspora
 0.9998	Eukaryota	Ascomycota	Dothideomycetes	Mycosphaerellales	Mycosphaerellaceae
-0.9997	Eukaryota	Ascomycota	Dothideomycetes	Pleosporales
 0.9991	Eukaryota	Ascomycota	Dothideomycetes	Venturiales	Venturiaceae	Venturia	Venturia_inaequalis
 0.9996	Eukaryota	Ascomycota	Eurotiomycetes	Chaetothyriales
 0.9994	Eukaryota	Ascomycota	Eurotiomycetes	Eurotiales
@@ -676,7 +675,6 @@
 0.9998	Eukaryota	Ascomycota	Pneumocystidomycetes	Pneumocystidales	Pneumocystidaceae	Pneumocystis
 0.9998	Eukaryota	Ascomycota	Saccharomycetes	Saccharomycetales
 0.9954	Eukaryota	Ascomycota	Schizosaccharomycetes	Schizosaccharomycetales	Schizosaccharomycetaceae	Schizosaccharomyces
-0.9967	Eukaryota	Ascomycota	Sordariomycetes	Diaporthales
 0.9915	Eukaryota	Ascomycota	Sordariomycetes	Glomerellales
 0.9999	Eukaryota	Ascomycota	Sordariomycetes	Hypocreales
 0.9998	Eukaryota	Ascomycota	Sordariomycetes	Koralionastetales	Koralionastetaceae	Pontogeneia	Pontogeneia_inermis
@@ -1176,7 +1174,6 @@
 0.9997	Eukaryota	Mollusca	Cephalopoda	Spirulida	Spirulidae	Spirula	Spirula_spirula
 0.9987	Eukaryota	Mollusca	Cephalopoda	Teuthida
 0.9997	Eukaryota	Mollusca	Cephalopoda	Vampyromorpha	Vampyroteuthidae	Vampyroteuthis	Vampyroteuthis_infernalis
-0.2936	Eukaryota	Mollusca	Gastropoda
 0.9994	Eukaryota	Mollusca	Gastropoda	Abyssochrysidae	Abyssochrysidae	Abyssochrysos
 0.9986	Eukaryota	Mollusca	Gastropoda	Acmaeidae	Acmaeidae
 0.9994	Eukaryota	Mollusca	Gastropoda	Acochlidiacea

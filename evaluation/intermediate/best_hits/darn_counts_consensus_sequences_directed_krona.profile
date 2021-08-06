@@ -2062,7 +2062,6 @@
 1.0	Eukaryota	Ascomycota	Dothideomycetes	Dothideales	Dothioraceae	Sydowia	Sydowia_polyspora
 	Eukaryota	Ascomycota	Dothideomycetes	Mycosphaerellales
 1.0	Eukaryota	Ascomycota	Dothideomycetes	Mycosphaerellales	Mycosphaerellaceae
-1.0	Eukaryota	Ascomycota	Dothideomycetes	Pleosporales
 	Eukaryota	Ascomycota	Dothideomycetes	Venturiales
 	Eukaryota	Ascomycota	Dothideomycetes	Venturiales	Venturiaceae
 	Eukaryota	Ascomycota	Dothideomycetes	Venturiales	Venturiaceae	Venturia
@@ -2129,7 +2128,6 @@
 	Eukaryota	Ascomycota	Schizosaccharomycetes	Schizosaccharomycetales	Schizosaccharomycetaceae
 1.0	Eukaryota	Ascomycota	Schizosaccharomycetes	Schizosaccharomycetales	Schizosaccharomycetaceae	Schizosaccharomyces
 	Eukaryota	Ascomycota	Sordariomycetes
-1.0	Eukaryota	Ascomycota	Sordariomycetes	Diaporthales
 1.0	Eukaryota	Ascomycota	Sordariomycetes	Glomerellales
 1.0	Eukaryota	Ascomycota	Sordariomycetes	Hypocreales
 	Eukaryota	Ascomycota	Sordariomycetes	Koralionastetales
@@ -3354,7 +3352,7 @@
 	Eukaryota	Mollusca	Cephalopoda	Vampyromorpha	Vampyroteuthidae
 	Eukaryota	Mollusca	Cephalopoda	Vampyromorpha	Vampyroteuthidae	Vampyroteuthis
 1.0	Eukaryota	Mollusca	Cephalopoda	Vampyromorpha	Vampyroteuthidae	Vampyroteuthis	Vampyroteuthis_infernalis
-1.0	Eukaryota	Mollusca	Gastropoda
+	Eukaryota	Mollusca	Gastropoda
 	Eukaryota	Mollusca	Gastropoda	Abyssochrysidae
 	Eukaryota	Mollusca	Gastropoda	Abyssochrysidae	Abyssochrysidae
 1.0	Eukaryota	Mollusca	Gastropoda	Abyssochrysidae	Abyssochrysidae	Abyssochrysos
