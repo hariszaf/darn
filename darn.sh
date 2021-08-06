@@ -63,7 +63,11 @@ if [ -z "${threads}" ]; then
     threads=1
 fi
 
+# Keep the complete name of the file
 nameFile=${sample##*/}
+
+# Remove the .fasta suffix
+sampleName=${nameFile::-6}
 
 
 #---------------------------------------------------------------------------------------------------
@@ -80,9 +84,6 @@ nameFile=${sample##*/}
 cd /mnt
 [[ -f epa_info.log ]] && rm epa_info.log
 
-# Sample name
-sampleName=${nameFile::-6}
-
 # Keep the headers of the seqs in a file
 awk -v n=1 '{if($x~/>/) {printf "%s\t%s\n",$0,"Query"n;n++} else {print $0}}' $sample > darn.fasta.tmp
 cat darn.fasta.tmp | tr -d '\r' > darn.fasta.tmp.2
@@ -96,12 +97,22 @@ awk -v n=1 '{if($x~/>/){sub(/>.*/, ">Query" n); print; n++} else {print $0}}' $s
 sed '/^>/!s/.\{80\}/&\n/g' labeled_$nameFile > multiline_labeled_$nameFile
 
 # Remove blank spaces
-sed -i '/^[[:space:]]*$/d' multiline_labeled_$name_file
+sed -i '/^[[:space:]]*$/d' multiline_labeled_$nameFile
 
 
 # Make sure the sequences of the .fasta file are with capital letters 
-awk '{if ($0 ~ />/ ){print $0} else {print toupper($0)}}' multiline_labeled_$name_file  > caps_multiline_labeled_$name_file
-mv caps_multiline_labeled_$name_file multiline_labeled_$name_file
+awk '{if ($0 ~ />/ ){print $0} else {print toupper($0)}}' multiline_labeled_$nameFile  > caps_multiline_labeled_$nameFile
+mv caps_multiline_labeled_$nameFile multiline_labeled_$nameFile
+
+
+# Make sure about having the correct orientation
+vsearch --orient multiline_labeled_$nameFile --db /home/docs/oriented_consensus_seqs.fasta --fastaout oriented_$nameFile
+
+# Single line copy to run with python parse script 
+awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' oriented_$nameFile > oriented_input.fasta
+
+# Keep header - darn id pairs
+grep ">"  darn_$sampleName.fasta > id_pairs ; sed 's/>//g' id_pairs > PINK ; mv PINK id_pairs
 
 
 ################################
@@ -113,7 +124,7 @@ mv caps_multiline_labeled_$name_file multiline_labeled_$name_file
 	-t /home/docs/magicTree.bestTree \
 	-s /home/docs/magic_tree_aln.phy \
 	-n papara \
-	-q multiline_labeled_$nameFile \
+	-q oriented_$nameFile \
 	-r \
 	-j $threads
 
@@ -188,6 +199,8 @@ mv /mnt/darn_best_hit* /mnt/intermediate/best_hits
 mv /mnt/darn_likelihood* /mnt/intermediate/best_hits
 mv /mnt/darn_counts* /mnt/intermediate/best_hits
 mv /mnt/*epa_result.jplace /mnt/intermediate
+rm oriented_input.fasta
+mv /mnt/oriented* /mnt/intermediate
 
 # Rename output files to follow the sample notion
 cd /mnt
@@ -206,6 +219,6 @@ mv /mnt/darn_*.fasta  /mnt/final_outcome
 
 # Remove the rest
 cd /mnt
-rm epa_info.log papara* multiline* labeled_* reference.fasta
+rm epa_info.log papara* multiline* labeled_* reference.fasta 
 
 echo "DARN has been completed. You may dive into the dark matter.."

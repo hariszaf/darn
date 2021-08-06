@@ -124,8 +124,6 @@ for taxonomy, value in counts_dict.items():
                   exact_counts[build_taxonomy] += 0.0          
 
 
-
-
          elif level == len(taxonomy) - 1:
             build_taxonomy += ";" + taxonomy[level]
 
@@ -145,6 +143,8 @@ for taxonomy, value in counts_dict.items():
 
    else:
       print(taxonomy)
+
+# ----------------------------------------------------------
 
 entries = []
 for taxonomy, value in exact_counts.items():
@@ -196,6 +196,9 @@ for query, domains in domain_dict.items():
 
 query_names_per_domain.pop("taxopath", None)
 
+
+# ----------------------------------------------------------
+
 # Keep some counts! 
 total_queries = len(domain_dict.keys()) 
 
@@ -232,8 +235,19 @@ with open('darn_assignments_per_domain.json', 'w') as fp:
     json.dump(query_names_per_domain, fp)
 
 
+# ----------------------------------------------------------
 
-query_fasta_file = open('query.fasta', "r")
+# Write per domain .fasta files
+darn_mapping_file  = open('id_pairs', 'r')
+darn_mappings      = {} 
+for entry in darn_mapping_file:
+   entry                 = entry.split('_')
+   darnID                = entry[1]
+   initID                = entry[0]
+   darn_mappings[darnID] = initID
+
+
+query_fasta_file = open('oriented_input.fasta', "r")
 
 queries_dict = {}
 ids_mapping = {}
@@ -242,8 +256,12 @@ for line in query_fasta_file:
 
    if line[0] == ">": 
 
-      header = line
-      darn_id = line[line.rindex('_')+1:][:-1]
+      header = line[1:]
+
+      try:
+         darn_id = line[line.rindex('_')+1:][:-1]
+      except:
+         darn_id = line[1:][:-1]
       
    else: 
       queries_dict[header]  = line
@@ -257,7 +275,7 @@ if "Bacteria" in query_names_per_domain:
       if query_id in ids_mapping.keys():
          header = ids_mapping[query_id]
          seq = queries_dict[header]
-         bacteria_fasta.write(header + seq)
+         bacteria_fasta.write(">" + darn_mappings[header] + "\t" +  header + seq)
 
 if "Archaea" in query_names_per_domain:
    archaea_fasta = open("darn_archaea_assignments.fasta", "w")
@@ -266,7 +284,7 @@ if "Archaea" in query_names_per_domain:
       if query_id in ids_mapping.keys():
          header = ids_mapping[query_id]
          seq = queries_dict[header]
-         archaea_fasta.write(header + seq)
+         archaea_fasta.write(">" + darn_mappings[header] + "\t" + header + seq)
 
 if "Eukaryota" in query_names_per_domain: 
    eukaryota_fasta = open("darn_eukaryota_assignments.fasta", "w")
@@ -275,7 +293,7 @@ if "Eukaryota" in query_names_per_domain:
       if query_id in ids_mapping.keys():
          header = ids_mapping[query_id]
          seq = queries_dict[header]
-         eukaryota_fasta.write(header + seq)
+         eukaryota_fasta.write(">" + darn_mappings[header] + "\t" + header + seq)
 
 if "DISTANT" in query_names_per_domain: 
    eukaryota_fasta = open("darn_distant_assignments.fasta", "w")
@@ -284,6 +302,6 @@ if "DISTANT" in query_names_per_domain:
       if query_id in ids_mapping.keys():
          header = ids_mapping[query_id]
          seq = queries_dict[header]
-         eukaryota_fasta.write(header + seq)
+         eukaryota_fasta.write(">" + darn_mappings[header] + "\t" + header + seq)
 
 print("Parsing script has been completed. \n")
