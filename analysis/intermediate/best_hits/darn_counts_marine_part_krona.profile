@@ -1,0 +1,159 @@
+5.0	Archaea
+	Archaea	Candidatus_Thermoplasmatota
+	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata
+	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata	Thermoplasmatales
+4.0	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata	Thermoplasmatales	unclassified_Thermoplasmatales
+2.0	Archaea	environmental_samples
+6.0	Bacteria
+	Bacteria	FCB_group
+	Bacteria	FCB_group	Bacteroidetes/Chlorobi_group
+	Bacteria	FCB_group	Bacteroidetes/Chlorobi_group	Bacteroidetes
+	Bacteria	FCB_group	Bacteroidetes/Chlorobi_group	Bacteroidetes	Flavobacteriia
+1.0	Bacteria	FCB_group	Bacteroidetes/Chlorobi_group	Bacteroidetes	Flavobacteriia	Weeksellaceae
+46.0	Bacteria	Proteobacteria
+1.0	Bacteria	Proteobacteria	Alphaproteobacteria
+	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria
+	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	incertae
+	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	incertae	sedis
+	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	incertae	sedis	SAR116
+25.0	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	incertae	sedis	SAR116	cluster
+	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	incertae	sedis	SAR116	cluster	SAR116
+	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	incertae	sedis	SAR116	cluster	SAR116	cluster
+	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	incertae	sedis	SAR116	cluster	SAR116	cluster	Candidatus_Puniceispirillum
+4.0	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	incertae	sedis	SAR116	cluster	SAR116	cluster	Candidatus_Puniceispirillum	Candidatus_Puniceispirillum_marinum
+	Bacteria	Proteobacteria	Alphaproteobacteria	Holosporales
+	Bacteria	Proteobacteria	Alphaproteobacteria	Holosporales	Caedimonadaceae
+3.0	Bacteria	Proteobacteria	Alphaproteobacteria	Holosporales	Caedimonadaceae	Caedimonadaceae
+7.0	Bacteria	Proteobacteria	Alphaproteobacteria	Hyphomicrobiales
+1.0	Bacteria	Proteobacteria	Alphaproteobacteria	Hyphomicrobiales	Parvibaculaceae
+	Bacteria	Proteobacteria	Alphaproteobacteria	Pelagibacterales
+	Bacteria	Proteobacteria	Alphaproteobacteria	Pelagibacterales	Pelagibacteraceae
+56.0	Bacteria	Proteobacteria	Alphaproteobacteria	Pelagibacterales	Pelagibacteraceae	Pelagibacteraceae
+38.0	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales
+	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales	unclassified_Rhodobacterales
+29.0	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales	unclassified_Rhodobacterales	unclassified_Rhodobacterales
+1.0	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodospirillales
+	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales
+	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Erythrobacteraceae
+2.0	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Erythrobacteraceae	Erythrobacteraceae
+	Bacteria	Proteobacteria	Betaproteobacteria
+	Bacteria	Proteobacteria	Betaproteobacteria	Betaproteobacteria_incertae_sedis
+1.0	Bacteria	Proteobacteria	Betaproteobacteria	Betaproteobacteria_incertae_sedis	Candidatus_Accumulibacter_sp._BA94
+13.0	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales
+	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	Burkholderiales
+	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	Burkholderiales	genera
+	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	Burkholderiales	genera	incertae
+2.0	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	Burkholderiales	genera	incertae	sedis
+	Bacteria	Proteobacteria	Betaproteobacteria	Nitrosomonadales
+10.0	Bacteria	Proteobacteria	Betaproteobacteria	Nitrosomonadales	unclassified_Nitrosomonadales_OM43_clade
+61.0	Bacteria	Proteobacteria	Gammaproteobacteria
+1.0	Bacteria	Proteobacteria	Gammaproteobacteria	Alteromonadales
+	Bacteria	Proteobacteria	Gammaproteobacteria	Alteromonadales	Alteromonadaceae
+2.0	Bacteria	Proteobacteria	Gammaproteobacteria	Alteromonadales	Alteromonadaceae	Alteromonadaceae
+	Bacteria	Proteobacteria	Gammaproteobacteria	Alteromonadales	Psychromonadaceae
+4.0	Bacteria	Proteobacteria	Gammaproteobacteria	Alteromonadales	Psychromonadaceae	Psychromonadaceae
+	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales
+	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales	Halieaceae
+14.0	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales	Halieaceae	Halieaceae
+	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales	Porticoccaceae
+	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales	Porticoccaceae	Porticoccaceae
+1.0	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales	Porticoccaceae	Porticoccaceae	unclassified_Porticoccaceae
+	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales	Spongiibacteraceae
+2.0	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales	Spongiibacteraceae	Spongiibacteraceae
+2.0	Bacteria	Proteobacteria	Gammaproteobacteria	Enterobacterales
+	Bacteria	Proteobacteria	Gammaproteobacteria	Gammaproteobacteria
+	Bacteria	Proteobacteria	Gammaproteobacteria	Gammaproteobacteria	incertae
+	Bacteria	Proteobacteria	Gammaproteobacteria	Gammaproteobacteria	incertae	sedis
+	Bacteria	Proteobacteria	Gammaproteobacteria	Gammaproteobacteria	incertae	sedis	SAR86
+	Bacteria	Proteobacteria	Gammaproteobacteria	Gammaproteobacteria	incertae	sedis	SAR86	cluster
+	Bacteria	Proteobacteria	Gammaproteobacteria	Gammaproteobacteria	incertae	sedis	SAR86	cluster	SAR86
+4.0	Bacteria	Proteobacteria	Gammaproteobacteria	Gammaproteobacteria	incertae	sedis	SAR86	cluster	SAR86	cluster
+	Bacteria	Proteobacteria	Gammaproteobacteria	Gammaproteobacteria_incertae_sedis
+	Bacteria	Proteobacteria	Gammaproteobacteria	Gammaproteobacteria_incertae_sedis	Pseudohongiella
+2.0	Bacteria	Proteobacteria	Gammaproteobacteria	Gammaproteobacteria_incertae_sedis	Pseudohongiella	Pseudohongiella_acticola
+	Bacteria	Proteobacteria	Gammaproteobacteria	Methylococcales
+	Bacteria	Proteobacteria	Gammaproteobacteria	Methylococcales	Methylococcaceae
+8.0	Bacteria	Proteobacteria	Gammaproteobacteria	Methylococcales	Methylococcaceae	Methylococcaceae
+3.0	Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales
+	Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales	Hahellaceae
+2.0	Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales	Hahellaceae	Hahellaceae
+	Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales	Kangiellaceae
+	Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales	Kangiellaceae	Kangiellaceae
+4.0	Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales	Kangiellaceae	Kangiellaceae	Kangiella
+3.0	Bacteria	Proteobacteria	Gammaproteobacteria	Xanthomonadales
+	Bacteria	Proteobacteria	Gammaproteobacteria	unclassified_Gammaproteobacteria
+	Bacteria	Proteobacteria	Gammaproteobacteria	unclassified_Gammaproteobacteria	unclassified_Gammaproteobacteria
+5.0	Bacteria	Proteobacteria	Gammaproteobacteria	unclassified_Gammaproteobacteria	unclassified_Gammaproteobacteria	unclassified_Gammaproteobacteria
+	Bacteria	Terrabacteria_group
+	Bacteria	Terrabacteria_group	Chloroflexi
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples	uncultured
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples	uncultured	Chloroflexi
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples	uncultured	Chloroflexi	bacterium
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples	uncultured	Chloroflexi	bacterium	uncultured
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples	uncultured	Chloroflexi	bacterium	uncultured	Chloroflexi
+2.0	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples	uncultured	Chloroflexi	bacterium	uncultured	Chloroflexi	bacterium
+	Bacteria	Terrabacteria_group	Firmicutes
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli
+5.0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales	Bacillales
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales	Bacillales	incertae
+3.0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales	Bacillales	incertae	sedis
+1.0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales	Listeriaceae
+22.0	DISTANT
+45.0	Eukaryota
+	Eukaryota	Annelida
+1.0	Eukaryota	Annelida	Polychaeta
+5.0	Eukaryota	Bacillariophyta
+2.0	Eukaryota	Bacillariophyta	Mediophyceae
+	Eukaryota	Basidiomycota
+	Eukaryota	Basidiomycota	Microbotryomycetes
+	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales
+	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae
+4.0	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae	Rhodotorula
+7.0	Eukaryota	Chlorophyta
+	Eukaryota	Chlorophyta	Chlorophyceae
+	Eukaryota	Chlorophyta	Chlorophyceae	Oedogoniales
+	Eukaryota	Chlorophyta	Chlorophyceae	Oedogoniales	Oedogoniaceae
+	Eukaryota	Chlorophyta	Chlorophyceae	Oedogoniales	Oedogoniaceae	Bulbochaete
+1.0	Eukaryota	Chlorophyta	Chlorophyceae	Oedogoniales	Oedogoniaceae	Bulbochaete	Bulbochaete_rectangularis
+	Eukaryota	Chlorophyta	Mamiellophyceae
+2.0	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales
+	Eukaryota	Chordata
+1.0	Eukaryota	Chordata	Aves
+	Eukaryota	Chordata	Thaliacea
+	Eukaryota	Chordata	Thaliacea	Pyrosomata
+	Eukaryota	Chordata	Thaliacea	Pyrosomata	Pyrosomatidae
+	Eukaryota	Chordata	Thaliacea	Pyrosomata	Pyrosomatidae	Pyrostremma
+2.0	Eukaryota	Chordata	Thaliacea	Pyrosomata	Pyrosomatidae	Pyrostremma	Pyrostremma_spinosum
+	Eukaryota	Chrysophyceae
+3.0	Eukaryota	Chrysophyceae	Chrysophyceae
+1.0	Eukaryota	Cnidaria
+	Eukaryota	Cryptophyceae
+1.0	Eukaryota	Cryptophyceae	Cryptophyceae
+2.0	Eukaryota	Cryptophyceae	Cryptophyceae	Cyathomonadacea
+3.0	Eukaryota	Cryptophyceae	Cryptophyceae	Pyrenomonadales
+	Eukaryota	Dictyochophyceae
+2.0	Eukaryota	Dictyochophyceae	Dictyochophyceae
+1.0	Eukaryota	Dictyochophyceae	Dictyochophyceae	Dictyochales
+	Eukaryota	Euglenozoa
+2.0	Eukaryota	Euglenozoa	Euglenida
+	Eukaryota	Haptista
+	Eukaryota	Haptista	Haptophyta
+	Eukaryota	Haptista	Haptophyta	Phaeocystales
+	Eukaryota	Haptista	Haptophyta	Phaeocystales	Phaeocystaceae
+1.0	Eukaryota	Haptista	Haptophyta	Phaeocystales	Phaeocystaceae	Phaeocystis
+	Eukaryota	Mucoromycota
+	Eukaryota	Mucoromycota	Glomeromycetes
+1.0	Eukaryota	Mucoromycota	Glomeromycetes	Archaeosporales
+	Eukaryota	Oomycota
+2.0	Eukaryota	Oomycota	Oomycota
+	Eukaryota	Porifera
+	Eukaryota	Porifera	Calcarea
+1.0	Eukaryota	Porifera	Calcarea	Leucosolenida
+1.0	Eukaryota	Rhodophyta
+1.0	Eukaryota	Streptophyta
