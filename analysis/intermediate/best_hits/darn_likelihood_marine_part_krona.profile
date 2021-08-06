@@ -1,49 +1,58 @@
-19.019399999999997	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III
-4.518000000000001	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III	euryarchaeote_AD1000_61_A07
-2.6453	Archaea	TACK_group	Crenarchaeota	Thermoprotei
-1.9315	Archaea	TACK_group	Thaumarchaeota
-40.636399999999995	Bacteria
-0.2536	Bacteria	Proteobacteria
-21.099199999999996	Bacteria	Proteobacteria	Alphaproteobacteria
-13.115600000000002	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	Alphaproteobacteria	Alphaproteobacteria	SAR116_cluster_alpha_proteobacterium_HIMB100
-46.61630000000002	Bacteria	Proteobacteria	Alphaproteobacteria	Pelagibacterales	Pelagibacteraceae
-0.5	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales
-53.9563	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales
-0.9138	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales
-14.069999999999999	Bacteria	Proteobacteria	Betaproteobacteria
-0.1661	Bacteria	Proteobacteria	Betaproteobacteria	Betaproteobacteria_incertae_sedis	Candidatus_Accumulibacter
-2.8169999999999997	Bacteria	Proteobacteria	Betaproteobacteria	Nitrosomonadales
-39.46650000000001	Bacteria	Proteobacteria	Gammaproteobacteria
-0.6173	Bacteria	Proteobacteria	Gammaproteobacteria	Alteromonadales
-8.64773	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales
-0.8951	Bacteria	Proteobacteria	Gammaproteobacteria	Methylococcales	Methylococcaceae
-1.6149	Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales
-1.1244	Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales
-1.8947	Bacteria	Proteobacteria	Gammaproteobacteria	Thiotrichales	Piscirickettsiaceae
-24.9943	DISTANT
-15.50751	Eukaryota
-0.8409	Eukaryota	Annelida	Polychaeta
-3.6078	Eukaryota	Bacillariophyta
-0.6132	Eukaryota	Bacillariophyta	Mediophyceae
-0.5	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales	Sphaerobolaceae	Sphaerobolus	Sphaerobolus_stellatus
-2.557	Eukaryota	Chlorophyta
-0.4867	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales
-0.9406	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales
-0.2793	Eukaryota	Chlorophyta	Palmophyllophyceae	Prasinococcales	Prasinococcaceae
-0.5	Eukaryota	Chlorophyta	Trebouxiophyceae	Trebouxiales	Trebouxiaceae
-0.9679	Eukaryota	Chlorophyta	Ulvophyceae	Ulotrichales
-0.741	Eukaryota	Chordata
-2.06005	Eukaryota	Chordata	Thaliacea	Pyrosomata	Pyrosomatidae	Pyrostremma	Pyrostremma_spinosum
-0.6537	Eukaryota	Ciliophora	Oligohymenophorea	Peniculida
-0.5117	Eukaryota	Ciliophora	Spirotrichea
-0.5638	Eukaryota	Collodictyonidae	Collodictyonidae	Collodictyonidae	Collodictyonidae	Diphylleia	Diphylleia_rotans
-1.7395	Eukaryota	Cryptophyceae	Cryptophyceae
-0.9918	Eukaryota	Cryptophyceae	Cryptophyceae	Cyathomonadacea
-0.4971	Eukaryota	Cryptophyceae	Cryptophyceae	Pyrenomonadales
-1.4881	Eukaryota	Dictyochophyceae	Dictyochophyceae
-0.7965	Eukaryota	Dictyochophyceae	Dictyochophyceae	Dictyochales
-0.5199	Eukaryota	Euglenozoa	Euglenida
-0.572	Eukaryota	Evosea	Eumycetozoa	Trichiida	Trichiidae	Arcyria	Arcyria_cinerea
-0.3343	Eukaryota	Rhodophyta
-0.4386	Eukaryota	Streptophyta	Coleochaetophyceae	Coleochaetales
-0.902	Eukaryota	Streptophyta	Haplomitriopsida	Treubiales	Treubiaceae	Treubia	Treubia_lacunosa
+4.9562	Bacteria
+33.208000000000006	Bacteria	Proteobacteria
+1.5366	Bacteria	Proteobacteria	Alphaproteobacteria
+26.7762	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	incertae	sedis	SAR116	cluster
+3.1034	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	incertae	sedis	SAR116	cluster	SAR116	cluster	Candidatus_Puniceispirillum	Candidatus_Puniceispirillum_marinum
+2.4416	Bacteria	Proteobacteria	Alphaproteobacteria	Holosporales	Caedimonadaceae	Caedimonadaceae
+6.19	Bacteria	Proteobacteria	Alphaproteobacteria	Hyphomicrobiales
+0.8158	Bacteria	Proteobacteria	Alphaproteobacteria	Hyphomicrobiales	Parvibaculaceae
+62.16119999999999	Bacteria	Proteobacteria	Alphaproteobacteria	Pelagibacterales	Pelagibacteraceae	Pelagibacteraceae
+27.714000000000002	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales
+1.9264999999999999	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Roseobacteraceae	Roseobacteraceae
+16.4947	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales	unclassified_Rhodobacterales	unclassified_Rhodobacterales
+2.7156000000000002	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodospirillales
+0.7419	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales
+1.3159	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Erythrobacteraceae	Erythrobacteraceae
+10.131700000000002	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales
+1.3435	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	Burkholderiales	genera	incertae	sedis
+8.5475	Bacteria	Proteobacteria	Betaproteobacteria	Nitrosomonadales	unclassified_Nitrosomonadales_OM43_clade
+39.5046	Bacteria	Proteobacteria	Gammaproteobacteria
+0.9572	Bacteria	Proteobacteria	Gammaproteobacteria	Alteromonadales
+0.6866000000000001	Bacteria	Proteobacteria	Gammaproteobacteria	Alteromonadales	Alteromonadaceae	Alteromonadaceae
+2.3153	Bacteria	Proteobacteria	Gammaproteobacteria	Alteromonadales	Psychromonadaceae	Psychromonadaceae
+9.5532	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales	Halieaceae	Halieaceae
+0.423	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales	Microbulbiferaceae	Microbulbiferaceae	Microbulbifer
+0.8712	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales	Porticoccaceae	Porticoccaceae	unclassified_Porticoccaceae
+15.7666	Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales	Spongiibacteraceae	Spongiibacteraceae
+0.5174	Bacteria	Proteobacteria	Gammaproteobacteria	Chromatiales	Wenzhouxiangellaceae	Wenzhouxiangellaceae	Wenzhouxiangella
+5.1756	Bacteria	Proteobacteria	Gammaproteobacteria	Gammaproteobacteria	incertae	sedis	SAR86	cluster	SAR86	cluster
+1.0521	Bacteria	Proteobacteria	Gammaproteobacteria	Gammaproteobacteria_incertae_sedis	Pseudohongiella	Pseudohongiella_acticola
+4.6935	Bacteria	Proteobacteria	Gammaproteobacteria	Methylococcales	Methylococcaceae	Methylococcaceae
+1.6040999999999999	Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales
+0.8427	Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales	Hahellaceae	Hahellaceae
+2.2948	Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales	Kangiellaceae	Kangiellaceae	Kangiella
+1.9116	Bacteria	Proteobacteria	Gammaproteobacteria	Xanthomonadales
+2.5926	Bacteria	Proteobacteria	Gammaproteobacteria	unclassified_Gammaproteobacteria	unclassified_Gammaproteobacteria	unclassified_Gammaproteobacteria
+0.08968	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales	Listeriaceae
+2.90506	Eukaryota
+0.6785	Eukaryota	Annelida	Polychaeta
+3.1298	Eukaryota	Bacillariophyta
+1.4314999999999998	Eukaryota	Bacillariophyta	Mediophyceae
+4.4723999999999995	Eukaryota	Chlorophyta
+0.4824	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales
+0.678	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales
+0.3108	Eukaryota	Chlorophyta	Ulvophyceae	Cladophorales	Pithophoraceae	Pithophora	Pithophora_roettleri
+0.3536	Eukaryota	Chordata	Aves
+1.1021649999999998	Eukaryota	Chordata	Thaliacea	Pyrosomata	Pyrosomatidae	Pyrostremma	Pyrostremma_spinosum
+2.4678	Eukaryota	Chrysophyceae	Chrysophyceae
+0.538	Eukaryota	Cnidaria
+0.6958	Eukaryota	Cryptophyceae	Cryptophyceae
+1.6453	Eukaryota	Cryptophyceae	Cryptophyceae	Cyathomonadacea
+1.6463999999999999	Eukaryota	Cryptophyceae	Cryptophyceae	Pyrenomonadales
+1.8420999999999998	Eukaryota	Dictyochophyceae	Dictyochophyceae
+0.7638	Eukaryota	Dictyochophyceae	Dictyochophyceae	Dictyochales
+0.6287	Eukaryota	Euglenozoa	Euglenida
+0.982	Eukaryota	Haptista	Haptophyta	Phaeocystales	Phaeocystaceae	Phaeocystis
+0.9159999999999999	Eukaryota	Oomycota	Oomycota
+0.8112	Eukaryota	Rhodophyta
+1.0723	Eukaryota	Streptophyta

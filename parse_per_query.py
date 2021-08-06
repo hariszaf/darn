@@ -16,11 +16,11 @@ input_file = open("darn_gappa_assign_per_query.tsv", "r")
 # And a second one for the likelihood sums for each taxonomy: {'Eukaryota;Chlorophyta': 4.441, 'Eukaryota;Haptista;Haptophyta': 0.7416, ...}
 
 domain_dict = {}
-counter = 0 
+counter = 0
 lwr_dict = {}
 counts_dict = {}
 
-# Each line of the per_query is parsed to fill in the 2 dictionaries 
+# Each line of the per_query is parsed to fill in the 2 dictionaries
 for line in input_file:
 
    # Keep the query id
@@ -53,10 +53,10 @@ for line in input_file:
       # Keep the LWR score of the record
       lwr = line[1]
 
-      # And again, if this is the first record make a new pair 
+      # And again, if this is the first record make a new pair
       if taxonomy not in lwr_dict.keys():
          lwr_dict[taxonomy] = float(lwr)
-      
+
       # This is critical!! Otherwise, we add this new likelihood value to the list
       else:
          lwr_dict[taxonomy] += float(lwr)
@@ -67,7 +67,7 @@ for line in input_file:
       else: 
          counts_dict[taxonomy] += 1.0
 
-# Build likelihood krona profile 
+# Build likelihood krona profile
 lwr_krona_profile = open("darn_processed_lwr.profile", "w")
 entries = []
 for taxonomy, value in lwr_dict.items():
@@ -87,12 +87,12 @@ for taxonomy, value in lwr_dict.items():
 # Sort based on the taxonomy
 entries.sort(key=lambda x:x[1])
 
-# Write a file with all the entries 
+# Write a file with all the entries
 for entry in entries:
    lwr_krona_profile.write(str(entry[0]) + "\t" + entry[1] + "\n")
 
 
-# Likewise, for the counts 
+# Likewise, for the counts
 counts_krona_profile = open("darn_processed_counts.profile", "w")
 exact_counts = {}
 for taxonomy, value in counts_dict.items():
@@ -120,31 +120,29 @@ for taxonomy, value in counts_dict.items():
             else:
                if build_taxonomy not in exact_counts.keys():
                   exact_counts[build_taxonomy] = 0.0
-               else: 
-                  exact_counts[build_taxonomy] += 0.0          
-
-
-
+               else:
+                  exact_counts[build_taxonomy] += 0.0
 
          elif level == len(taxonomy) - 1:
             build_taxonomy += ";" + taxonomy[level]
 
             if build_taxonomy not in exact_counts.keys():
                exact_counts[build_taxonomy] = value
-            else: 
-               exact_counts[build_taxonomy] += value            
-
+            else:
+               exact_counts[build_taxonomy] += value
 
          else:
             build_taxonomy += ";" + taxonomy[level]
 
             if build_taxonomy not in exact_counts.keys():
                exact_counts[build_taxonomy] = 0.0
-            else: 
+            else:
                exact_counts[build_taxonomy] += 0.0
 
    else:
-      print(taxonomy)
+      print("TAXONOMY >>>>>", taxonomy)
+
+# ----------------------------------------------------------
 
 entries = []
 for taxonomy, value in exact_counts.items():
@@ -165,7 +163,7 @@ for taxonomy, value in exact_counts.items():
 entries.sort(key=lambda x:x[1])
 
 
-# Write a file with all the entries 
+# Write a file with all the entries
 for entry in entries:
    if entry[0] == 0.0:
       counts = ""
@@ -177,11 +175,11 @@ for entry in entries:
 
 
 ###################################################################
-# PART B: Build the .json file for retrieve query ids per domain 
+# PART B: Build the .json file for retrieve query ids per domain
 # and export seqs of each domain in a text file
 ###################################################################
 
-# Track query ids assigned in each domain 
+# Track query ids assigned in each domain
 query_names_per_domain = {}
 
 for query, domains in domain_dict.items():
@@ -196,8 +194,11 @@ for query, domains in domain_dict.items():
 
 query_names_per_domain.pop("taxopath", None)
 
-# Keep some counts! 
-total_queries = len(domain_dict.keys()) 
+
+# ----------------------------------------------------------
+
+# Keep some counts!
+total_queries = len(domain_dict.keys())
 
 if "Bacteria" in query_names_per_domain:
    total_bacteria  = len(query_names_per_domain["Bacteria"])
@@ -232,58 +233,86 @@ with open('darn_assignments_per_domain.json', 'w') as fp:
     json.dump(query_names_per_domain, fp)
 
 
+# ----------------------------------------------------------
 
-query_fasta_file = open('query.fasta', "r")
+# Write per domain .fasta files
+darn_mapping_file  = open('id_pairs', 'r')
+darn_mappings      = {}
 
-queries_dict = {}
-ids_mapping = {}
+for entry in darn_mapping_file:
 
+   if "\n" in entry:
+      entry              = entry[:-1]
+
+   entry                 = entry.split('_')
+   darnID                = entry[-1]
+   initID                = entry[:-1]
+   initID                = '_'.join(initID)
+   darn_mappings[darnID] = initID
+
+
+
+query_fasta_file = open('oriented_input.fasta', "r")
+darn_ids_to_user = {}
+darn_ids_to_seq  = {}
+
+# start for loop
 for line in query_fasta_file:
 
-   if line[0] == ">": 
+   if line[0] == ">":
 
-      header = line
-      darn_id = line[line.rindex('_')+1:][:-1]
-      
-   else: 
-      queries_dict[header]  = line
-      ids_mapping[darn_id] = header
+      hline = line[1:]
+      if "\n" in hline:
+         hline = hline[:-1]
+
+      hline       = hline.split('_')
+      darn_id     = hline[-1]
+      user_header = '_'.join(hline)
+
+   else:
+      darn_ids_to_user[darn_id]  = user_header
+      darn_ids_to_seq[darn_id]   = line
+# end of for loop
+
 
 
 if "Bacteria" in query_names_per_domain:
    bacteria_fasta = open("darn_bacteria_assignments.fasta", "w")
+
    for query_id in query_names_per_domain["Bacteria"]:
 
-      if query_id in ids_mapping.keys():
-         header = ids_mapping[query_id]
-         seq = queries_dict[header]
-         bacteria_fasta.write(header + seq)
+      if query_id in darn_ids_to_user.keys():
+
+         header = darn_ids_to_user[query_id]
+         seq    = darn_ids_to_seq[header]
+         bacteria_fasta.write(">" + darn_mappings[header] + "\t" +  header + "\n" + seq)
 
 if "Archaea" in query_names_per_domain:
    archaea_fasta = open("darn_archaea_assignments.fasta", "w")
    for query_id in query_names_per_domain["Archaea"]:
 
-      if query_id in ids_mapping.keys():
-         header = ids_mapping[query_id]
-         seq = queries_dict[header]
-         archaea_fasta.write(header + seq)
+      if query_id in darn_ids_to_user.keys():
+         header = darn_ids_to_user[query_id]
+         seq    = darn_ids_to_seq[header]
+         archaea_fasta.write(">" + darn_mappings[header] + "\t" + header + "\n" + seq)
 
 if "Eukaryota" in query_names_per_domain: 
    eukaryota_fasta = open("darn_eukaryota_assignments.fasta", "w")
    for query_id in query_names_per_domain["Eukaryota"]:
 
-      if query_id in ids_mapping.keys():
-         header = ids_mapping[query_id]
-         seq = queries_dict[header]
-         eukaryota_fasta.write(header + seq)
+      if query_id in darn_ids_to_user.keys():
+         header = darn_ids_to_user[query_id]
+         seq = darn_ids_to_seq[header]
+         eukaryota_fasta.write(">" + darn_mappings[header] + "\t" + header + "\n"  + seq)
 
 if "DISTANT" in query_names_per_domain: 
    eukaryota_fasta = open("darn_distant_assignments.fasta", "w")
    for query_id in query_names_per_domain["DISTANT"]:
 
-      if query_id in ids_mapping.keys():
-         header = ids_mapping[query_id]
-         seq = queries_dict[header]
-         eukaryota_fasta.write(header + seq)
+      if query_id in darn_ids_to_user.keys():
+         header = darn_ids_to_user[query_id]
+         seq    = darn_ids_to_seq[header]
+         eukaryota_fasta.write(">" + darn_mappings[header] + "\t" + header + "\n" + seq)
+
 
 print("Parsing script has been completed. \n")
