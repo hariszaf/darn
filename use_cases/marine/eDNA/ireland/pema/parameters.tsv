@@ -19,7 +19,7 @@
 #
 # Give in your each uniq experiment a NAME, so a single output file will be created for each of them 
 #
-outputFolderName	irish_marine_samples
+outputFolderName	irish_marine_samples_d_13
 #
 #
 # PEMA needs the names of the samples to be as in ENA format (e.g "ERR1021912") but 
@@ -284,7 +284,7 @@ clusteringAlgo	algo_Swarm
 # will be grouped if they hav e integer (or less) differences. This is swarm's most important
 # parameter
 #
-d	10
+d	13
 #
 #
 # when using the option --fastidious (-f), define the minimum mass of a large ASV. 
