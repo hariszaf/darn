@@ -1,0 +1,166 @@
+1.3372	Archaea
+0.5545	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata	Thermoplasmatales
+4.936e-06	Archaea	Euryarchaeota	Stenosarchaea_group	Methanomicrobia	Methanosarcinales	Candidatus_Methanoperedenaceae	Candidatus_Methanoperedens
+122.50240000000005	Bacteria
+1.1555	Bacteria	Bacteria	incertae_sedis_Bacteria	Candidatus_Bipolaricaulota	Candidatus_Acetothermum_autotrophicum
+7.3878	Bacteria	FCB_group	Bacteroidetes/Chlorobi_group	Bacteroidetes
+1.5438999999999998	Bacteria	PVC_group	Chlamydiae	Chlamydiia	Parachlamydiales
+5.033e-06	Bacteria	PVC_group	Planctomycetes	Candidatus_Brocadiae	Candidatus_Brocadiales	Candidatus_Brocadiaceae
+4.0945	Bacteria	PVC_group	Verrucomicrobia
+0.5108	Bacteria	PVC_group	Verrucomicrobia	Methylacidiphilae	Methylacidiphilales	Methylacidiphilaceae	Methylacidiphilum
+0.5953	Bacteria	PVC_group	Verrucomicrobia	Verrucomicrobiae	Verrucomicrobiales	unclassified_Verrucomicrobiales	Verrucomicrobiales	bacterium	VVV1	6827
+29.6941	Bacteria	Proteobacteria
+56.0026	Bacteria	Proteobacteria	Alphaproteobacteria
+1.6597	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	incertae	sedis
+1.0316	Bacteria	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria	incertae	sedis	SAR116	cluster
+4.6192	Bacteria	Proteobacteria	Alphaproteobacteria	Holosporales	Caedimonadaceae	Caedimonadaceae
+16.8737	Bacteria	Proteobacteria	Alphaproteobacteria	Hyphomicrobiales
+0.556	Bacteria	Proteobacteria	Alphaproteobacteria	Hyphomicrobiales	Cohaesibacteraceae	Cohaesibacteraceae	Cohaesibacter
+2.5857	Bacteria	Proteobacteria	Alphaproteobacteria	Hyphomicrobiales	Pseudoxanthobacteraceae	Pseudoxanthobacteraceae	Pseudoxanthobacter	Pseudoxanthobacter	soli	Pseudoxanthobacter	soli	DSM	19599	1123
+0.5535	Bacteria	Proteobacteria	Alphaproteobacteria	Maricaulales	Maricaulaceae	Maricaulaceae
+1.2042	Bacteria	Proteobacteria	Alphaproteobacteria	Micropepsales	Micropepsaceae	Micropepsaceae	Rhizomicrobium	unclassified_Rhizomicrobium	Rhizomicrobium_sp._SCGC_AG212E05
+3.3032999999999997	Bacteria	Proteobacteria	Alphaproteobacteria	Pelagibacterales	Pelagibacteraceae	Pelagibacteraceae
+24.708200000000005	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales
+3.4969	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Roseobacteraceae	Roseobacteraceae
+3.4119	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodospirillales
+18.262500000000003	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales
+8.400300000000001	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Erythrobacteraceae	Erythrobacteraceae
+0.5293	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingosinicellaceae	Sphingosinicellaceae
+1.4441000000000002	Bacteria	Proteobacteria	Betaproteobacteria
+16.2775	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales
+3.0921000000000003	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	Alcaligenaceae	Alcaligenaceae
+4.205399999999999	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	Comamonadaceae	Comamonadaceae
+3.6104000000000003	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	Oxalobacteraceae	Oxalobacteraceae
+23.379800000000003	Bacteria	Proteobacteria	Betaproteobacteria	Nitrosomonadales	Nitrosomonadaceae	Nitrosomonadaceae
+0.5236	Bacteria	Proteobacteria	Betaproteobacteria	Nitrosomonadales	unclassified_Nitrosomonadales_OM43_clade
+0.633	Bacteria	Proteobacteria	Gammaproteobacteria
+1.0626	Bacteria	Proteobacteria	Gammaproteobacteria	Legionellales	Legionellaceae	Legionellaceae
+4.0326	Bacteria	Proteobacteria	Gammaproteobacteria	Methylococcales	Methylococcaceae	Methylococcaceae
+0.66921	Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales	Oceanospirillales	incertae	sedis	Oceanospirillales	incertae	sedis	Pelagibaculum	Pelagibaculum	spongiae	7477	Pelagibaculum	spongiae	7477
+1.5994	Bacteria	Terrabacteria_group	Actinobacteria	Acidimicrobiia	Acidimicrobiales	Acidimicrobiaceae
+12.690999999999999	Bacteria	Terrabacteria_group	Actinobacteria	Actinomycetia
+27.224899999999998	Bacteria	Terrabacteria_group	Actinobacteria	Actinomycetia	Candidatus_Nanopelagicales	Candidatus_Nanopelagicaceae
+12.216500000000003	Bacteria	Terrabacteria_group	Actinobacteria	Actinomycetia	Micrococcales
+0.4894	Bacteria	Terrabacteria_group	Actinobacteria	Actinomycetia	Propionibacteriales	Kribbellaceae	Kribbella
+1.643	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples	uncultured	Chloroflexi	bacterium	uncultured	Chloroflexi	bacterium
+1.4237	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales
+0.7989	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales	Listeriaceae
+1.3664	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=	JCM	14202
+11.109110000000001	DISTANT
+273.3363300000003	Eukaryota
+32.724	Eukaryota	Annelida	Clitellata
+0.6156	Eukaryota	Annelida	Clitellata	Acanthobdellida	Acanthobdella	Acanthobdella	Acanthobdella_peledina
+1.1635	Eukaryota	Annelida	Clitellata	Haplotaxida
+3.777	Eukaryota	Annelida	Polychaeta
+11.222199999999999	Eukaryota	Apusomonadidae	Apusomonadidae	Apusomonadidae	Apusomonadidae	Thecamonas	Thecamonas_trahens
+19.8651	Eukaryota	Arthropoda
+0.7599	Eukaryota	Arthropoda	Branchiopoda
+1.1989	Eukaryota	Arthropoda	Collembola
+1.4041000000000001	Eukaryota	Arthropoda	Collembola	Poduromorpha
+1.5748	Eukaryota	Arthropoda	Diplopoda
+0.6604	Eukaryota	Arthropoda	Diplopoda	Julida
+0.42	Eukaryota	Arthropoda	Diplopoda	Polyxenida
+27.529400000000003	Eukaryota	Arthropoda	Insecta
+0.5972	Eukaryota	Arthropoda	Insecta	Diptera
+1.7504	Eukaryota	Arthropoda	Insecta	Ephemeroptera
+1.6320999999999999	Eukaryota	Arthropoda	Insecta	Hemiptera
+0.5366	Eukaryota	Arthropoda	Insecta	Hymenoptera
+0.9440999999999999	Eukaryota	Arthropoda	Insecta	Mantophasmatodea
+0.6488	Eukaryota	Arthropoda	Malacostraca
+0.4427	Eukaryota	Arthropoda	Malacostraca	Mysida
+10.2977	Eukaryota	Ascomycota
+2.0118	Eukaryota	Ascomycota	Dothideomycetes
+2.1765	Eukaryota	Ascomycota	Leotiomycetes	Leohumicola	Leohumicola	Leohumicola
+0.5098	Eukaryota	Bacillariophyta
+5.9746999999999995	Eukaryota	Bacillariophyta	Bacillariophyceae
+1.0944	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae
+1.0	Eukaryota	Bacillariophyta	Coscinodiscophyceae
+0.7199	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales
+0.56	Eukaryota	Basidiomycota	Agaricomycetes
+0.5852	Eukaryota	Basidiomycota	Cystobasidiomycetes	Cystobasidiales	Cystobasidiaceae	Cystobasidium	Cystobasidium_sp
+2.1811	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae	Rhodotorula
+1.2236	Eukaryota	Basidiomycota	Pucciniomycetes	Pucciniales
+2.05593	Eukaryota	Basidiomycota	Tremellomycetes	Cystofilobasidiales	Mrakiaceae	Phaffia	Phaffia_rhodozyma
+13.131499999999999	Eukaryota	Bigyra	Bigyra	Bicosoecida
+9.327499999999997	Eukaryota	Bigyra	Bigyra	Thraustochytrida	Thraustochytriaceae
+0.9996	Eukaryota	Brachiopoda	Craniata	Craniida	Craniidae
+0.6203	Eukaryota	Bryozoa	Phylactolaemata
+4.4871	Eukaryota	Chlorophyta
+8.967800000000002	Eukaryota	Chlorophyta	Chlorophyceae
+1.1764999999999999	Eukaryota	Chlorophyta	Chlorophyceae	Chlamydomonadales
+1.0798999999999999	Eukaryota	Chlorophyta	Chlorophyceae	Sphaeropleales
+1.4999	Eukaryota	Chlorophyta	Tetraedoron	Tetraedoron	Tetraedoron	Tetraedoron	Tetraedoron_bitridens
+2.5686	Eukaryota	Chlorophyta	Trebouxiophyceae
+1.1353	Eukaryota	Chlorophyta	Trebouxiophyceae	Coccomyxa	Coccomyxa	Coccomyxa	Coccomyxa_subellipsoidea
+1.7847	Eukaryota	Chlorophyta	Ulvophyceae	Cladophorales	Pithophoraceae	Pithophora	Pithophora_roettleri
+0.6097	Eukaryota	Chlorophyta	Ulvophyceae	Oltmannsiellopsidales	Oltmannsiellopsidaceae	Oltmannsiellopsis	Oltmannsiellopsis_viridis
+1.1991	Eukaryota	Chordata	Actinopteri	Cypriniformes
+1.506	Eukaryota	Chordata	Actinopteri	Salmoniformes	Salmonidae
+0.9491	Eukaryota	Chordata	Aves	Anseriformes
+0.4796	Eukaryota	Chordata	Aves	Passeriformes
+0.9997	Eukaryota	Chordata	Hyperoartia	Petromyzontiformes
+0.9804	Eukaryota	Chordata	Mammalia
+0.8334	Eukaryota	Chordata	Mammalia	Artiodactyla
+0.535	Eukaryota	Chordata	Thaliacea	Pyrosomata	Pyrosomatidae	Pyrostremma	Pyrostremma_spinosum
+21.497299999999996	Eukaryota	Chrysophyceae	Chrysophyceae
+4.8026	Eukaryota	Chrysophyceae	Chrysophyceae	Apoikiaceae	Apoikiaceae	Apoikiospumella	Apoikiospumella_mondseeiensis
+47.8068	Eukaryota	Chrysophyceae	Chrysophyceae	Chromulinales
+2.156	Eukaryota	Chrysophyceae	Chrysophyceae	Hibberdiales	Hibberdiaceae	Hibberdia	Hibberdia_magna
+12.2892	Eukaryota	Chytridiomycota
+3.5418000000000003	Eukaryota	Chytridiomycota	Chytridiomycetes	Spizellomycetales
+0.4066	Eukaryota	Chytridiomycota	Chytridiomycetes	Synchytriales	Synchytriaceae	Synchytrium
+0.7664	Eukaryota	Ciliophora
+0.9587	Eukaryota	Cnidaria	Hydrozoa	Limnomedusae
+2.1255	Eukaryota	Cnidaria	Myxozoa
+0.3047	Eukaryota	Collodictyonidae	Collodictyonidae	Collodictyonidae	Collodictyonidae	Diphylleia	Diphylleia_rotans
+3.2365999999999997	Eukaryota	Cryptophyceae	Cryptophyceae
+4.810700000000001	Eukaryota	Cryptophyceae	Cryptophyceae	Cryptomonadales
+1.92932	Eukaryota	Cryptophyceae	Cryptophyceae	Cyathomonadacea
+8.0368	Eukaryota	Dictyochophyceae	Dictyochophyceae
+2.4589	Eukaryota	Discosea	Flabellinia	Vannellidae	Vannellidae
+2.686	Eukaryota	Discosea	Himatismenida	Himatismenida
+34.521620000000006	Eukaryota	Euglenozoa	Euglenida
+2.4574	Eukaryota	Euglenozoa	Euglenida	Euglenales
+1.6271	Eukaryota	Eustigmatophyceae	Eustigmatophyceae
+2.3494	Eukaryota	Eustigmatophyceae	Eustigmatophyceae	Goniochloridales	Trachydiscus	Trachydiscus	Trachydiscus_minutus
+1.03451	Eukaryota	Evosea	Eumycetozoa	Physariida
+2.9641	Eukaryota	Evosea	Squamamoeba	Squamamoeba	Squamamoeba	Squamamoeba	Squamamoeba_japonica
+3.2849	Eukaryota	Evosea	Variosea
+4.8197	Eukaryota	Gastrotricha	Chaetonotida	Chaetonotida
+0.6508	Eukaryota	Gnathostomulida
+5.4578999999999995	Eukaryota	Haptista	Haptophyta
+2.61	Eukaryota	Haptista	Haptophyta	Phaeocystales	Phaeocystaceae	Phaeocystis
+2.5233999999999996	Eukaryota	Heterolobosea
+1.0735000000000001	Eukaryota	Ichthyosporea	Ichthyosporea	Dermocystida	Sphaerothecum	Sphaerothecum	Sphaerothecum_destruens
+0.5185	Eukaryota	Mollusca	Solenogastres
+0.4868	Eukaryota	Mucoromycota
+1.2511999999999999	Eukaryota	Mucoromycota	Glomeromycetes	Diversisporales
+0.6073	Eukaryota	Nematoda
+0.5402	Eukaryota	Nematoda	Chromadorea	Desmoscolecida	Desmoscolecidae	Desmoscolex	Desmoscolex_koloensis
+0.7741	Eukaryota	Nematoda	Enoplea
+0.5643	Eukaryota	Nematoda	Enoplea	Trichinellida
+0.3951	Eukaryota	Nemertea	Enopla
+25.322499999999998	Eukaryota	Oomycota	Oomycota
+0.5782	Eukaryota	Oomycota	Oomycota	Lagenaceae	Lagenaceae	Lagena	Lagena	radicicola
+0.4998	Eukaryota	Oomycota	Oomycota	Lagenidiales
+5.7583	Eukaryota	Oomycota	Oomycota	Peronosporales
+2.9939999999999998	Eukaryota	Oomycota	Oomycota	Saprolegniales	Saprolegniaceae
+6.2878	Eukaryota	Phaeophyceae	Phaeophyceae
+0.662	Eukaryota	Phaeophyceae	Phaeophyceae	Scytothamnales
+0.549	Eukaryota	Placozoa
+0.9493	Eukaryota	Platyhelminthes	Catenulida	Stenostomidae	Stenostomidae
+1.1159	Eukaryota	Platyhelminthes	Trematoda	Diplostomida
+0.9992	Eukaryota	Porifera	Demospongiae	Spongillida
+3.0941	Eukaryota	Rhodophyta
+0.6159	Eukaryota	Rhodophyta	Florideophyceae
+1.7987000000000002	Eukaryota	Rhodophyta	Florideophyceae	Batrachospermales
+2.4449	Eukaryota	Rotifera	Bdelloidea
+1.1435	Eukaryota	Rotifera	Monogononta
+9.462200000000001	Eukaryota	Rotifera	Monogononta	Ploima
+9.061100000000001	Eukaryota	Streptophyta
+0.8058	Eukaryota	Streptophyta	Magnoliopsida
+0.7538	Eukaryota	Streptophyta	Magnoliopsida	Malpighiales
+4.454	Eukaryota	Streptophyta	Mesostigmatophyceae	Mesostigmatales	Mesostigmataceae	Mesostigma	Mesostigma_viride
+1.2641	Eukaryota	Synurophyceae	Synurophyceae	Ochromonadales
+1.5501	Eukaryota	Tardigrada	Eutardigrada	Parachela
+3.9991	Eukaryota	Xanthophyceae	Xanthophyceae
