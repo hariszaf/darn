@@ -1,99 +1,95 @@
-	Archaea
+2.0	Archaea
+	Archaea	Candidatus_Thermoplasmatota
+	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata
+2.0	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata	Thermoplasmatales
+1.0	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata	Thermoplasmatales	unclassified_Thermoplasmatales
 	Archaea	Euryarchaeota
-	Archaea	Euryarchaeota	environmental_samples
-227.0	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III
-4.0	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III	euryarchaeote_AD1000_61_A07
-	Archaea	TACK_group
-	Archaea	TACK_group	Crenarchaeota
-8.0	Archaea	TACK_group	Crenarchaeota	Thermoprotei
-6.0	Bacteria
-1.0	Bacteria	Proteobacteria
-158.0	DISTANT
-262.0	Eukaryota
+	Archaea	Euryarchaeota	Archaeoglobi
+	Archaea	Euryarchaeota	Archaeoglobi	Archaeoglobales
+	Archaea	Euryarchaeota	Archaeoglobi	Archaeoglobales	Archaeoglobaceae
+	Archaea	Euryarchaeota	Archaeoglobi	Archaeoglobales	Archaeoglobaceae	Archaeoglobaceae
+1.0	Archaea	Euryarchaeota	Archaeoglobi	Archaeoglobales	Archaeoglobaceae	Archaeoglobaceae	Ferroglobus
+3.0	Bacteria
+3.0	Bacteria	Proteobacteria
+	Bacteria	Proteobacteria	Alphaproteobacteria
+	Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales
+	Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales	unclassified_Rickettsiales
+1.0	Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales	unclassified_Rickettsiales	unclassified_Rickettsiales
+	Bacteria	Terrabacteria_group
+	Bacteria	Terrabacteria_group	Chloroflexi
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples	uncultured
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples	uncultured	Chloroflexi
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples	uncultured	Chloroflexi	bacterium
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples	uncultured	Chloroflexi	bacterium	uncultured
+	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples	uncultured	Chloroflexi	bacterium	uncultured	Chloroflexi
+1.0	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples	uncultured	Chloroflexi	bacterium	uncultured	Chloroflexi	bacterium
+	Bacteria	Terrabacteria_group	Firmicutes
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli
+1.0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=	JCM
+6.0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=	JCM	14202
+14.0	DISTANT
+111.0	Eukaryota
 	Eukaryota	Arthropoda
-2.0	Eukaryota	Arthropoda	Branchiopoda
-1.0	Eukaryota	Arthropoda	Branchiopoda	Anostraca
-9.0	Eukaryota	Arthropoda	Insecta
-1.0	Eukaryota	Arthropoda	Insecta	Coleoptera
+5.0	Eukaryota	Arthropoda	Branchiopoda
+3.0	Eukaryota	Arthropoda	Branchiopoda	Anostraca
+2.0	Eukaryota	Arthropoda	Insecta
+4.0	Eukaryota	Arthropoda	Insecta	Diptera
 1.0	Eukaryota	Arthropoda	Insecta	Mecoptera
-	Eukaryota	Ascomycota
-	Eukaryota	Ascomycota	Lecanoromycetes
-	Eukaryota	Ascomycota	Lecanoromycetes	Caliciales
-	Eukaryota	Ascomycota	Lecanoromycetes	Caliciales	Physciaceae
-1.0	Eukaryota	Ascomycota	Lecanoromycetes	Caliciales	Physciaceae	Heterodermia
 	Eukaryota	Basidiomycota
-	Eukaryota	Basidiomycota	Agaricomycetes
-	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales
-	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales	Sphaerobolaceae
-	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales	Sphaerobolaceae	Sphaerobolus
-4.0	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales	Sphaerobolaceae	Sphaerobolus	Sphaerobolus_stellatus
 	Eukaryota	Basidiomycota	Microbotryomycetes
 	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales
 	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae
-1.0	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae	Rhodotorula
-	Eukaryota	Bryozoa
-	Eukaryota	Bryozoa	Phylactolaemata
-	Eukaryota	Bryozoa	Phylactolaemata	Fredericellidae
-	Eukaryota	Bryozoa	Phylactolaemata	Fredericellidae	Fredericellidae
-	Eukaryota	Bryozoa	Phylactolaemata	Fredericellidae	Fredericellidae	Fredericella
-1.0	Eukaryota	Bryozoa	Phylactolaemata	Fredericellidae	Fredericellidae	Fredericella	Fredericella_sultana
+17.0	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae	Rhodotorula
 	Eukaryota	Chlorophyta
 	Eukaryota	Chlorophyta	Chlorophyceae
-	Eukaryota	Chlorophyta	Chlorophyceae	Protosiphonales
-	Eukaryota	Chlorophyta	Chlorophyceae	Protosiphonales	Protosiphonaceae
-	Eukaryota	Chlorophyta	Chlorophyceae	Protosiphonales	Protosiphonaceae	Protosiphon
-11.0	Eukaryota	Chlorophyta	Chlorophyceae	Protosiphonales	Protosiphonaceae	Protosiphon	Protosiphon_botryoides
-	Eukaryota	Choanoflagellata
-	Eukaryota	Choanoflagellata	Choanoflagellata
-	Eukaryota	Choanoflagellata	Choanoflagellata	Craspedida
-	Eukaryota	Choanoflagellata	Choanoflagellata	Craspedida	Salpingoecidae
-	Eukaryota	Choanoflagellata	Choanoflagellata	Craspedida	Salpingoecidae	Monosiga
-1.0	Eukaryota	Choanoflagellata	Choanoflagellata	Craspedida	Salpingoecidae	Monosiga	Monosiga_brevicollis
-	Eukaryota	Chordata
-	Eukaryota	Chordata	Appendicularia
-	Eukaryota	Chordata	Appendicularia	Copelata
-1.0	Eukaryota	Chordata	Appendicularia	Copelata	Oikopleuridae
+	Eukaryota	Chlorophyta	Chlorophyceae	Microsporaceae
+	Eukaryota	Chlorophyta	Chlorophyceae	Microsporaceae	Microsporaceae
+	Eukaryota	Chlorophyta	Chlorophyceae	Microsporaceae	Microsporaceae	Microspora
+1.0	Eukaryota	Chlorophyta	Chlorophyceae	Microsporaceae	Microsporaceae	Microspora	Microspora_stagnorum
 	Eukaryota	Chytridiomycota
 	Eukaryota	Chytridiomycota	Chytridiomycetes
+2.0	Eukaryota	Chytridiomycota	Chytridiomycetes	Spizellomycetales
 	Eukaryota	Chytridiomycota	Chytridiomycetes	Synchytriales
 	Eukaryota	Chytridiomycota	Chytridiomycetes	Synchytriales	Synchytriaceae
 1.0	Eukaryota	Chytridiomycota	Chytridiomycetes	Synchytriales	Synchytriaceae	Synchytrium
 	Eukaryota	Ciliophora
-	Eukaryota	Ciliophora	Heterotrichea
-2.0	Eukaryota	Ciliophora	Heterotrichea	Heterotrichida
+1.0	Eukaryota	Ciliophora	Spirotrichea
 	Eukaryota	Cnidaria
-7.0	Eukaryota	Cnidaria	Myxozoa
-	Eukaryota	Cnidaria	Myxozoa	Malacovalvulida
-4.0	Eukaryota	Cnidaria	Myxozoa	Malacovalvulida	Saccosporidae
-	Eukaryota	Cnidaria	Myxozoa	Multivalvulida
-	Eukaryota	Cnidaria	Myxozoa	Multivalvulida	Kudoidae
-21.0	Eukaryota	Cnidaria	Myxozoa	Multivalvulida	Kudoidae	Kudoa
-	Eukaryota	Cryptophyceae
-	Eukaryota	Cryptophyceae	Cryptophyceae
-	Eukaryota	Cryptophyceae	Cryptophyceae	Kathablepharidacea
-	Eukaryota	Cryptophyceae	Cryptophyceae	Kathablepharidacea	Katablepharidaceae
-	Eukaryota	Cryptophyceae	Cryptophyceae	Kathablepharidacea	Katablepharidaceae	Leucocryptos
-1.0	Eukaryota	Cryptophyceae	Cryptophyceae	Kathablepharidacea	Katablepharidaceae	Leucocryptos	Leucocryptos_marina
+4.0	Eukaryota	Cnidaria	Myxozoa
+	Eukaryota	Cnidaria	Myxozoa	Bivalvulida
+	Eukaryota	Cnidaria	Myxozoa	Bivalvulida	Enteromyxidae
+	Eukaryota	Cnidaria	Myxozoa	Bivalvulida	Enteromyxidae	Enteromyxum
+1.0	Eukaryota	Cnidaria	Myxozoa	Bivalvulida	Enteromyxidae	Enteromyxum	Enteromyxum_leei
 	Eukaryota	Euglenozoa
-1.0	Eukaryota	Euglenozoa	Euglenida
-	Eukaryota	Mucoromycota
-1.0	Eukaryota	Mucoromycota	Glomeromycetes
-	Eukaryota	Mucoromycota	Mortierellomycetes
-	Eukaryota	Mucoromycota	Mortierellomycetes	Mortierellales
-	Eukaryota	Mucoromycota	Mortierellomycetes	Mortierellales	Mortierellaceae
-1.0	Eukaryota	Mucoromycota	Mortierellomycetes	Mortierellales	Mortierellaceae	Mortierella
-1.0	Eukaryota	Nematoda
-68.0	Eukaryota	Nematoda	Chromadorea
-	Eukaryota	Nematoda	Chromadorea	Desmoscolecida
-	Eukaryota	Nematoda	Chromadorea	Desmoscolecida	Desmoscolecidae
-	Eukaryota	Nematoda	Chromadorea	Desmoscolecida	Desmoscolecidae	Desmoscolex
-2.0	Eukaryota	Nematoda	Chromadorea	Desmoscolecida	Desmoscolecidae	Desmoscolex	Desmoscolex_koloensis
-7.0	Eukaryota	Nematoda	Chromadorea	Plectida
+191.0	Eukaryota	Euglenozoa	Euglenida
+1.0	Eukaryota	Euglenozoa	Euglenida	Euglenales
+	Eukaryota	Euglenozoa	Euglenida	Eutreptiales
+	Eukaryota	Euglenozoa	Euglenida	Eutreptiales	Eutreptiella
+	Eukaryota	Euglenozoa	Euglenida	Eutreptiales	Eutreptiella	Eutreptiella
+2.0	Eukaryota	Euglenozoa	Euglenida	Eutreptiales	Eutreptiella	Eutreptiella	Eutreptiella_gymnastica
+	Eukaryota	Platyhelminthes
+	Eukaryota	Platyhelminthes	Trematoda
+	Eukaryota	Platyhelminthes	Trematoda	Cercaria
+	Eukaryota	Platyhelminthes	Trematoda	Cercaria	Cercaria
+1.0	Eukaryota	Platyhelminthes	Trematoda	Cercaria	Cercaria	Cercaria
+3.0	Eukaryota	Platyhelminthes	Trematoda	Diplostomida
 	Eukaryota	Streptophyta
-	Eukaryota	Streptophyta	Coleochaetophyceae
-3.0	Eukaryota	Streptophyta	Coleochaetophyceae	Coleochaetales
-	Eukaryota	Streptophyta	Haplomitriopsida
-	Eukaryota	Streptophyta	Haplomitriopsida	Treubiales
-	Eukaryota	Streptophyta	Haplomitriopsida	Treubiales	Treubiaceae
-	Eukaryota	Streptophyta	Haplomitriopsida	Treubiales	Treubiaceae	Treubia
-3.0	Eukaryota	Streptophyta	Haplomitriopsida	Treubiales	Treubiaceae	Treubia	Treubia_lacunosa
+	Eukaryota	Streptophyta	Magnoliopsida
+	Eukaryota	Streptophyta	Magnoliopsida	Celastrales
+1.0	Eukaryota	Streptophyta	Magnoliopsida	Celastrales	Celastraceae

@@ -1,34 +1,30 @@
-167.9804	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III
-2.3040000000000003	Archaea	Euryarchaeota	environmental_samples	uncultured_marine_group_II/III	euryarchaeote_AD1000_61_A07
-2.941	Archaea	TACK_group	Crenarchaeota	Thermoprotei
-1.199503194	Bacteria
-0.226	Bacteria	Proteobacteria
-103.23299999999998	DISTANT
-193.54789999999997	Eukaryota
-1.1029	Eukaryota	Arthropoda	Branchiopoda
-0.5445	Eukaryota	Arthropoda	Branchiopoda	Anostraca
-8.2651	Eukaryota	Arthropoda	Insecta
-0.4936	Eukaryota	Arthropoda	Insecta	Coleoptera
-0.7103	Eukaryota	Arthropoda	Insecta	Mecoptera
-0.4318	Eukaryota	Ascomycota	Lecanoromycetes	Caliciales	Physciaceae	Heterodermia
-2.0349	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales	Sphaerobolaceae	Sphaerobolus	Sphaerobolus_stellatus
-0.602	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae	Rhodotorula
-0.9945	Eukaryota	Bryozoa	Phylactolaemata	Fredericellidae	Fredericellidae	Fredericella	Fredericella_sultana
-10.6341	Eukaryota	Chlorophyta	Chlorophyceae	Protosiphonales	Protosiphonaceae	Protosiphon	Protosiphon_botryoides
-0.4959	Eukaryota	Choanoflagellata	Choanoflagellata	Craspedida	Salpingoecidae	Monosiga	Monosiga_brevicollis
-0.5497	Eukaryota	Chordata	Appendicularia	Copelata	Oikopleuridae
-0.5023	Eukaryota	Chytridiomycota	Chytridiomycetes	Synchytriales	Synchytriaceae	Synchytrium
-0.9934000000000001	Eukaryota	Ciliophora	Heterotrichea	Heterotrichida
-4.5062999999999995	Eukaryota	Cnidaria	Myxozoa
-2.0	Eukaryota	Cnidaria	Myxozoa	Malacovalvulida	Saccosporidae
-8.5636	Eukaryota	Cnidaria	Myxozoa	Multivalvulida	Kudoidae	Kudoa
-0.527	Eukaryota	Cryptophyceae	Cryptophyceae	Kathablepharidacea	Katablepharidaceae	Leucocryptos	Leucocryptos_marina
-0.5778	Eukaryota	Euglenozoa	Euglenida
-0.4426	Eukaryota	Mucoromycota	Glomeromycetes
-0.7447	Eukaryota	Mucoromycota	Mortierellomycetes	Mortierellales	Mortierellaceae	Mortierella
-0.3048	Eukaryota	Nematoda
-61.8422	Eukaryota	Nematoda	Chromadorea
-0.7524	Eukaryota	Nematoda	Chromadorea	Desmoscolecida	Desmoscolecidae	Desmoscolex	Desmoscolex_koloensis
-3.8117	Eukaryota	Nematoda	Chromadorea	Plectida
-0.6966199999999999	Eukaryota	Streptophyta	Coleochaetophyceae	Coleochaetales
-1.2428	Eukaryota	Streptophyta	Haplomitriopsida	Treubiales	Treubiaceae	Treubia	Treubia_lacunosa
+1.3603999999999998	Archaea
+0.39573	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata	Thermoplasmatales
+0.6501	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata	Thermoplasmatales	unclassified_Thermoplasmatales
+0.6343	Archaea	Euryarchaeota	Archaeoglobi	Archaeoglobales	Archaeoglobaceae	Archaeoglobaceae	Ferroglobus
+2.6191	Bacteria
+2.2058	Bacteria	Proteobacteria
+0.5	Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales	unclassified_Rickettsiales	unclassified_Rickettsiales
+0.4227	Bacteria	Terrabacteria_group	Chloroflexi	Chloroflexi	Chloroflexi	Chloroflexi	environmental	samples	uncultured	Chloroflexi	bacterium	uncultured	Chloroflexi	bacterium
+0.8049	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales
+4.6727	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=	JCM	14202
+9.6837	DISTANT
+96.0341	Eukaryota
+3.6035	Eukaryota	Arthropoda	Branchiopoda
+1.5535	Eukaryota	Arthropoda	Branchiopoda	Anostraca
+1.5209000000000001	Eukaryota	Arthropoda	Insecta
+3.472	Eukaryota	Arthropoda	Insecta	Diptera
+0.6175	Eukaryota	Arthropoda	Insecta	Mecoptera
+10.0131	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae	Rhodotorula
+0.5447	Eukaryota	Chlorophyta	Chlorophyceae	Microsporaceae	Microsporaceae	Microspora	Microspora_stagnorum
+2.0	Eukaryota	Chytridiomycota	Chytridiomycetes	Spizellomycetales
+0.2581	Eukaryota	Chytridiomycota	Chytridiomycetes	Synchytriales	Synchytriaceae	Synchytrium
+0.5771	Eukaryota	Ciliophora	Spirotrichea
+3.1208	Eukaryota	Cnidaria	Myxozoa
+0.5142	Eukaryota	Cnidaria	Myxozoa	Bivalvulida	Enteromyxidae	Enteromyxum	Enteromyxum_leei
+168.48160000000004	Eukaryota	Euglenozoa	Euglenida
+0.4395	Eukaryota	Euglenozoa	Euglenida	Euglenales
+1.9043	Eukaryota	Euglenozoa	Euglenida	Eutreptiales	Eutreptiella	Eutreptiella	Eutreptiella_gymnastica
+0.08684	Eukaryota	Platyhelminthes	Trematoda	Cercaria	Cercaria	Cercaria
+1.7051	Eukaryota	Platyhelminthes	Trematoda	Diplostomida
+0.4741	Eukaryota	Streptophyta	Magnoliopsida	Celastrales	Celastraceae
