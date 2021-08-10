@@ -1,0 +1,86 @@
+70.46	Eukaryota
+0	Eukaryota	Arthropoda
+0.774	Eukaryota	Arthropoda	Hexanauplia
+3.858	Eukaryota	Arthropoda	Hexanauplia	Cyclopoida
+0.07893	Eukaryota	Arthropoda	Hexanauplia	Harpacticoida
+1.226	Eukaryota	Arthropoda	Branchiopoda
+0.6599	Eukaryota	Arthropoda	Branchiopoda	Anostraca
+0	Eukaryota	Chordata
+0	Eukaryota	Chordata	Appendicularia
+0	Eukaryota	Chordata	Appendicularia	Copelata
+1.551	Eukaryota	Chordata	Appendicularia	Copelata	Oikopleuridae
+0	Eukaryota	Basidiomycota
+0	Eukaryota	Basidiomycota	Microbotryomycetes
+0	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales
+0	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae
+1.476	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae	Rhodotorula
+0	Eukaryota	Basidiomycota	Pucciniomycetes
+1.334e-05	Eukaryota	Basidiomycota	Pucciniomycetes	Pucciniales
+0	Eukaryota	Basidiomycota	Agaricomycetes
+0	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales
+0	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales	Sphaerobolaceae
+0	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales	Sphaerobolaceae	Sphaerobolus
+1.641e-06	Eukaryota	Basidiomycota	Agaricomycetes	Geastrales	Sphaerobolaceae	Sphaerobolus	Sphaerobolus_stellatus
+0	Eukaryota	Porifera
+0	Eukaryota	Porifera	Calcarea
+0	Eukaryota	Porifera	Calcarea	Lithonida
+0	Eukaryota	Porifera	Calcarea	Lithonida	Petrobionidae
+0	Eukaryota	Porifera	Calcarea	Lithonida	Petrobionidae	Petrobiona
+6.354	Eukaryota	Porifera	Calcarea	Lithonida	Petrobionidae	Petrobiona	Petrobiona_massiliana
+0	Eukaryota	Euglenozoa
+60.48	Eukaryota	Euglenozoa	Euglenida
+0.443	Eukaryota	Euglenozoa	Euglenida	Euglenales
+0	Eukaryota	Euglenozoa	Euglenida	Eutreptiales
+0	Eukaryota	Euglenozoa	Euglenida	Eutreptiales	Eutreptiella
+0	Eukaryota	Euglenozoa	Euglenida	Eutreptiales	Eutreptiella	Eutreptiella
+0.3005	Eukaryota	Euglenozoa	Euglenida	Eutreptiales	Eutreptiella	Eutreptiella	Eutreptiella_gymnastica
+0	Eukaryota	Nematoda
+0	Eukaryota	Nematoda	Enoplea
+8.561e-06	Eukaryota	Nematoda	Enoplea	Triplonchida
+0	Eukaryota	Nematoda	Chromadorea
+0.01241	Eukaryota	Nematoda	Chromadorea	Araeolaimida
+0	Eukaryota	Platyhelminthes
+0	Eukaryota	Platyhelminthes	Catenulida
+0	Eukaryota	Platyhelminthes	Catenulida	Stenostomidae
+1.285e-05	Eukaryota	Platyhelminthes	Catenulida	Stenostomidae	Stenostomidae
+0	Eukaryota	Platyhelminthes	Rhabditophora
+0.002277	Eukaryota	Platyhelminthes	Rhabditophora	Proseriata
+0	Eukaryota	Cryptophyceae
+0	Eukaryota	Cryptophyceae	Cryptophyceae
+0	Eukaryota	Cryptophyceae	Cryptophyceae	Kathablepharidacea
+0	Eukaryota	Cryptophyceae	Cryptophyceae	Kathablepharidacea	Katablepharidaceae
+0	Eukaryota	Cryptophyceae	Cryptophyceae	Kathablepharidacea	Katablepharidaceae	Leucocryptos
+1.761e-06	Eukaryota	Cryptophyceae	Cryptophyceae	Kathablepharidacea	Katablepharidaceae	Leucocryptos	Leucocryptos_marina
+8.215	DISTANT
+2.361	Bacteria
+0	Bacteria	Terrabacteria_group
+0	Bacteria	Terrabacteria_group	Firmicutes
+0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli
+0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales
+0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae
+0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus
+0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus
+0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti
+0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus
+0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti
+0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM
+0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527
+0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=
+0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=	JCM
+0.7774	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=	JCM	14202
+0	Bacteria	FCB_group
+0	Bacteria	FCB_group	Bacteroidetes/Chlorobi_group
+0	Bacteria	FCB_group	Bacteroidetes/Chlorobi_group	Bacteroidetes
+0	Bacteria	FCB_group	Bacteroidetes/Chlorobi_group	Bacteroidetes	Flavobacteriia
+0.3688	Bacteria	FCB_group	Bacteroidetes/Chlorobi_group	Bacteroidetes	Flavobacteriia	Weeksellaceae
+0	Bacteria	Proteobacteria
+0	Bacteria	Proteobacteria	Betaproteobacteria
+0	Bacteria	Proteobacteria	Betaproteobacteria	Ferrovales
+0	Bacteria	Proteobacteria	Betaproteobacteria	Ferrovales	Ferrovaceae
+0	Bacteria	Proteobacteria	Betaproteobacteria	Ferrovales	Ferrovaceae	Ferrovaceae
+0	Bacteria	Proteobacteria	Betaproteobacteria	Ferrovales	Ferrovaceae	Ferrovaceae	Ferrovum
+8.619e-06	Bacteria	Proteobacteria	Betaproteobacteria	Ferrovales	Ferrovaceae	Ferrovaceae	Ferrovum	unclassified_Ferrovum
+0	Archaea
+0	Archaea	Candidatus_Thermoplasmatota
+0	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata
+0.2009	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata	Thermoplasmatales

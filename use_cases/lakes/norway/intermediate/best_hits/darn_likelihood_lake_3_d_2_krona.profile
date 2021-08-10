@@ -1,0 +1,9 @@
+0.866	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata	Thermoplasmatales
+2.4188	Bacteria
+0.1253	Bacteria	Proteobacteria	Gammaproteobacteria	Enterobacterales
+0.21222	DISTANT
+15.0193	Eukaryota
+9.818000000000001	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae	Rhodotorula
+2.0	Eukaryota	Chytridiomycota	Chytridiomycetes	Spizellomycetales
+173.79160000000005	Eukaryota	Euglenozoa	Euglenida
+0.4684	Eukaryota	Platyhelminthes	Trematoda	Diplostomida
