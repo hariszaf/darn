@@ -1,6 +1,0 @@
-- "left reads":
-  - "/mnt/analysis/vigo_d_10/2.trimmomatic_output/filtered_max_SRR1808870_1.fastq.gz.1P.fastq.gz"
-  "orientation": "fr"
-  "right reads":
-  - "/mnt/analysis/vigo_d_10/2.trimmomatic_output/filtered_max_SRR1808870_2.fastq.gz.2P.fastq.gz"
-  "type": "paired-end"
