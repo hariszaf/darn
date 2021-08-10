@@ -1,16 +1,16 @@
-11.933399999999999	Eukaryota
-9.416400000000001	Eukaryota	Annelida	Polychaeta
-5.1873000000000005	Eukaryota	Arthropoda
-0.3628	Eukaryota	Arthropoda	Branchiopoda	Anostraca
-0.623	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae
-2.6001	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales
-1.7599	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida
-3.5707	Eukaryota	Chordata	Ascidiacea	Stolidobranchia
-0.9553	Eukaryota	Cnidaria	Hydrozoa
-2.7646	Eukaryota	Cnidaria	Myxozoa
-0.4764	Eukaryota	Cnidaria	Myxozoa	Multivalvulida	Kudoidae	Kudoa
-1.7795	Eukaryota	Echinodermata	Asteroidea	Peripodida	Xyloplacidae	Xyloplax	Xyloplax_janetae
-8.368500000000001	Eukaryota	Mollusca	Bivalvia	Ostreoida
-0.3854	Eukaryota	Mollusca	Gastropoda	Pleurotomariida
-0.3729	Eukaryota	Porifera	Demospongiae
-0.9246	Eukaryota	Porifera	Demospongiae	Suberitida
+1.7241	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=	JCM	14202
+7.236800000000001	Eukaryota
+11.790199999999999	Eukaryota	Annelida	Polychaeta
+0.3641	Eukaryota	Annelida	Polychaeta	Spionida
+5.3124	Eukaryota	Arthropoda
+1.8216	Eukaryota	Arthropoda	Hexanauplia
+0.5016	Eukaryota	Bacillariophyta	Bacillariophyceae
+2.8152	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales
+5.294099999999999	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida
+3.6636	Eukaryota	Chordata	Ascidiacea	Stolidobranchia
+0.1124	Eukaryota	Chytridiomycota	Chytridiomycetes	Spizellomycetales
+0.9232	Eukaryota	Cnidaria	Hydrozoa
+2.8415	Eukaryota	Euglenozoa	Euglenida
+8.5733	Eukaryota	Mollusca	Bivalvia	Ostreoida
+0.8616	Eukaryota	Porifera	Demospongiae
+0.9097	Eukaryota	Porifera	Demospongiae	Suberitida

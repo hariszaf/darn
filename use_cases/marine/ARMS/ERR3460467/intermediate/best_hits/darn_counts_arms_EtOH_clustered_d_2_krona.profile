@@ -1,38 +1,45 @@
-16.0	Eukaryota
+	Bacteria
+	Bacteria	Terrabacteria_group
+	Bacteria	Terrabacteria_group	Firmicutes
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=
+	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=	JCM
+2.0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=	JCM	14202
+13.0	Eukaryota
 	Eukaryota	Annelida
-15.0	Eukaryota	Annelida	Polychaeta
+14.0	Eukaryota	Annelida	Polychaeta
+1.0	Eukaryota	Annelida	Polychaeta	Spionida
 7.0	Eukaryota	Arthropoda
-	Eukaryota	Arthropoda	Branchiopoda
-1.0	Eukaryota	Arthropoda	Branchiopoda	Anostraca
+3.0	Eukaryota	Arthropoda	Hexanauplia
 	Eukaryota	Bacillariophyta
-	Eukaryota	Bacillariophyta	Bacillariophyceae
-	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales
-1.0	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae
+1.0	Eukaryota	Bacillariophyta	Bacillariophyceae
 	Eukaryota	Bacillariophyta	Coscinodiscophyceae
 4.0	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales
 	Eukaryota	Bryozoa
 	Eukaryota	Bryozoa	Gymnolaemata
-3.0	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida
+6.0	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida
 	Eukaryota	Chordata
 	Eukaryota	Chordata	Ascidiacea
 5.0	Eukaryota	Chordata	Ascidiacea	Stolidobranchia
+	Eukaryota	Chytridiomycota
+	Eukaryota	Chytridiomycota	Chytridiomycetes
+1.0	Eukaryota	Chytridiomycota	Chytridiomycetes	Spizellomycetales
 	Eukaryota	Cnidaria
 1.0	Eukaryota	Cnidaria	Hydrozoa
-5.0	Eukaryota	Cnidaria	Myxozoa
-	Eukaryota	Cnidaria	Myxozoa	Multivalvulida
-	Eukaryota	Cnidaria	Myxozoa	Multivalvulida	Kudoidae
-1.0	Eukaryota	Cnidaria	Myxozoa	Multivalvulida	Kudoidae	Kudoa
-	Eukaryota	Echinodermata
-	Eukaryota	Echinodermata	Asteroidea
-	Eukaryota	Echinodermata	Asteroidea	Peripodida
-	Eukaryota	Echinodermata	Asteroidea	Peripodida	Xyloplacidae
-	Eukaryota	Echinodermata	Asteroidea	Peripodida	Xyloplacidae	Xyloplax
-2.0	Eukaryota	Echinodermata	Asteroidea	Peripodida	Xyloplacidae	Xyloplax	Xyloplax_janetae
+	Eukaryota	Euglenozoa
+4.0	Eukaryota	Euglenozoa	Euglenida
 	Eukaryota	Mollusca
 	Eukaryota	Mollusca	Bivalvia
 10.0	Eukaryota	Mollusca	Bivalvia	Ostreoida
-	Eukaryota	Mollusca	Gastropoda
-1.0	Eukaryota	Mollusca	Gastropoda	Pleurotomariida
 	Eukaryota	Porifera
 1.0	Eukaryota	Porifera	Demospongiae
 1.0	Eukaryota	Porifera	Demospongiae	Suberitida
