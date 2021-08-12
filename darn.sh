@@ -39,23 +39,28 @@ usage() {
 }
 
 
-while getopts ":s:t:" o; do
+while getopts ":s:t:o:" o; do
    case "${o}" in
       s)
          sample=${OPTARG}
          ;;
-	   t)
+      t)
          threads=${OPTARG}
          ;;
-     *)
+      o)
+         orientation=${OPTARG}
+         ;;
+      *)
          usage
          ;;
    esac
 done
+
 shift $((OPTIND-1))
 
+# Check if string is null, i.e that has zero length
 if [ -z "${sample}" ]; then
-    echo "One or more mandatory parameters were not set."
+    echo "DARN needs a .fasta sample as input."
     usage
 fi
 
@@ -106,7 +111,18 @@ mv caps_multiline_labeled_$nameFile multiline_labeled_$nameFile
 
 
 # Make sure about having the correct orientation
-vsearch --orient multiline_labeled_$nameFile --db /home/docs/oriented_consensus_seqs.fasta --fastaout darn_oriented_$nameFile
+if [[ $orientation != 0 ]] ; then
+
+   printf "\n >>> STEP 0: Orientation of the input sequences using the --orient module of the VSEARCH tool (Torbjørn, et al. 2016), \n based on the consensus sequences used to build the reference COI phylogenetic tree that DARN makes use of. \n"
+   
+   vsearch --orient multiline_labeled_$nameFile --db /home/docs/oriented_consensus_seqs.fasta --fastaout darn_oriented_$nameFile
+
+   printf "\n STEP 0 has been completed. \n" 
+
+else
+   cp multiline_labeled_$nameFile darn_oriented_$nameFile
+fi
+
 
 # Single line copy to run with python parse script
 awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' darn_oriented_$nameFile > oriented_input.fasta
@@ -120,6 +136,7 @@ grep ">"  darn_$sampleName.fasta > id_pairs ; sed 's/>//g' id_pairs > PINK ; mv 
 ################################
 
 # Run PaPaRa
+printf "\n >>> STEP 1: alignment of input reads to the MSA built from the consensus COI sequences, \n using the PaPaRa software (S.A. Berger, A. Stamatakis 2012).\n"
 /home/tools/papara_nt-2.5/papara \
 	-t /home/docs/magicTree.bestTree \
 	-s /home/docs/magic_tree_aln.phy \
@@ -128,16 +145,19 @@ grep ">"  darn_$sampleName.fasta > id_pairs ; sed 's/>//g' id_pairs > PINK ; mv 
 	-r \
 	-j $threads
 
+printf "\n <<< STEP 1 has been completed.\n"
+
 # Remove ref seqs from the query MSA
 /home/tools/epa/bin/epa-ng --split /home/docs/magic_tree_aln.phy papara_alignment.papara
 
 
-# Run EPA-ng
-/home/tools/epa/bin/epa-ng -t /home/docs/magicTree.bestTree -s /home/docs/magic_tree_aln.fasta -m GTR+FO+G4m -q query.fasta 
+# Run EPA-ng - remember the model we use is the one used for building the reference tree
+printf "\n >>> STEP 2: placement of the input reads on the reference COI phylogenetic tree of DARN, \n using the EPA-ng algorithm (Barbera et al. 2018). \n"
+/home/tools/epa/bin/epa-ng -t /home/docs/magicTree.bestTree -s /home/docs/magic_tree_aln.fasta -m GTR+F+R10 -q query.fasta 
+printf "\n <<< STEP 2 has been completed. \n"
 
 # Run gappa to build krona input
-# IMPORTANT HINT! Darn will build Krona plots based on the BEST HITS assignments; both based on the likelihood values and in a binary way. 
-# However, it will also return the likelihoods of the exhaustive likelihood values to allow user a thorough overview of its queries
+printf "\n >>> STEP 3: Build assignment profiles per input query, \n using the examine assign of the gappa package (Czech et al. 2020). \n"
 /home/tools/gappa/bin/gappa examine assign \
    --file-prefix darn_assign_exhaustive_$sampleName\_ \
    --jplace-path epa_result.jplace \
@@ -152,7 +172,7 @@ grep ">"  darn_$sampleName.fasta > id_pairs ; sed 's/>//g' id_pairs > PINK ; mv 
    --per-query-results \
    --best-hit \
    --krona
-
+printf "\n <<< STEP 3 has been completed. \n"
 
 # Remove non query sequences from the output of gappa assign
 sed 's/^Archaea.*//g ; s/^Bacteria.*//g ; s/^Eukaryota.*//g ; /^$/d ' darn_best_hit_$sampleName\_per_query.tsv > tmp 
@@ -164,22 +184,27 @@ rm darn_assign_exhaustive_$sampleName\_per_query.tsv
 mv tmp darn_assign_exhaustive_$sampleName\_per_query.tsv
 
 # Run parsing script; this step uses the gappa output to get the 
+printf "\n >>> STEP 4: Parse the profiles returned to build Krona-specific profiles. \n"
 cp darn_best_hit_$sampleName\_per_query.tsv darn_gappa_assign_per_query.tsv
 python3 /home/parse_per_query.py
 rm darn_gappa_assign_per_query.tsv
+printf "\n <<< STEP 4 has been completed.\n"
 
 # Build Krona input (profile) for binary 
 mv darn_processed_lwr.profile darn_likelihood_$sampleName\_krona.profile
 mv darn_processed_counts.profile darn_counts_$sampleName\_krona.profile
 
 # Build Krona plots
+printf "\n >>> STEP5: Build Krona plots using the ktImportText command of KronaTools (Ondov et al. 2011)."
 ktImportText darn_counts_$sampleName\_krona.profile -o darn_$sampleName\_pres_abs.krona_plot.html
 ktImportText darn_likelihood_$sampleName\_krona.profile -o darn_$sampleName\_likelihood.krona_plot.html
-
+printf "\n <<< STEP 5 has been completed. \n"
 
 ###########################
 #    Build darn output    #
 ###########################
+
+printf "\n >>> STEP 6: Build DARN output \n"
 
 # Move krona plots and important files to mount directory
 rm query.fasta
@@ -221,4 +246,6 @@ rm oriented* id_pairs
 cd /mnt
 rm epa_info.log papara* multiline* labeled_* reference.fasta
 
-echo "DARN has been completed! Thanks for using DARN!"
+printf "\n <<< STEP 6 has been completed \n"
+
+printf "\n DARN has been completed! Thanks for using DARN! \n"
