@@ -61,7 +61,7 @@ shift $((OPTIND-1))
 
 # Check if string is null, i.e that has zero length
 if [ -z "${sample}" ]; then
-    echo "DARN needs a .fasta sample as input."
+    printf "\nERROR: DARN needs a .fasta sample as input."
     usage
 fi
 
