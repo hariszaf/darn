@@ -31,7 +31,7 @@ usage() {
    echo "Usage: bash $0 -s sequence_sample"
    echo -e "\t -s \t Path to the input sequence file. This file needs to be in .fasta format"
    echo -e "\t -t \t Number of threads to be used in the PaPaRa step."
-   echo -e "\t -o \t Reads orientation if not oriented. Set -o short or long depending on the length of your amplicon."
+   echo -e "\t -o \t Reads orientation if not oriented. Set the value of the parameter as 'short' (<300 bp) or 'long' depending on the length of your amplicon."
    echo -e "\t -h \t How to use DARN"
    echo -e "\n"
    echo -e "Example:"
@@ -119,7 +119,8 @@ if [[ $orientation != 0 ]] ; then
       vsearch --orient multiline_labeled_$nameFile --db /home/docs/oriented_consensus_seqs.fasta --fastaout darn_oriented_$nameFile --notmatched discarded_not_oriented_seqs.fasta
    else
       vsearch --orient multiline_labeled_$nameFile --db /home/docs/oriented_short_consensus_seqs.fasta --fastaout darn_oriented_$nameFile --notmatched discarded_not_oriented_seqs.fasta
-   printf "\n >>> STEP 0 has been completed. \n" 
+   fi
+   printf "\n <<< STEP 0 has been completed. \n" 
 
 else
    cp multiline_labeled_$nameFile darn_oriented_$nameFile
