@@ -1,30 +1,40 @@
-3.0	Archaea
+16.0	Archaea
 	Archaea	Candidatus_Thermoplasmatota
 	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata
-1.0	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata	Thermoplasmatales
+4.0	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata	Thermoplasmatales
 	Archaea	Euryarchaeota
 	Archaea	Euryarchaeota	Archaeoglobi
 	Archaea	Euryarchaeota	Archaeoglobi	Archaeoglobales
 	Archaea	Euryarchaeota	Archaeoglobi	Archaeoglobales	Archaeoglobaceae
 	Archaea	Euryarchaeota	Archaeoglobi	Archaeoglobales	Archaeoglobaceae	Archaeoglobaceae
 1.0	Archaea	Euryarchaeota	Archaeoglobi	Archaeoglobales	Archaeoglobaceae	Archaeoglobaceae	Ferroglobus
-3.0	Bacteria
+6.0	Bacteria
+	Bacteria	FCB_group
+	Bacteria	FCB_group	Bacteroidetes/Chlorobi_group
+	Bacteria	FCB_group	Bacteroidetes/Chlorobi_group	Bacteroidetes
+	Bacteria	FCB_group	Bacteroidetes/Chlorobi_group	Bacteroidetes	Flavobacteriia
+1.0	Bacteria	FCB_group	Bacteroidetes/Chlorobi_group	Bacteroidetes	Flavobacteriia	Weeksellaceae
 	Bacteria	PVC_group
 	Bacteria	PVC_group	Planctomycetes
 	Bacteria	PVC_group	Planctomycetes	Candidatus_Brocadiae
 	Bacteria	PVC_group	Planctomycetes	Candidatus_Brocadiae	Candidatus_Brocadiales
 1.0	Bacteria	PVC_group	Planctomycetes	Candidatus_Brocadiae	Candidatus_Brocadiales	Candidatus_Brocadiaceae
-1.0	Bacteria	Proteobacteria
+4.0	Bacteria	Proteobacteria
 	Bacteria	Proteobacteria	Alphaproteobacteria
 	Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales
 	Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales	unclassified_Rickettsiales
 1.0	Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales	unclassified_Rickettsiales	unclassified_Rickettsiales
-	Bacteria	Proteobacteria	Gammaproteobacteria
-3.0	Bacteria	Proteobacteria	Gammaproteobacteria	Enterobacterales
+	Bacteria	Proteobacteria	Betaproteobacteria
+	Bacteria	Proteobacteria	Betaproteobacteria	Betaproteobacteria_incertae_sedis
+1.0	Bacteria	Proteobacteria	Betaproteobacteria	Betaproteobacteria_incertae_sedis	Candidatus_Accumulibacter_sp._BA94
+1.0	Bacteria	Proteobacteria	Gammaproteobacteria
+5.0	Bacteria	Proteobacteria	Gammaproteobacteria	Enterobacterales
 	Bacteria	Terrabacteria_group
+3.0	Bacteria	Terrabacteria_group	Chloroflexi
 	Bacteria	Terrabacteria_group	Firmicutes
 	Bacteria	Terrabacteria_group	Firmicutes	Bacilli
-2.0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales
+5.0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales
+1.0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales	Listeriaceae
 	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales
 	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae
 	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus
@@ -36,12 +46,11 @@
 	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527
 	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=
 	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=	JCM
-3.0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=	JCM	14202
-10.0	DISTANT
-78.0	Eukaryota
+10.0	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=	JCM	14202
+24.0	DISTANT
+137.0	Eukaryota
 	Eukaryota	Arthropoda
-1.0	Eukaryota	Arthropoda	Branchiopoda
-1.0	Eukaryota	Arthropoda	Branchiopoda	Anostraca
+2.0	Eukaryota	Arthropoda	Branchiopoda
 	Eukaryota	Arthropoda	Hexanauplia
 3.0	Eukaryota	Arthropoda	Hexanauplia	Cyclopoida
 4.0	Eukaryota	Arthropoda	Insecta
@@ -50,26 +59,31 @@
 	Eukaryota	Basidiomycota	Microbotryomycetes
 	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales
 	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae
-11.0	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae	Rhodotorula
+27.0	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae	Rhodotorula
 	Eukaryota	Bryozoa
 	Eukaryota	Bryozoa	Phylactolaemata
 	Eukaryota	Bryozoa	Phylactolaemata	Fredericellidae
 	Eukaryota	Bryozoa	Phylactolaemata	Fredericellidae	Fredericellidae
 	Eukaryota	Bryozoa	Phylactolaemata	Fredericellidae	Fredericellidae	Fredericella
-1.0	Eukaryota	Bryozoa	Phylactolaemata	Fredericellidae	Fredericellidae	Fredericella	Fredericella_sultana
+2.0	Eukaryota	Bryozoa	Phylactolaemata	Fredericellidae	Fredericellidae	Fredericella	Fredericella_sultana
 	Eukaryota	Chlorophyta
 	Eukaryota	Chlorophyta	Chlorophyceae
 	Eukaryota	Chlorophyta	Chlorophyceae	Microsporaceae
 	Eukaryota	Chlorophyta	Chlorophyceae	Microsporaceae	Microsporaceae
 	Eukaryota	Chlorophyta	Chlorophyceae	Microsporaceae	Microsporaceae	Microspora
-2.0	Eukaryota	Chlorophyta	Chlorophyceae	Microsporaceae	Microsporaceae	Microspora	Microspora_stagnorum
+5.0	Eukaryota	Chlorophyta	Chlorophyceae	Microsporaceae	Microsporaceae	Microspora	Microspora_stagnorum
 	Eukaryota	Chordata
+	Eukaryota	Chordata	Appendicularia
+	Eukaryota	Chordata	Appendicularia	Copelata
+1.0	Eukaryota	Chordata	Appendicularia	Copelata	Oikopleuridae
 	Eukaryota	Chordata	Leptocardii
 	Eukaryota	Chordata	Leptocardii	Amphioxiformes
 1.0	Eukaryota	Chordata	Leptocardii	Amphioxiformes	Branchiostomidae
 	Eukaryota	Chytridiomycota
 	Eukaryota	Chytridiomycota	Chytridiomycetes
 4.0	Eukaryota	Chytridiomycota	Chytridiomycetes	Spizellomycetales
+	Eukaryota	Ciliophora
+1.0	Eukaryota	Ciliophora	Spirotrichea
 	Eukaryota	Cnidaria
 6.0	Eukaryota	Cnidaria	Myxozoa
 	Eukaryota	Cryptophyceae
@@ -78,12 +92,14 @@
 	Eukaryota	Dictyochophyceae
 1.0	Eukaryota	Dictyochophyceae	Dictyochophyceae
 	Eukaryota	Euglenozoa
-39.0	Eukaryota	Euglenozoa	Euglenida
+35.0	Eukaryota	Euglenozoa	Euglenida
 2.0	Eukaryota	Gnathostomulida
 	Eukaryota	Mucoromycota
-1.0	Eukaryota	Mucoromycota	Glomeromycetes
+3.0	Eukaryota	Mucoromycota	Glomeromycetes
 	Eukaryota	Platyhelminthes
 	Eukaryota	Platyhelminthes	Catenulida
 	Eukaryota	Platyhelminthes	Catenulida	Stenostomidae
-2.0	Eukaryota	Platyhelminthes	Catenulida	Stenostomidae	Stenostomidae
+4.0	Eukaryota	Platyhelminthes	Catenulida	Stenostomidae	Stenostomidae
 2.0	Eukaryota	Platyhelminthes	Cestoda
+	Eukaryota	Platyhelminthes	Trematoda
+2.0	Eukaryota	Platyhelminthes	Trematoda	Diplostomida

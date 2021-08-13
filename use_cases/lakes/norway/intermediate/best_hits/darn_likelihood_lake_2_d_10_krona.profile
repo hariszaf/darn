@@ -1,12 +1,16 @@
-0.17	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata	Thermoplasmatales
-0.751	Bacteria
-74.23629999999999	Eukaryota
-3.7787	Eukaryota	Arthropoda	Branchiopoda
-1.6174999999999997	Eukaryota	Arthropoda	Hexanauplia
-1.0110999999999999	Eukaryota	Arthropoda	Hexanauplia	Calanoida
-1.6004	Eukaryota	Arthropoda	Insecta
-0.5226	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae	Rhodotorula
-1.4412	Eukaryota	Chlorophyta	Chlorophyceae	Microsporaceae	Microsporaceae	Microspora	Microspora_stagnorum
-0.97	Eukaryota	Chytridiomycota	Chytridiomycetes	Spizellomycetales
-139.97279999999998	Eukaryota	Euglenozoa	Euglenida
-0.9301	Eukaryota	Euglenozoa	Euglenida	Eutreptiales	Eutreptiella	Eutreptiella	Eutreptiella_gymnastica
+1.7243	Archaea
+0.5077	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata	Thermoplasmatales
+4.2262	Bacteria
+0.4266	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=	JCM	14202
+2.4379999999999997	DISTANT
+91.6612	Eukaryota
+4.4825	Eukaryota	Arthropoda	Branchiopoda
+1.6953	Eukaryota	Arthropoda	Hexanauplia
+1.6253000000000002	Eukaryota	Arthropoda	Insecta
+2.2233	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae	Rhodotorula
+1.9284000000000001	Eukaryota	Chlorophyta	Chlorophyceae	Microsporaceae	Microsporaceae	Microspora	Microspora_stagnorum
+2.0	Eukaryota	Chytridiomycota	Chytridiomycetes	Spizellomycetales
+59.66900000000002	Eukaryota	Euglenozoa	Euglenida
+0.9337	Eukaryota	Euglenozoa	Euglenida	Eutreptiales	Eutreptiella	Eutreptiella	Eutreptiella_gymnastica
+8.259899999999998	Eukaryota	Platyhelminthes	Catenulida	Stenostomidae	Stenostomidae
+0.5923	Eukaryota	Platyhelminthes	Trematoda	Diplostomida

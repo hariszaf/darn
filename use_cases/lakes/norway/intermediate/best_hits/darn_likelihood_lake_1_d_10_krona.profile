@@ -1,30 +1,37 @@
-2.074	Archaea
-0.2435	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata	Thermoplasmatales
-0.6541	Archaea	Euryarchaeota	Archaeoglobi	Archaeoglobales	Archaeoglobaceae	Archaeoglobaceae	Ferroglobus
-2.2058	Bacteria
-0.4876	Bacteria	PVC_group	Planctomycetes	Candidatus_Brocadiae	Candidatus_Brocadiales	Candidatus_Brocadiaceae
-0.9162	Bacteria	Proteobacteria
+11.258899999999999	Archaea
+1.1256	Archaea	Candidatus_Thermoplasmatota	Thermoplasmata	Thermoplasmatales
+0.7642	Archaea	Euryarchaeota	Archaeoglobi	Archaeoglobales	Archaeoglobaceae	Archaeoglobaceae	Ferroglobus
+4.658200000000001	Bacteria
+0.5375	Bacteria	FCB_group	Bacteroidetes/Chlorobi_group	Bacteroidetes	Flavobacteriia	Weeksellaceae
+0.4337	Bacteria	PVC_group	Planctomycetes	Candidatus_Brocadiae	Candidatus_Brocadiales	Candidatus_Brocadiaceae
+2.6801000000000004	Bacteria	Proteobacteria
 2.483e-06	Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales	unclassified_Rickettsiales	unclassified_Rickettsiales
-0.637	Bacteria	Proteobacteria	Gammaproteobacteria	Enterobacterales
-1.4477	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales
-2.4598	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=	JCM	14202
-6.4855	DISTANT
-67.37740000000001	Eukaryota
-0.7966	Eukaryota	Arthropoda	Branchiopoda
-0.4873	Eukaryota	Arthropoda	Branchiopoda	Anostraca
-2.3908	Eukaryota	Arthropoda	Hexanauplia	Cyclopoida
-3.0839000000000003	Eukaryota	Arthropoda	Insecta
-0.726	Eukaryota	Arthropoda	Insecta	Mecoptera
-7.3015	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae	Rhodotorula
-0.6547	Eukaryota	Bryozoa	Phylactolaemata	Fredericellidae	Fredericellidae	Fredericella	Fredericella_sultana
-1.2111	Eukaryota	Chlorophyta	Chlorophyceae	Microsporaceae	Microsporaceae	Microspora	Microspora_stagnorum
-0.5657	Eukaryota	Chordata	Leptocardii	Amphioxiformes	Branchiostomidae
-3.8794	Eukaryota	Chytridiomycota	Chytridiomycetes	Spizellomycetales
-4.385199999999999	Eukaryota	Cnidaria	Myxozoa
-1.3955000000000002	Eukaryota	Cryptophyceae	Cryptophyceae	Cryptomonadales
-0.7093	Eukaryota	Dictyochophyceae	Dictyochophyceae
-34.996900000000004	Eukaryota	Euglenozoa	Euglenida
-1.7835999999999999	Eukaryota	Gnathostomulida
-0.6895	Eukaryota	Mucoromycota	Glomeromycetes
-1.9943	Eukaryota	Platyhelminthes	Catenulida	Stenostomidae	Stenostomidae
-1.6015000000000001	Eukaryota	Platyhelminthes	Cestoda
+0.6485	Bacteria	Proteobacteria	Betaproteobacteria	Betaproteobacteria_incertae_sedis	Candidatus_Accumulibacter_sp._BA94
+0.7536	Bacteria	Proteobacteria	Gammaproteobacteria
+0.98085	Bacteria	Proteobacteria	Gammaproteobacteria	Enterobacterales
+2.5212	Bacteria	Terrabacteria_group	Chloroflexi
+3.8303000000000003	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales
+0.4859	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Bacillales	Listeriaceae
+7.554500000000001	Bacteria	Terrabacteria_group	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus	composti	Agrilactobacillus	composti	DSM	18527	=	JCM	14202
+15.379400000000002	DISTANT
+117.76299999999995	Eukaryota
+1.38	Eukaryota	Arthropoda	Branchiopoda
+2.4557	Eukaryota	Arthropoda	Hexanauplia	Cyclopoida
+3.1409000000000002	Eukaryota	Arthropoda	Insecta
+0.6428	Eukaryota	Arthropoda	Insecta	Mecoptera
+17.0673	Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	Sporidiobolaceae	Rhodotorula
+1.172	Eukaryota	Bryozoa	Phylactolaemata	Fredericellidae	Fredericellidae	Fredericella	Fredericella_sultana
+3.4902999999999995	Eukaryota	Chlorophyta	Chlorophyceae	Microsporaceae	Microsporaceae	Microspora	Microspora_stagnorum
+0.5	Eukaryota	Chordata	Appendicularia	Copelata	Oikopleuridae
+0.532	Eukaryota	Chordata	Leptocardii	Amphioxiformes	Branchiostomidae
+3.9091	Eukaryota	Chytridiomycota	Chytridiomycetes	Spizellomycetales
+0.4854	Eukaryota	Ciliophora	Spirotrichea
+4.4007	Eukaryota	Cnidaria	Myxozoa
+1.3211	Eukaryota	Cryptophyceae	Cryptophyceae	Cryptomonadales
+0.7492	Eukaryota	Dictyochophyceae	Dictyochophyceae
+16.3365	Eukaryota	Euglenozoa	Euglenida
+1.8369	Eukaryota	Gnathostomulida
+1.6419	Eukaryota	Mucoromycota	Glomeromycetes
+2.7657999999999996	Eukaryota	Platyhelminthes	Catenulida	Stenostomidae	Stenostomidae
+1.5675	Eukaryota	Platyhelminthes	Cestoda
+1.2410999999999999	Eukaryota	Platyhelminthes	Trematoda	Diplostomida
