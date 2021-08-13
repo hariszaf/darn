@@ -31,10 +31,11 @@ usage() {
    echo "Usage: bash $0 -s sequence_sample"
    echo -e "\t -s \t Path to the input sequence file. This file needs to be in .fasta format"
    echo -e "\t -t \t Number of threads to be used in the PaPaRa step."
+   echo -e "\t -o \t Reads orientation if not oriented. Set -o short or long depending on the length of your amplicon."
    echo -e "\t -h \t How to use DARN"
    echo -e "\n"
    echo -e "Example:"
-   echo -e "./darn -s my_query_file.fasta -o /home/user_1/Desktop"
+   echo -e "./darn -s my_query_file.fasta -t 8 -o long"
    exit 1 # Exit script after printing help
 }
 
@@ -114,15 +115,15 @@ mv caps_multiline_labeled_$nameFile multiline_labeled_$nameFile
 if [[ $orientation != 0 ]] ; then
 
    printf "\n >>> STEP 0: Orientation of the input sequences using the --orient module of the VSEARCH tool (Torbjørn, et al. 2016), \n based on the consensus sequences used to build the reference COI phylogenetic tree that DARN makes use of. \n"
-   
-   vsearch --orient multiline_labeled_$nameFile --db /home/docs/oriented_consensus_seqs.fasta --fastaout darn_oriented_$nameFile
-
-   printf "\n STEP 0 has been completed. \n" 
+   if [[ $orientation == 'long' ]] ; then
+      vsearch --orient multiline_labeled_$nameFile --db /home/docs/oriented_consensus_seqs.fasta --fastaout darn_oriented_$nameFile --notmatched discarded_not_oriented_seqs.fasta
+   else
+      vsearch --orient multiline_labeled_$nameFile --db /home/docs/oriented_short_consensus_seqs.fasta --fastaout darn_oriented_$nameFile --notmatched discarded_not_oriented_seqs.fasta
+   printf "\n >>> STEP 0 has been completed. \n" 
 
 else
    cp multiline_labeled_$nameFile darn_oriented_$nameFile
 fi
-
 
 # Single line copy to run with python parse script
 awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' darn_oriented_$nameFile > oriented_input.fasta
