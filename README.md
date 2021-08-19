@@ -10,6 +10,11 @@ to assign your sequences to the 3 domains of life.
 Its purpose is not to provide you with certain taxonomic assignment but to give an overview of the species present. 
 
 
+<img src="https://raw.githubusercontent.com/hariszaf/darn/main/figures/placements_of_consensus_seqs_transpaernt.png" width="850" height="700">
+
+
+
+
 ## Installation 
 
 `darn` is a available as a container, meaning you need a containerized technology to use it. 
