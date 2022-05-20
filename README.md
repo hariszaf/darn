@@ -158,4 +158,7 @@ You may have a look on the DARN output over [here](https://github.com/hariszaf/d
 * [krona](https://github.com/marbl/Krona/wiki)
 
 
+## How to cite
+
+Zafeiropoulos H, Gargan L, Hintikka S, Pavloudi C, Carlsson J. The Dark mAtteR iNvestigator (DARN) tool: getting to know the known unknowns in COI amplicon data. Metabarcoding and Metagenomics. 2021 Mar 11;5:e69657. DOI: [https://doi.org/10.3897/mbmg.5.69657](https://doi.org/10.3897/mbmg.5.69657)
 
